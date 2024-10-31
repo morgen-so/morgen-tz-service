@@ -36,16 +36,17 @@
         "@vvo/tzdb": "^6.148.0",
         "fast-xml-parser": "^4.5.0",
         "jest": "^29.7.0",
+        "moment": "*",
+        "moment-timezone": "0.5.46",
         "timezones-ical-library": "^1.8.3",
         "ts-jest": "^29.2.5",
         "ts-node": "^10.9.2",
         "tsup": "^8.3.5",
         "tsx": "^4.19.2",
-        "typescript": "^5.6.3"
+        "typescript": "^5.6.3",
+        "tzdata": "^1.0.42"
     },
     "peerDependencies": {
-        "lodash": "*",
-        "moment": "*",
-        "moment-timezone": "*"
+        "lodash": "*"
     }
 }

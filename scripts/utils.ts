@@ -1,14 +1,16 @@
 import _ from "lodash";
-import { getTimeZones, type TimeZone } from "@vvo/tzdb";
+import timezoneData from "tzdata/timezone-data.json";
 
-const dbData = getTimeZones({ includeUtc: true });
-const tzdbMap: Record<string, TimeZone> = {};
-dbData.forEach((tz) => {
-  tzdbMap[tz.name] = tz;
-  tz.group.forEach((group) => {
-    tzdbMap[group] = tz;
-  });
-});
+function getCanonicalName_(name: string) {
+  const candicate = (timezoneData as any).zones[name];
+  if (!candicate) return undefined;
+  // If the name is an alias, it maps to the canonical name (a string).
+  // If the name if already canonical, it maps to an array with info.
+  // We are not interested in the info but we can use this to know
+  // whether the name is canonical or not.
+  if (typeof candicate === "string") return candicate;
+  else return name;
+}
 
 const utcAliases = [
   "Z",
@@ -34,5 +36,5 @@ export function getCanonicalIanaName(name: string): string | undefined {
   // exception, Etc/UTC is actually the canonical one, but UTC is widely recognized more understood
   if (utcAliases.includes(name)) return "UTC";
   if (name.includes("Etc/GMT")) return name;
-  return tzdbMap[name]?.name;
+  return getCanonicalName_(name);
 }

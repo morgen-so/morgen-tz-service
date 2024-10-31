@@ -4,7 +4,7 @@ import moment from "moment-timezone";
 import { getCanonicalIanaName } from "./utils.js";
 /**
  * Generates a mapping to legacy IANA names to canonical IANA names
- * from data in @vvo/tzdb.
+ * from data in `https://www.npmjs.com/package/tzdata`.
  */
 (async function () {
   const zones = moment.tz.names();
@@ -19,7 +19,7 @@ import { getCanonicalIanaName } from "./utils.js";
   // Additionally, add Z, which is what ical.js return for UTC -.-
   canonicalNames["Z"] = "UTC";
 
-  const header = `// Generated from @vvo/tzdb data on ${new Date().toISOString()}\n\n`;
+  const header = `// Generated from https://www.npmjs.com/package/tzdata data on ${new Date().toISOString()}\n\n`;
 
   fs.writeFileSync(
     "./src/generated/canonicalNames.ts",
