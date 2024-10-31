@@ -220,4 +220,4 @@ class Timezone {
   }
 }
 
-export { Timezone };
+export default { Timezone };
