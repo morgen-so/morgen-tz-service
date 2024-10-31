@@ -8939,7 +8939,7 @@ var Timezone = class _Timezone {
   validated_;
   constructor(tzName) {
     this.validated_ = false;
-    this.canonicalName_ = this.getIanaTzName(tzName);
+    this.canonicalName_ = this.getIanaTzName_(tzName);
   }
   get ianaName() {
     return this.canonicalName_;
@@ -8980,7 +8980,7 @@ var Timezone = class _Timezone {
    *
    * @param tzName
    */
-  getIanaTzName(tzName) {
+  getIanaTzName_(tzName) {
     if (!tzName) {
       return _Timezone.findCanonicalIANAName(import_moment_timezone2.default.tz.guess());
     }
@@ -8995,7 +8995,7 @@ var Timezone = class _Timezone {
       this.validated_ = true;
       return ianaFromMs;
     }
-    const ianaInferred = this.bestGuess(tzName);
+    const ianaInferred = this.bestGuess_(tzName);
     if (ianaInferred) {
       const ianaInferredCanonical = _Timezone.findCanonicalIANAName(ianaInferred);
       if (import_moment_timezone2.default.tz.zone(ianaInferredCanonical)) {
@@ -9008,7 +9008,7 @@ var Timezone = class _Timezone {
     );
     return _Timezone.findCanonicalIANAName(import_moment_timezone2.default.tz.guess());
   }
-  extractCities(timezoneDescription) {
+  extractCities_(timezoneDescription) {
     const match2 = timezoneDescription.match(/\(.*?\)\s*(.*)/);
     if (match2 && match2[1]) {
       const citiesString = match2[1];
@@ -9016,7 +9016,7 @@ var Timezone = class _Timezone {
     }
     return [];
   }
-  mapOffsetToIANATimeZone(offsetString) {
+  mapOffsetToIANATimeZone_(offsetString) {
     const offsetToIANAMap = {
       "+0000": "Etc/UTC",
       "+0100": "Etc/GMT-1",
@@ -9072,16 +9072,16 @@ var Timezone = class _Timezone {
    * @param tzName
    * @returns
    */
-  bestGuess(tzName) {
+  bestGuess_(tzName) {
     const names = import_moment_timezone2.default.tz.names();
     const ianaInferred = names.find((name) => tzName.endsWith(name));
     if (ianaInferred) return ianaInferred;
-    const cities = this.extractCities(tzName);
+    const cities = this.extractCities_(tzName);
     for (const city of cities) {
       const ianaName2 = regions[city.toLocaleLowerCase()];
       if (ianaName2) return ianaName2;
     }
-    const ianaName = this.mapOffsetToIANATimeZone(tzName);
+    const ianaName = this.mapOffsetToIANATimeZone_(tzName);
     if (ianaName) return ianaName;
     return null;
   }

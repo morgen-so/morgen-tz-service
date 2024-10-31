@@ -3,8 +3,8 @@
  *
  */
 declare class Timezone {
-    private canonicalName_;
-    private validated_;
+    canonicalName_: string;
+    validated_: boolean;
     constructor(tzName: string);
     get ianaName(): string;
     get validated(): boolean;
@@ -32,9 +32,9 @@ declare class Timezone {
      *
      * @param tzName
      */
-    private getIanaTzName;
-    private extractCities;
-    private mapOffsetToIANATimeZone;
+    getIanaTzName_(tzName: string): string;
+    extractCities_(timezoneDescription: string): string[];
+    mapOffsetToIANATimeZone_(offsetString: string): string | null;
     /**
      *  If both moment-timezone and ews failed to recognize the timezone name
      *  we may have something not standard such as
@@ -45,7 +45,7 @@ declare class Timezone {
      * @param tzName
      * @returns
      */
-    private bestGuess;
+    bestGuess_(tzName: string): string | null;
 }
 declare const _default: {
     Timezone: typeof Timezone;

@@ -13,12 +13,12 @@ import { icsZones } from "./generated/icsZones.js";
 import { checkLuxonCompatibility } from "./utils.js";
 
 class Timezone {
-  private canonicalName_: string;
-  private validated_: boolean;
+  canonicalName_: string;
+  validated_: boolean;
 
   constructor(tzName: string) {
     this.validated_ = false;
-    this.canonicalName_ = this.getIanaTzName(tzName);
+    this.canonicalName_ = this.getIanaTzName_(tzName);
   }
 
   get ianaName() {
@@ -68,7 +68,7 @@ class Timezone {
    *
    * @param tzName
    */
-  private getIanaTzName(tzName: string) {
+  getIanaTzName_(tzName: string) {
     if (!tzName) {
       // No timezone name provided, we assume local timezone
       return Timezone.findCanonicalIANAName(moment.tz.guess());
@@ -98,7 +98,7 @@ class Timezone {
     // 3. Heuristic match
     // Ideally, we should never get here but some providers (especially CalDAV ones)
     // return very odd timezone names sometimes.
-    const ianaInferred = this.bestGuess(tzName);
+    const ianaInferred = this.bestGuess_(tzName);
     if (ianaInferred) {
       const ianaInferredCanonical =
         Timezone.findCanonicalIANAName(ianaInferred);
@@ -115,7 +115,7 @@ class Timezone {
     return Timezone.findCanonicalIANAName(moment.tz.guess());
   }
 
-  private extractCities(timezoneDescription: string): string[] {
+  extractCities_(timezoneDescription: string): string[] {
     // Regular expression to match any offset format within parentheses and capture the cities list
     const match = timezoneDescription.match(/\(.*?\)\s*(.*)/);
 
@@ -133,7 +133,7 @@ class Timezone {
     return [];
   }
 
-  private mapOffsetToIANATimeZone(offsetString: string): string | null {
+  mapOffsetToIANATimeZone_(offsetString: string): string | null {
     // Comprehensive mappings for UTC offsets to IANA time zones (without DST consideration)
     const offsetToIANAMap: { [key: string]: string } = {
       "+0000": "Etc/UTC",
@@ -198,7 +198,7 @@ class Timezone {
    * @param tzName
    * @returns
    */
-  private bestGuess(tzName: string) {
+  bestGuess_(tzName: string) {
     // Heuristic 1: match the end with a known timezone
     // Cover the case of propertary prefixes such as
     // /freeassociation.sourceforge.net/Europe/Berlin
@@ -209,7 +209,7 @@ class Timezone {
     // Heuristic 2: use city mapping, which should cover the cases of
     // time zone descriptions such as
     // (UTC+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien
-    const cities = this.extractCities(tzName);
+    const cities = this.extractCities_(tzName);
     for (const city of cities) {
       const ianaName = regions[city.toLocaleLowerCase()];
       if (ianaName) return ianaName;
@@ -217,7 +217,7 @@ class Timezone {
 
     // Heuristic 3: use offset mapping, which should cover the cases of
     // time zone descriptions such as GMT+0100
-    const ianaName = this.mapOffsetToIANATimeZone(tzName);
+    const ianaName = this.mapOffsetToIANATimeZone_(tzName);
     if (ianaName) return ianaName;
 
     return null;
