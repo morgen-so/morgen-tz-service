@@ -47,5 +47,8 @@ declare class Timezone {
      */
     private bestGuess;
 }
+declare const _default: {
+    Timezone: typeof Timezone;
+};
 
-export { Timezone };
+export { _default as default };

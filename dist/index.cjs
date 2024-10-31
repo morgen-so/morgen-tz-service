@@ -30,7 +30,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  Timezone: () => Timezone
+  default: () => src_default
 });
 module.exports = __toCommonJS(src_exports);
 var import_moment_timezone = __toESM(require("moment-timezone"), 1);
@@ -2385,7 +2385,4 @@ var Timezone = class _Timezone {
     return null;
   }
 };
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  Timezone
-});
+var src_default = { Timezone };

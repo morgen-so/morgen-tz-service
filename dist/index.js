@@ -2351,6 +2351,7 @@ var Timezone = class _Timezone {
     return null;
   }
 };
+var src_default = { Timezone };
 export {
-  Timezone
+  src_default as default
 };
