@@ -913,7 +913,8 @@ var canonicalNames = {
   "Universal": "UTC",
   "W-SU": "Europe/Moscow",
   "WET": "Europe/Lisbon",
-  "Zulu": "UTC"
+  "Zulu": "UTC",
+  "Z": "UTC"
 };
 
 // src/generated/regions.ts

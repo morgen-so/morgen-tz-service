@@ -1,4 +1,4 @@
-// Generated from @vvo/tzdb data on 2024-10-31T10:44:31.623Z
+// Generated from @vvo/tzdb data on 2024-10-31T10:54:19.979Z
 
 export const canonicalNames: Record<string, string> = {
   "Africa/Addis_Ababa": "Africa/Nairobi",
@@ -310,5 +310,6 @@ export const canonicalNames: Record<string, string> = {
   "Universal": "UTC",
   "W-SU": "Europe/Moscow",
   "WET": "Europe/Lisbon",
-  "Zulu": "UTC"
+  "Zulu": "UTC",
+  "Z": "UTC"
 }
