@@ -1,4 +1,4 @@
-import * as TimezoneService from "../src/index.js";
+import TimezoneService from "../src/index.js";
 
 const validTzNames = [
   "Europe/Zurich",
@@ -14,7 +14,7 @@ const validTzNames = [
 
 const invalidTzNames = ["", "invalid"];
 
-describe("Timezone", () => {
+describe("Timezone general", () => {
   it.each(invalidTzNames)(
     "detects invalid timezone name '%s'",
     async (tzName) => {
@@ -77,5 +77,8 @@ describe("Timezone", () => {
     expect(
       new TimezoneService.Timezone("India Standard Time").ianaName
     ).toEqual("Asia/Kolkata");
+    expect(new TimezoneService.Timezone("Europe/Kiev").ianaName).toEqual(
+      "Europe/Kyiv"
+    );
   });
 });
