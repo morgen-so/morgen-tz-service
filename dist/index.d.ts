@@ -19,7 +19,7 @@ declare class Timezone {
      * Returns a dictionary that maps from tzid to the corresponding VTIMEZONE ical string.
      *
      */
-    static getVTimeZoneComponent(): {
+    static getVTimeZoneComponents(): {
         [x: string]: string;
     };
     /**
