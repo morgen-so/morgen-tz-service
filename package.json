@@ -11,15 +11,22 @@
         "type": "git",
         "url": "git+https://github.com/morgen-so/morgen-tz-service.git"
     },
-    "main": "dist/src/index.js",
+    "main": "dist/index.js",
+    "exports": {
+        "./package.json": "./package.json",
+        ".": {
+            "import": "./dist/index.js",
+            "default": "./dist/index.cjs"
+        }
+    },
     "files": [
         "dist"
     ],
     "scripts": {
         "test": "TZ=UTC npx jest",
         "generate": "sh ./generate.sh",
-        "build": "tsc",
-        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
+        "build": "tsup",
+        "check-exports": "attw --pack . "
     },
     "type": "module",
     "devDependencies": {
@@ -32,13 +39,13 @@
         "timezones-ical-library": "^1.8.3",
         "ts-jest": "^29.2.5",
         "ts-node": "^10.9.2",
+        "tsup": "^8.3.5",
         "tsx": "^4.19.2",
         "typescript": "^5.6.3"
     },
     "peerDependencies": {
+        "lodash": "*",
         "moment": "*",
-        "moment-timezone": "*",
-        "lodash": "*"
-
+        "moment-timezone": "*"
     }
 }

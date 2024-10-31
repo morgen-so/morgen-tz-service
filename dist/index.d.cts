@@ -47,5 +47,5 @@ declare class Timezone {
      */
     private bestGuess;
 }
+
 export { Timezone };
-//# sourceMappingURL=index.d.ts.map
