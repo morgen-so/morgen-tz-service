@@ -15,12 +15,18 @@ import { getCanonicalIanaName } from "./utils.js";
   allZones.forEach((zone) => {
     const canonicalZone = getCanonicalIanaName(zone);
     if (!canonicalZone) throw new Error(`No canonical zone found for ${zone}`);
-    const [block, tzid] = tzlib_get_ical_block(canonicalZone);
+    const [block, tzid] = tzlib_get_ical_block(zone);
     if (!block) throw new Error(`No ics block for ${zone}`);
+    if (!tzid) throw new Error(`No ics tzid for ${zone}`);
     if (typeof block !== "string") {
       throw new Error(`iCal block for ${zone} is not a string`);
     }
-    icsZones[canonicalZone] = block;
+    // Before adding to the map, we need to replace the TZID with the actual zone name
+    // because the library always returns the canonical zone name
+    // Eg. the library return {"Europe/Kiev": {... TZID=Europe/Kyiv ...}}
+    // and this breaks the mapping.
+    const blockUpdated = block.replace(tzid.replace("=", ":"), `TZID:${zone}`);
+    icsZones[zone] = blockUpdated;
   });
 
   const header = `// Generated from timezones-ical-library data on ${new Date().toISOString()}\n\n`;

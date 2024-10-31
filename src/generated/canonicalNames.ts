@@ -1,4 +1,4 @@
-// Generated from @vvo/tzdb data on 2024-10-31T10:28:44.655Z
+// Generated from @vvo/tzdb data on 2024-10-31T10:44:31.623Z
 
 export const canonicalNames: Record<string, string> = {
   "Africa/Addis_Ababa": "Africa/Nairobi",

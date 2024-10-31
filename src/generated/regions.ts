@@ -1,4 +1,4 @@
-// Generated from @vvo/tzdb data on 2024-10-31T10:28:45.104Z
+// Generated from @vvo/tzdb data on 2024-10-31T10:44:32.065Z
 
 export const regions: Record<string, string> = {
   "alofi": "Pacific/Niue",

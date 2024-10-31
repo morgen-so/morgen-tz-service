@@ -25,7 +25,7 @@
     "scripts": {
         "test": "TZ=UTC npx jest",
         "generate": "sh ./generate.sh",
-        "build": "tsup",
+        "build": "npm run generate && tsup",
         "check-exports": "attw --pack . "
     },
     "type": "module",
