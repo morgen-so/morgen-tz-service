@@ -11,7 +11,7 @@
         "type": "git",
         "url": "git+https://github.com/morgen-so/morgen-tz-service.git"
     },
-    "main": "dist/index.js",
+    "main": "dist/src/index.js",
     "files": [
         "dist"
     ],
