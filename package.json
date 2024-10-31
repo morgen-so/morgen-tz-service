@@ -25,7 +25,7 @@
     "scripts": {
         "test": "TZ=UTC npx jest",
         "generate": "sh ./generate.sh",
-        "build": "npm run generate && tsup",
+        "build": "npm run generate && tsup && npm run test",
         "check-exports": "attw --pack . "
     },
     "type": "module",
@@ -33,20 +33,23 @@
         "@arethetypeswrong/cli": "^0.16.4",
         "@types/jest": "^29.5.14",
         "@types/lodash": "^4.17.13",
+        "@types/luxon": "^3.4.2",
         "@vvo/tzdb": "^6.148.0",
         "fast-xml-parser": "^4.5.0",
         "jest": "^29.7.0",
-        "moment": "*",
-        "moment-timezone": "0.5.46",
         "timezones-ical-library": "^1.8.3",
         "ts-jest": "^29.2.5",
         "ts-node": "^10.9.2",
         "tsup": "^8.3.5",
         "tsx": "^4.19.2",
         "typescript": "^5.6.3",
-        "tzdata": "^1.0.42"
+        "tzdata": "^1.0.42",
+        "luxon": "latest"
     },
     "peerDependencies": {
-        "lodash": "*"
+        "lodash": "*",
+        "moment": "latest",
+        "moment-timezone": "latest"
+
     }
 }

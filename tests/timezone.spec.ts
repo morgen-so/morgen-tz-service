@@ -27,7 +27,6 @@ describe("Timezone general", () => {
     "maps valid timezone '%s' to standard IANA",
     async (tzName) => {
       const tz = new TimezoneService.Timezone(tzName);
-      console.log(tzName);
       expect(tz.validated).toBeTruthy();
     }
   );

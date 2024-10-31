@@ -10,6 +10,7 @@ import { windowsZonesInverse } from "./generated/windowsZonesInverse.js";
 import { canonicalNames } from "./generated/canonicalNames.js";
 import { regions } from "./generated/regions.js";
 import { icsZones } from "./generated/icsZones.js";
+import { checkLuxonCompatibility } from "./utils.js";
 
 class Timezone {
   private canonicalName_: string;
@@ -224,3 +225,8 @@ class Timezone {
 }
 
 export default { Timezone };
+
+// Run a check to see if all the zones of moment-timezone are recognized by Luxon
+setTimeout(() => {
+  checkLuxonCompatibility();
+}, 0);
