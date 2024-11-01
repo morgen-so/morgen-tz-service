@@ -1,4 +1,4 @@
-// Generated from @vvo/tzdb data on 2024-10-31T17:08:07.809Z
+// Generated from @vvo/tzdb data on 2024-11-01T08:37:26.285Z
 
 export const regions: Record<string, string> = {
   "alofi": "Pacific/Niue",
@@ -553,6 +553,10 @@ export const regions: Record<string, string> = {
   "sector 3": "Europe/Bucharest",
   "iaşi": "Europe/Bucharest",
   "sector 6": "Europe/Bucharest",
+  "cairo": "Africa/Cairo",
+  "alexandria": "Africa/Cairo",
+  "giza": "Africa/Cairo",
+  "shubrā al khaymah": "Africa/Cairo",
   "chisinau": "Europe/Chisinau",
   "tiraspol": "Europe/Chisinau",
   "bălţi": "Europe/Chisinau",
@@ -683,10 +687,6 @@ export const regions: Record<string, string> = {
   "kakamega": "Africa/Nairobi",
   "mombasa": "Africa/Nairobi",
   "nakuru": "Africa/Nairobi",
-  "cairo": "Africa/Cairo",
-  "alexandria": "Africa/Cairo",
-  "giza": "Africa/Cairo",
-  "shubrā al khaymah": "Africa/Cairo",
   "minsk": "Europe/Minsk",
   "homyel'": "Europe/Minsk",
   "hrodna": "Europe/Minsk",

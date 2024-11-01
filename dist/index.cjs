@@ -1460,6 +1460,10 @@ var regions = {
   "sector 3": "Europe/Bucharest",
   "ia\u015Fi": "Europe/Bucharest",
   "sector 6": "Europe/Bucharest",
+  "cairo": "Africa/Cairo",
+  "alexandria": "Africa/Cairo",
+  "giza": "Africa/Cairo",
+  "shubr\u0101 al khaymah": "Africa/Cairo",
   "chisinau": "Europe/Chisinau",
   "tiraspol": "Europe/Chisinau",
   "b\u0103l\u0163i": "Europe/Chisinau",
@@ -1590,10 +1594,6 @@ var regions = {
   "kakamega": "Africa/Nairobi",
   "mombasa": "Africa/Nairobi",
   "nakuru": "Africa/Nairobi",
-  "cairo": "Africa/Cairo",
-  "alexandria": "Africa/Cairo",
-  "giza": "Africa/Cairo",
-  "shubr\u0101 al khaymah": "Africa/Cairo",
   "minsk": "Europe/Minsk",
   "homyel'": "Europe/Minsk",
   "hrodna": "Europe/Minsk",
@@ -8984,6 +8984,7 @@ var Timezone = class _Timezone {
     if (!tzName) {
       return _Timezone.findCanonicalIANAName(import_moment_timezone2.default.tz.guess());
     }
+    tzName = tzName.replace(/^[^a-zA-Z0-9\(\)]+|[^a-zA-Z0-9\(\)]+$/g, "");
     tzName = tzName.trim();
     tzName = _Timezone.findCanonicalIANAName(tzName);
     if (import_moment_timezone2.default.tz.zone(tzName)) {
@@ -9003,10 +9004,8 @@ var Timezone = class _Timezone {
         return ianaInferredCanonical;
       }
     }
-    console.error(
-      `Could not map timezone "${tzName}" to an IANA timezone database name.`
-    );
-    return _Timezone.findCanonicalIANAName(import_moment_timezone2.default.tz.guess());
+    console.error(`Invalid zone "${tzName}". Falling back to UTC`);
+    return "UTC";
   }
   extractCities_(timezoneDescription) {
     const match2 = timezoneDescription.match(/\(.*?\)\s*(.*)/);

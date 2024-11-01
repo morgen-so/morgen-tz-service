@@ -1,4 +1,4 @@
-// Generated from windowsZones.xml on 2024-10-31T17:08:06.021Z
+// Generated from windowsZones.xml on 2024-11-01T08:37:25.633Z
 // Source: https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml
 
 export const windowsZonesInverse: Record<string, string> = {

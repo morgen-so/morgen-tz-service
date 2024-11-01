@@ -74,6 +74,9 @@ class Timezone {
       return Timezone.findCanonicalIANAName(moment.tz.guess());
     }
 
+    // Remove any character that is not a letter or a digit at start and end of the name
+    tzName = tzName.replace(/^[^a-zA-Z0-9\(\)]+|[^a-zA-Z0-9\(\)]+$/g, "");
+
     // Try to resolve aliases to a canonical IANA name first
     // This step needs to come _before_ confirming with moment-timezone
     // because moment-timezone also accepts legacy zone names
@@ -109,10 +112,8 @@ class Timezone {
     }
 
     // Timezone could not be found
-    console.error(
-      `Could not map timezone "${tzName}" to an IANA timezone database name.`
-    );
-    return Timezone.findCanonicalIANAName(moment.tz.guess());
+    console.error(`Invalid zone "${tzName}". Falling back to UTC`);
+    return "UTC";
   }
 
   extractCities_(timezoneDescription: string): string[] {
