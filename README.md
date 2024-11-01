@@ -52,6 +52,7 @@ const vtimezone = TimezoneService.Timezone.getVTimeZoneComponent(zone);
 - Update `scripts/data/windowsZones.xml` with the [latest Windows timezone data](https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml).
 - Run `npm run build` to update the data files and run the tests.
 - Push the changes to the repository.
+- Update the commit hash in the `package.json` of other projects fetching this repo from Github.
 
 
 
