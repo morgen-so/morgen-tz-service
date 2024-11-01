@@ -34,8 +34,8 @@ const canonicalZone = new TimezoneService.Timezone(ianaZone).ianaName;
 
 Interestingly, both `moment-timezone` and `@vvo/tzdb` are unreliable for this opeation
 For example:
-- `moment-timezone` says `Europe/Kiev` is the canonical, while it shoudl be `Europe/Kyiv`
-- `@vvo/tzdb` groups names by coutry and offset, creating spurious links, liek `Australia/Hobart` is linked to `Australia/syndey` but it should not.
+- `moment-timezone` says `Europe/Kiev` is canonical, while it should be `Europe/Kyiv`
+- `@vvo/tzdb` groups names by country and offset, creating spurious links, like `Australia/Hobart` is linked to `Australia/syndey` but it should not.
   
 We found that `tzdata` is the most reliable source for this operation.
 
