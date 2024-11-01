@@ -44,6 +44,9 @@ describe("Timezone general", () => {
     expect(
       new TimezoneService.Timezone("America/Los_Angeles\u{13}").ianaName
     ).toEqual("America/Los_Angeles");
+    expect(
+      new TimezoneService.Timezone("America/Los_Angeles&#13").ianaName
+    ).toEqual("America/Los_Angeles");
   });
 
   it("maps (UTC+01:00) Amsterdam zone description to Europe/Berlin", async () => {

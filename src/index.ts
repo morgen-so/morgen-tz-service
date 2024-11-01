@@ -3,7 +3,7 @@
  *
  */
 
-import moment from "moment-timezone";
+import moment, { tz } from "moment-timezone";
 import _ from "lodash";
 import { windowsZones } from "./generated/windowsZones.js";
 import { windowsZonesInverse } from "./generated/windowsZonesInverse.js";
@@ -76,11 +76,11 @@ class Timezone {
 
     // Remove any character that is not a letter or a digit at start and end of the name
     tzName = tzName.replace(/^[^a-zA-Z0-9\(\)]+|[^a-zA-Z0-9\(\)]+$/g, "");
+    if (tzName.length === 0) return "UTC";
 
     // Try to resolve aliases to a canonical IANA name first
     // This step needs to come _before_ confirming with moment-timezone
     // because moment-timezone also accepts legacy zone names
-    tzName = tzName.trim();
     tzName = Timezone.findCanonicalIANAName(tzName);
 
     // 1. Validate with moment
@@ -200,14 +200,7 @@ class Timezone {
    * @returns
    */
   bestGuess_(tzName: string) {
-    // Heuristic 1: match the end with a known timezone
-    // Cover the case of propertary prefixes such as
-    // /freeassociation.sourceforge.net/Europe/Berlin
-    const names = moment.tz.names();
-    const ianaInferred = names.find((name) => tzName.endsWith(name));
-    if (ianaInferred) return ianaInferred;
-
-    // Heuristic 2: use city mapping, which should cover the cases of
+    // Heuristic 1: use city mapping, which should cover the cases of
     // time zone descriptions such as
     // (UTC+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien
     const cities = this.extractCities_(tzName);
@@ -216,7 +209,24 @@ class Timezone {
       if (ianaName) return ianaName;
     }
 
-    // Heuristic 3: use offset mapping, which should cover the cases of
+    // Heuristic 2: match the end with a known timezone
+    // Cover the case of propertary prefixes such as
+    // /freeassociation.sourceforge.net/Europe/Berlin
+    const names = moment.tz.names();
+    const ianaInferred = names.find((name) => tzName.endsWith(name));
+    if (ianaInferred) return ianaInferred;
+
+    // Heuristic 3: substring, but exluding GTM or UTC cause these could lead to false positives
+    // Cover the case of spurious prefixes/suffixes such as US/Pacific&#13;
+    const ianaInferred2 = names.find((name) => {
+      if (name.length < 5) return false; // UTC, GMT, MST, etc.
+      if (name.toLowerCase().includes("gmt")) return false;
+      if (name.toLowerCase().includes("utc")) return false;
+      return tzName.includes(name);
+    });
+    if (ianaInferred2) return ianaInferred2;
+
+    // Heuristic 4: use offset mapping, which should cover the cases of
     // time zone descriptions such as GMT+0100
     const ianaName = this.mapOffsetToIANATimeZone_(tzName);
     if (ianaName) return ianaName;
