@@ -16,8 +16,6 @@ import { getCanonicalIanaName } from "./utils.js";
       canonicalNames[zone] = canonicalZone;
     }
   }
-  // Additionally, add Z, which is what ical.js return for UTC -.-
-  canonicalNames["Z"] = getCanonicalIanaName("UTC")!;
 
   const header = `// Generated from https://www.npmjs.com/package/tzdata data on ${new Date().toISOString()}\n\n`;
 
