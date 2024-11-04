@@ -1,4 +1,4 @@
-// Generated from windowsZones.xml on 2024-11-01T08:37:25.633Z
+// Generated from windowsZones.xml on 2024-11-04T12:07:11.254Z
 // Source: https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml
 
 export const windowsZones: Record<string, string> = {
@@ -47,7 +47,7 @@ export const windowsZones: Record<string, string> = {
   "UTC-02": "Etc/GMT+2",
   "Azores Standard Time": "Atlantic/Azores",
   "Cape Verde Standard Time": "Atlantic/Cape_Verde",
-  "UTC": "UTC",
+  "UTC": "Etc/UTC",
   "GMT Standard Time": "Europe/London",
   "Greenwich Standard Time": "Africa/Abidjan",
   "Sao Tome Standard Time": "Africa/Sao_Tome",

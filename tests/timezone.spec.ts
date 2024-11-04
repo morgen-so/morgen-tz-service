@@ -47,6 +47,9 @@ describe("Timezone general", () => {
     expect(
       new TimezoneService.Timezone("America/Los_Angeles&#13").ianaName
     ).toEqual("America/Los_Angeles");
+    expect(new TimezoneService.Timezone("US/Pacific&#13").ianaName).toEqual(
+      "America/Los_Angeles"
+    );
   });
 
   it("maps (UTC+01:00) Amsterdam zone description to Europe/Berlin", async () => {
@@ -82,12 +85,19 @@ describe("Timezone general", () => {
   });
 
   it("normalizes timezone names", async () => {
-    expect(new TimezoneService.Timezone("Zulu").ianaName).toEqual("UTC");
-    expect(new TimezoneService.Timezone("Etc/GMT").ianaName).toEqual("UTC");
-    expect(new TimezoneService.Timezone("Etc/GMT").ianaName).toEqual("UTC");
-    expect(new TimezoneService.Timezone("Etc/GMT+0").ianaName).toEqual("UTC");
-    expect(new TimezoneService.Timezone("Etc/GMT+0").ianaName).toEqual("UTC");
-    expect(new TimezoneService.Timezone("GMT").ianaName).toEqual("UTC");
+    expect(new TimezoneService.Timezone("Zulu").ianaName).toEqual("Etc/UTC");
+    expect(new TimezoneService.Timezone("Z").ianaName).toEqual("Etc/UTC");
+    expect(new TimezoneService.Timezone("Etc/GMT").ianaName).toEqual("Etc/GMT");
+    expect(new TimezoneService.Timezone("Etc/GMT+0").ianaName).toEqual(
+      "Etc/GMT"
+    );
+    expect(new TimezoneService.Timezone("Etc/GMT+0").ianaName).toEqual(
+      "Etc/GMT"
+    );
+    expect(new TimezoneService.Timezone("GMT").ianaName).toEqual("Etc/GMT");
+    expect(
+      new TimezoneService.Timezone("tzone://Microsoft/Utc").ianaName
+    ).toEqual("Etc/UTC");
     expect(new TimezoneService.Timezone("Asia/Calcutta").ianaName).toEqual(
       "Asia/Kolkata"
     );

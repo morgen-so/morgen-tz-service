@@ -1,4 +1,4 @@
-// Generated from https://www.npmjs.com/package/tzdata data on 2024-11-01T08:37:25.824Z
+// Generated from https://www.npmjs.com/package/tzdata data on 2024-11-04T12:07:11.556Z
 
 export const canonicalNames: Record<string, string> = {
   "Africa/Accra": "Africa/Abidjan",
@@ -152,15 +152,13 @@ export const canonicalNames: Record<string, string> = {
   "EST5EDT": "America/New_York",
   "Egypt": "Africa/Cairo",
   "Eire": "Europe/Dublin",
-  "Etc/GMT": "UTC",
-  "Etc/GMT+0": "UTC",
-  "Etc/GMT-0": "UTC",
-  "Etc/GMT0": "UTC",
-  "Etc/Greenwich": "UTC",
-  "Etc/UCT": "UTC",
-  "Etc/UTC": "UTC",
-  "Etc/Universal": "UTC",
-  "Etc/Zulu": "UTC",
+  "Etc/GMT+0": "Etc/GMT",
+  "Etc/GMT-0": "Etc/GMT",
+  "Etc/GMT0": "Etc/GMT",
+  "Etc/Greenwich": "Etc/GMT",
+  "Etc/UCT": "Etc/UTC",
+  "Etc/Universal": "Etc/UTC",
+  "Etc/Zulu": "Etc/UTC",
   "Europe/Amsterdam": "Europe/Brussels",
   "Europe/Belfast": "Europe/London",
   "Europe/Bratislava": "Europe/Prague",
@@ -189,11 +187,11 @@ export const canonicalNames: Record<string, string> = {
   "Europe/Zaporozhye": "Europe/Kyiv",
   "GB": "Europe/London",
   "GB-Eire": "Europe/London",
-  "GMT": "UTC",
-  "GMT+0": "UTC",
-  "GMT-0": "UTC",
-  "GMT0": "UTC",
-  "Greenwich": "UTC",
+  "GMT": "Etc/GMT",
+  "GMT+0": "Etc/GMT",
+  "GMT-0": "Etc/GMT",
+  "GMT0": "Etc/GMT",
+  "Greenwich": "Etc/GMT",
   "HST": "Pacific/Honolulu",
   "Hongkong": "Asia/Hong_Kong",
   "Iceland": "Africa/Abidjan",
@@ -256,9 +254,8 @@ export const canonicalNames: Record<string, string> = {
   "US/Pacific": "America/Los_Angeles",
   "US/Samoa": "Pacific/Pago_Pago",
   "UTC": "Etc/UTC",
-  "Universal": "UTC",
+  "Universal": "Etc/UTC",
   "W-SU": "Europe/Moscow",
   "WET": "Europe/Lisbon",
-  "Zulu": "UTC",
-  "Z": "UTC"
+  "Zulu": "Etc/UTC"
 }

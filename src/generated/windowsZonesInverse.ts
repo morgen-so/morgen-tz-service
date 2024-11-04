@@ -1,4 +1,4 @@
-// Generated from windowsZones.xml on 2024-11-01T08:37:25.633Z
+// Generated from windowsZones.xml on 2024-11-04T12:07:11.254Z
 // Source: https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml
 
 export const windowsZonesInverse: Record<string, string> = {
@@ -183,7 +183,6 @@ export const windowsZonesInverse: Record<string, string> = {
   "Atlantic/Cape_Verde": "Cape Verde Standard Time",
   "Etc/GMT+1": "Cape Verde Standard Time",
   "Etc/UTC": "UTC",
-  "UTC": "UTC",
   "Etc/GMT": "UTC",
   "Europe/London": "GMT Standard Time",
   "Atlantic/Canary": "GMT Standard Time",

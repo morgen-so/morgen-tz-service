@@ -48,7 +48,7 @@ var windowsZones = {
   "UTC-02": "Etc/GMT+2",
   "Azores Standard Time": "Atlantic/Azores",
   "Cape Verde Standard Time": "Atlantic/Cape_Verde",
-  "UTC": "UTC",
+  "UTC": "Etc/UTC",
   "GMT Standard Time": "Europe/London",
   "Greenwich Standard Time": "Africa/Abidjan",
   "Sao Tome Standard Time": "Africa/Sao_Tome",
@@ -327,7 +327,6 @@ var windowsZonesInverse = {
   "Atlantic/Cape_Verde": "Cape Verde Standard Time",
   "Etc/GMT+1": "Cape Verde Standard Time",
   "Etc/UTC": "UTC",
-  "UTC": "UTC",
   "Etc/GMT": "UTC",
   "Europe/London": "GMT Standard Time",
   "Atlantic/Canary": "GMT Standard Time",
@@ -761,15 +760,13 @@ var canonicalNames = {
   "EST5EDT": "America/New_York",
   "Egypt": "Africa/Cairo",
   "Eire": "Europe/Dublin",
-  "Etc/GMT": "UTC",
-  "Etc/GMT+0": "UTC",
-  "Etc/GMT-0": "UTC",
-  "Etc/GMT0": "UTC",
-  "Etc/Greenwich": "UTC",
-  "Etc/UCT": "UTC",
-  "Etc/UTC": "UTC",
-  "Etc/Universal": "UTC",
-  "Etc/Zulu": "UTC",
+  "Etc/GMT+0": "Etc/GMT",
+  "Etc/GMT-0": "Etc/GMT",
+  "Etc/GMT0": "Etc/GMT",
+  "Etc/Greenwich": "Etc/GMT",
+  "Etc/UCT": "Etc/UTC",
+  "Etc/Universal": "Etc/UTC",
+  "Etc/Zulu": "Etc/UTC",
   "Europe/Amsterdam": "Europe/Brussels",
   "Europe/Belfast": "Europe/London",
   "Europe/Bratislava": "Europe/Prague",
@@ -798,11 +795,11 @@ var canonicalNames = {
   "Europe/Zaporozhye": "Europe/Kyiv",
   "GB": "Europe/London",
   "GB-Eire": "Europe/London",
-  "GMT": "UTC",
-  "GMT+0": "UTC",
-  "GMT-0": "UTC",
-  "GMT0": "UTC",
-  "Greenwich": "UTC",
+  "GMT": "Etc/GMT",
+  "GMT+0": "Etc/GMT",
+  "GMT-0": "Etc/GMT",
+  "GMT0": "Etc/GMT",
+  "Greenwich": "Etc/GMT",
   "HST": "Pacific/Honolulu",
   "Hongkong": "Asia/Hong_Kong",
   "Iceland": "Africa/Abidjan",
@@ -865,11 +862,10 @@ var canonicalNames = {
   "US/Pacific": "America/Los_Angeles",
   "US/Samoa": "Pacific/Pago_Pago",
   "UTC": "Etc/UTC",
-  "Universal": "UTC",
+  "Universal": "Etc/UTC",
   "W-SU": "Europe/Moscow",
   "WET": "Europe/Lisbon",
-  "Zulu": "UTC",
-  "Z": "UTC"
+  "Zulu": "Etc/UTC"
 };
 
 // src/generated/regions.ts
@@ -878,6 +874,7 @@ var regions = {
   "midway": "Pacific/Midway",
   "pago pago": "Pacific/Pago_Pago",
   "avarua": "Pacific/Rarotonga",
+  "adak": "America/Adak",
   "honolulu": "Pacific/Honolulu",
   "east honolulu": "Pacific/Honolulu",
   "pearl city": "Pacific/Honolulu",
@@ -886,21 +883,11 @@ var regions = {
   "papeete": "Pacific/Tahiti",
   "punaauia": "Pacific/Tahiti",
   "marquesas": "Pacific/Marquesas",
-  "gambier": "Pacific/Gambier",
-  "adak": "America/Adak",
   "anchorage": "America/Anchorage",
   "juneau": "America/Anchorage",
   "fairbanks": "America/Anchorage",
   "eagle river": "America/Anchorage",
-  "adamstown": "Pacific/Pitcairn",
-  "hermosillo": "America/Hermosillo",
-  "culiac\xE1n": "America/Hermosillo",
-  "ciudad obreg\xF3n": "America/Hermosillo",
-  "mazatl\xE1n": "America/Hermosillo",
-  "phoenix": "America/Phoenix",
-  "tucson": "America/Phoenix",
-  "mesa": "America/Phoenix",
-  "chandler": "America/Phoenix",
+  "gambier": "Pacific/Gambier",
   "los angeles": "America/Los_Angeles",
   "san diego": "America/Los_Angeles",
   "san jose": "America/Los_Angeles",
@@ -913,6 +900,24 @@ var regions = {
   "surrey": "America/Vancouver",
   "okanagan": "America/Vancouver",
   "victoria": "Indian/Mahe",
+  "adamstown": "Pacific/Pitcairn",
+  "hermosillo": "America/Hermosillo",
+  "culiac\xE1n": "America/Hermosillo",
+  "ciudad obreg\xF3n": "America/Hermosillo",
+  "mazatl\xE1n": "America/Hermosillo",
+  "calgary": "America/Edmonton",
+  "edmonton": "America/Edmonton",
+  "red deer": "America/Edmonton",
+  "sherwood park": "America/Edmonton",
+  "ciudad ju\xE1rez": "America/Ciudad_Juarez",
+  "denver": "America/Denver",
+  "el paso": "America/Denver",
+  "albuquerque": "America/Denver",
+  "colorado springs": "America/Denver",
+  "phoenix": "America/Phoenix",
+  "tucson": "America/Phoenix",
+  "mesa": "America/Phoenix",
+  "chandler": "America/Phoenix",
   "whitehorse": "America/Whitehorse",
   "fort st. john": "America/Whitehorse",
   "creston": "America/Whitehorse",
@@ -921,6 +926,10 @@ var regions = {
   "san ignacio": "America/Belize",
   "san pedro": "America/Belize",
   "orange walk": "America/Belize",
+  "chicago": "America/Chicago",
+  "houston": "America/Chicago",
+  "san antonio": "America/Chicago",
+  "dallas": "America/Chicago",
   "guatemala city": "America/Guatemala",
   "villa nueva": "America/Guatemala",
   "mixco": "America/Guatemala",
@@ -933,6 +942,10 @@ var regions = {
   "iztapalapa": "America/Mexico_City",
   "le\xF3n de los aldama": "America/Mexico_City",
   "puebla": "America/Mexico_City",
+  "reynosa": "America/Matamoros",
+  "heroica matamoros": "America/Matamoros",
+  "nuevo laredo": "America/Matamoros",
+  "piedras negras": "America/Matamoros",
   "san jos\xE9": "America/Costa_Rica",
   "lim\xF3n": "America/Costa_Rica",
   "alajuela": "America/Costa_Rica",
@@ -948,52 +961,56 @@ var regions = {
   "san pedro sula": "America/Tegucigalpa",
   "la ceiba": "America/Tegucigalpa",
   "choloma": "America/Tegucigalpa",
-  "galapagos": "Pacific/Galapagos",
-  "calgary": "America/Edmonton",
-  "edmonton": "America/Edmonton",
-  "red deer": "America/Edmonton",
-  "sherwood park": "America/Edmonton",
-  "ciudad ju\xE1rez": "America/Ciudad_Juarez",
-  "denver": "America/Denver",
-  "el paso": "America/Denver",
-  "albuquerque": "America/Denver",
-  "colorado springs": "America/Denver",
-  "rio branco": "America/Rio_Branco",
-  "cruzeiro do sul": "America/Rio_Branco",
-  "senador guiomard": "America/Rio_Branco",
-  "sena madureira": "America/Rio_Branco",
-  "chicago": "America/Chicago",
-  "houston": "America/Chicago",
-  "san antonio": "America/Chicago",
-  "dallas": "America/Chicago",
-  "reynosa": "America/Matamoros",
-  "heroica matamoros": "America/Matamoros",
-  "nuevo laredo": "America/Matamoros",
-  "piedras negras": "America/Matamoros",
   "winnipeg": "America/Winnipeg",
   "brandon": "America/Winnipeg",
   "steinbach": "America/Winnipeg",
   "kenora": "America/Winnipeg",
+  "galapagos": "Pacific/Galapagos",
+  "rio branco": "America/Rio_Branco",
+  "cruzeiro do sul": "America/Rio_Branco",
+  "senador guiomard": "America/Rio_Branco",
+  "sena madureira": "America/Rio_Branco",
   "bogot\xE1": "America/Bogota",
   "cali": "America/Bogota",
   "medell\xEDn": "America/Bogota",
   "barranquilla": "America/Bogota",
+  "havana": "America/Havana",
+  "santiago de cuba": "America/Havana",
+  "camag\xFCey": "America/Havana",
+  "holgu\xEDn": "America/Havana",
   "easter": "Pacific/Easter",
   "atikokan": "America/Atikokan",
   "canc\xFAn": "America/Cancun",
   "chetumal": "America/Cancun",
   "playa del carmen": "America/Cancun",
   "cozumel": "America/Cancun",
+  "cockburn town": "America/Grand_Turk",
   "george town": "America/Cayman",
   "west bay": "America/Cayman",
   "kingston": "Pacific/Norfolk",
   "new kingston": "America/Jamaica",
   "spanish town": "America/Jamaica",
   "portmore": "America/Jamaica",
+  "nassau": "America/Nassau",
+  "lucaya": "America/Nassau",
+  "freeport": "America/Nassau",
+  "killarney": "America/Nassau",
+  "new york city": "America/New_York",
+  "brooklyn": "America/New_York",
+  "queens": "America/New_York",
+  "philadelphia": "America/New_York",
   "panam\xE1": "America/Panama",
   "san miguelito": "America/Panama",
   "juan d\xEDaz": "America/Panama",
   "david": "America/Panama",
+  "port-au-prince": "America/Port-au-Prince",
+  "carrefour": "America/Port-au-Prince",
+  "delmas": "America/Port-au-Prince",
+  "port-de-paix": "America/Port-au-Prince",
+  "toronto": "America/Toronto",
+  "montr\xE9al": "America/Toronto",
+  "ottawa": "America/Toronto",
+  "mississauga": "America/Toronto",
   "quito": "America/Guayaquil",
   "guayaquil": "America/Guayaquil",
   "cuenca": "America/Guayaquil",
@@ -1022,6 +1039,11 @@ var regions = {
   "gros islet": "America/St_Lucia",
   "castries": "America/St_Lucia",
   "gustavia": "America/St_Barthelemy",
+  "halifax": "America/Halifax",
+  "moncton": "America/Halifax",
+  "sydney": "Australia/Sydney",
+  "dartmouth": "America/Halifax",
+  "hamilton": "Atlantic/Bermuda",
   "kingstown": "America/St_Vincent",
   "kralendijk": "America/Kralendijk",
   "les abymes": "America/Guadeloupe",
@@ -1049,32 +1071,12 @@ var regions = {
   "santo domingo oeste": "America/Santo_Domingo",
   "santo domingo este": "America/Santo_Domingo",
   "the valley": "America/Anguilla",
+  "thule": "America/Thule",
   "willemstad": "America/Curacao",
   "la paz": "America/La_Paz",
   "santa cruz de la sierra": "America/La_Paz",
   "cochabamba": "America/La_Paz",
   "sucre": "America/La_Paz",
-  "havana": "America/Havana",
-  "santiago de cuba": "America/Havana",
-  "camag\xFCey": "America/Havana",
-  "holgu\xEDn": "America/Havana",
-  "cockburn town": "America/Grand_Turk",
-  "nassau": "America/Nassau",
-  "lucaya": "America/Nassau",
-  "freeport": "America/Nassau",
-  "killarney": "America/Nassau",
-  "new york city": "America/New_York",
-  "brooklyn": "America/New_York",
-  "queens": "America/New_York",
-  "philadelphia": "America/New_York",
-  "port-au-prince": "America/Port-au-Prince",
-  "carrefour": "America/Port-au-Prince",
-  "delmas": "America/Port-au-Prince",
-  "port-de-paix": "America/Port-au-Prince",
-  "toronto": "America/Toronto",
-  "montr\xE9al": "America/Toronto",
-  "ottawa": "America/Toronto",
-  "mississauga": "America/Toronto",
   "georgetown": "America/Guyana",
   "linden": "America/Guyana",
   "new amsterdam": "America/Guyana",
@@ -1082,16 +1084,14 @@ var regions = {
   "maracaibo": "America/Caracas",
   "maracay": "America/Caracas",
   "valencia": "Europe/Madrid",
+  "st. john's": "America/St_Johns",
+  "mount pearl": "America/St_Johns",
+  "corner brook": "America/St_Johns",
+  "conception bay south": "America/St_Johns",
   "buenos aires": "America/Argentina/Buenos_Aires",
   "c\xF3rdoba": "America/Argentina/Buenos_Aires",
   "rosario": "America/Argentina/Buenos_Aires",
   "mar del plata": "America/Argentina/Buenos_Aires",
-  "halifax": "America/Halifax",
-  "moncton": "America/Halifax",
-  "sydney": "Australia/Sydney",
-  "dartmouth": "America/Halifax",
-  "hamilton": "Atlantic/Bermuda",
-  "thule": "America/Thule",
   "s\xE3o paulo": "America/Sao_Paulo",
   "rio de janeiro": "America/Sao_Paulo",
   "belo horizonte": "America/Sao_Paulo",
@@ -1113,19 +1113,15 @@ var regions = {
   "ciudad del este": "America/Asuncion",
   "san lorenzo": "America/Asuncion",
   "capiat\xE1": "America/Asuncion",
+  "saint-pierre": "Indian/Reunion",
   "paramaribo": "America/Paramaribo",
   "lelydorp": "America/Paramaribo",
   "montevideo": "America/Montevideo",
   "salto": "America/Montevideo",
   "paysand\xFA": "America/Montevideo",
   "las piedras": "America/Montevideo",
-  "st. john's": "America/St_Johns",
-  "mount pearl": "America/St_Johns",
-  "corner brook": "America/St_Johns",
-  "conception bay south": "America/St_Johns",
   "noronha": "America/Noronha",
   "grytviken": "Atlantic/South_Georgia",
-  "saint-pierre": "Indian/Reunion",
   "nuuk": "America/Nuuk",
   "ponta delgada": "Atlantic/Azores",
   "praia": "Atlantic/Cape_Verde",
@@ -6875,14 +6871,14 @@ function clone2(inst, alts) {
   };
   return new DateTime({ ...current, ...alts, old: current });
 }
-function fixOffset(localTS, o, tz) {
+function fixOffset(localTS, o, tz2) {
   let utcGuess = localTS - o * 60 * 1e3;
-  const o2 = tz.offset(utcGuess);
+  const o2 = tz2.offset(utcGuess);
   if (o === o2) {
     return [utcGuess, o];
   }
   utcGuess -= (o2 - o) * 60 * 1e3;
-  const o3 = tz.offset(utcGuess);
+  const o3 = tz2.offset(utcGuess);
   if (o2 === o3) {
     return [utcGuess, o2];
   }
@@ -8899,6 +8895,14 @@ function checkLuxonCompatibility() {
   }
 }
 
+// src/specialMapping.ts
+var specialMapping = {
+  "tzone://Microsoft/Utc": "Etc/UTC",
+  // Microsoft often returns this for UTC
+  Z: "Etc/UTC"
+  // ical.js returns this for UTC
+};
+
 // src/index.ts
 var Timezone = class _Timezone {
   canonicalName_;
@@ -8951,7 +8955,10 @@ var Timezone = class _Timezone {
       return _Timezone.findCanonicalIANAName(moment2.tz.guess());
     }
     tzName = tzName.replace(/^[^a-zA-Z0-9\(\)]+|[^a-zA-Z0-9\(\)]+$/g, "");
-    tzName = tzName.trim();
+    if (tzName.length === 0) return "UTC";
+    if (specialMapping[tzName]) {
+      tzName = specialMapping[tzName];
+    }
     tzName = _Timezone.findCanonicalIANAName(tzName);
     if (moment2.tz.zone(tzName)) {
       this.validated_ = true;
@@ -9038,14 +9045,21 @@ var Timezone = class _Timezone {
    * @returns
    */
   bestGuess_(tzName) {
-    const names = moment2.tz.names();
-    const ianaInferred = names.find((name) => tzName.endsWith(name));
-    if (ianaInferred) return ianaInferred;
     const cities = this.extractCities_(tzName);
     for (const city of cities) {
       const ianaName2 = regions[city.toLocaleLowerCase()];
       if (ianaName2) return ianaName2;
     }
+    const names = moment2.tz.names();
+    const ianaInferred = names.find((name) => tzName.endsWith(name));
+    if (ianaInferred) return ianaInferred;
+    const ianaInferred2 = names.find((name) => {
+      if (name.length < 5) return false;
+      if (name.toLowerCase().includes("gmt")) return false;
+      if (name.toLowerCase().includes("utc")) return false;
+      return tzName.includes(name);
+    });
+    if (ianaInferred2) return ianaInferred2;
     const ianaName = this.mapOffsetToIANATimeZone_(tzName);
     if (ianaName) return ianaName;
     return null;

@@ -11,6 +11,7 @@ import { canonicalNames } from "./generated/canonicalNames.js";
 import { regions } from "./generated/regions.js";
 import { icsZones } from "./generated/icsZones.js";
 import { checkLuxonCompatibility } from "./utils.js";
+import { specialMapping } from "./specialMapping.js";
 
 class Timezone {
   canonicalName_: string;
@@ -77,6 +78,11 @@ class Timezone {
     // Remove any character that is not a letter or a digit at start and end of the name
     tzName = tzName.replace(/^[^a-zA-Z0-9\(\)]+|[^a-zA-Z0-9\(\)]+$/g, "");
     if (tzName.length === 0) return "UTC";
+
+    // Some special, well-known zones are not part of the IANA database
+    if (specialMapping[tzName]) {
+      tzName = specialMapping[tzName]!;
+    }
 
     // Try to resolve aliases to a canonical IANA name first
     // This step needs to come _before_ confirming with moment-timezone
