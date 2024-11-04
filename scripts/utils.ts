@@ -12,29 +12,6 @@ function getCanonicalName_(name: string) {
   else return name;
 }
 
-const utcAliases = [
-  "Z",
-  "GMT",
-  "GMT+0",
-  "GMT-0",
-  "GMT0",
-  "Etc/GMT",
-  "Etc/GMT+0",
-  "Etc/GMT-0",
-  "Etc/GMT0",
-  "Etc/UCT",
-  "Etc/UTC",
-  "Etc/Universal",
-  "Universal",
-  "Etc/Zulu",
-  "Zulu",
-  "Etc/Greenwich",
-  "Greenwich",
-];
-
 export function getCanonicalIanaName(name: string): string | undefined {
-  // exception, Etc/UTC is actually the canonical one, but UTC is widely recognized more understood
-  if (utcAliases.includes(name)) return "UTC";
-  if (name.includes("Etc/GMT")) return name;
   return getCanonicalName_(name);
 }
