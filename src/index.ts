@@ -97,8 +97,17 @@ class Timezone {
     }
 
     // 2. Try windows mapping names
-    // Notice that here we remove the "(UTC+XX:00)" prefix from the timezone name
-    const ianaFromMs = windowsZones[tzName.replace(/\(.*\)\s*/gm, "").trim()];
+    // First try exact match
+    let ianaFromMs = windowsZones[tzName.trim()];
+    if (ianaFromMs) {
+      this.validated_ = true;
+      return ianaFromMs;
+    }
+
+    // If no match, try removing only prefix within brackets
+    // This becuase sometimes old Microsoft services return the timezone with a prefix like "(UTC+XX:00)"
+    // which is not part of the Windows zone name.
+    ianaFromMs = windowsZones[tzName.replace(/^\([^)]+\)\s*/gm, "").trim()];
     if (ianaFromMs) {
       this.validated_ = true;
       return ianaFromMs;

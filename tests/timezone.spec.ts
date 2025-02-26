@@ -75,6 +75,13 @@ describe("Timezone general", () => {
     expect(tz.ianaName).toEqual("Europe/Berlin");
   });
 
+  it("maps 'Central Standard Time (Mexico)' zone ID to America/Mexico_City", async () => {
+    const msTzName = "Central Standard Time (Mexico)";
+    const tz = new TimezoneService.Timezone(msTzName);
+    expect(tz.validated).toBeTruthy();
+    expect(tz.ianaName).toEqual("America/Mexico_City");
+  });
+
   it("maps offsets to IANA names", async () => {
     expect(new TimezoneService.Timezone("GMT+0100").ianaName).toEqual(
       "Etc/GMT-1"
