@@ -1,6 +1,6 @@
 {
     "name": "morgen-tz-service",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Time zone service for morgen.so",
     "homepage": "https://github.com/morgen-so/morgen-tz-service",
     "bugs": {

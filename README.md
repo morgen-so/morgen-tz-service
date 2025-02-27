@@ -54,6 +54,7 @@ _TODO: add a script to automate this, ideally with a CI job._
 - Use `npm update` to update the dependencies. Notice,  `npm install` will not work because of the peer dependencies.
 - Update `scripts/data/windowsZones.xml` with the [latest Windows timezone data](https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml).
 - Run `npm run build` to update the data files and run the tests.
+- Bump version in `package.json`.
 - Push the changes to the repository.
 - Update the commit hash in the `package.json` of other projects fetching this repo from Github.
 

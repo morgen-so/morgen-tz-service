@@ -1,4 +1,4 @@
-// Generated from timezones-ical-library data on 2025-02-26T17:31:32.794Z
+// Generated from timezones-ical-library data on 2025-02-27T10:38:29.429Z
 
 export const icsZones: Record<string, string> = {
   "Africa/Abidjan": "BEGIN:VTIMEZONE\r\nTZID:Africa/Abidjan\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",

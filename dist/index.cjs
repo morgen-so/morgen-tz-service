@@ -8995,7 +8995,12 @@ var Timezone = class _Timezone {
       this.validated_ = true;
       return tzName;
     }
-    const ianaFromMs = windowsZones[tzName.replace(/\(.*\)\s*/gm, "").trim()];
+    let ianaFromMs = windowsZones[tzName.trim()];
+    if (ianaFromMs) {
+      this.validated_ = true;
+      return ianaFromMs;
+    }
+    ianaFromMs = windowsZones[tzName.replace(/^\([^)]+\)\s*/gm, "").trim()];
     if (ianaFromMs) {
       this.validated_ = true;
       return ianaFromMs;
