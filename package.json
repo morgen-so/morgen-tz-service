@@ -1,55 +1,54 @@
 {
-    "name": "morgen-tz-service",
-    "version": "1.0.2",
-    "description": "Time zone service for morgen.so",
-    "homepage": "https://github.com/morgen-so/morgen-tz-service",
-    "bugs": {
-        "url": "https://github.com/morgen-so/morgen-tz-service"
-    },
-    "author": "Morgen AG (https://morgen.so)",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/morgen-so/morgen-tz-service.git"
-    },
-    "main": "dist/index.js",
-    "exports": {
-        "./package.json": "./package.json",
-        ".": {
-            "import": "./dist/index.js",
-            "default": "./dist/index.cjs"
-        }
-    },
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "test": "TZ=UTC npx jest",
-        "generate": "sh ./generate.sh",
-        "build": "npm run generate && tsup && npm run test",
-        "check-exports": "attw --pack . "
-    },
-    "type": "module",
-    "devDependencies": {
-        "@arethetypeswrong/cli": "^0.17.4",
-        "@types/jest": "^29.5.14",
-        "@types/lodash": "^4.17.15",
-        "@types/luxon": "^3.4.2",
-        "@vvo/tzdb": "^6.161.0",
-        "fast-xml-parser": "^5.0.7",
-        "jest": "^29.7.0",
-        "timezones-ical-library": "^1.9.1",
-        "ts-jest": "^29.2.6",
-        "ts-node": "^10.9.2",
-        "tsup": "^8.4.0",
-        "tsx": "^4.19.3",
-        "typescript": "^5.7.3",
-        "tzdata": "^1.0.43",
-        "luxon": "latest"
-    },
-    "peerDependencies": {
-        "lodash": "*",
-        "moment": "latest",
-        "moment-timezone": "latest"
-
+  "name": "morgen-tz-service",
+  "version": "1.0.2",
+  "description": "Time zone service for morgen.so",
+  "homepage": "https://github.com/morgen-so/morgen-tz-service",
+  "bugs": {
+    "url": "https://github.com/morgen-so/morgen-tz-service"
+  },
+  "author": "Morgen AG (https://morgen.so)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgen-so/morgen-tz-service.git"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
     }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "TZ=UTC NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest",
+    "generate": "sh ./generate.sh",
+    "build": "npm run generate && tsup && npm run test",
+    "check-exports": "attw --pack . "
+  },
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.4",
+    "@types/jest": "^30.0.0",
+    "@types/lodash": "^4.17.15",
+    "@types/luxon": "^3.7.1",
+    "@vvo/tzdb": "^6.187.0",
+    "fast-xml-parser": "^5.0.7",
+    "jest": "^30.2.0",
+    "timezones-ical-library": "^1.10.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.9.3",
+    "tzdata": "^1.0.46",
+    "luxon": "latest"
+  },
+  "peerDependencies": {
+    "lodash": "*",
+    "moment": "latest",
+    "moment-timezone": "latest"
+  }
 }

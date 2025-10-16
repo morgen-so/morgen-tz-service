@@ -1,9 +1,18 @@
 {
-  "preset": "ts-jest",
+  "preset": "ts-jest/presets/default-esm",
   "testEnvironment": "node",
-  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "extensionsToTreatAsEsm": [".ts"],
+  "moduleFileExtensions": ["js", "ts", "tsx"],
   "moduleNameMapper": {
     "^(\\.\\.?\\/.+)\\.js$": "$1"
+  },
+  "transform": {
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        "useESM": true
+      }
+    ]
   },
   "testMatch": ["**/*.spec.ts"]
 }

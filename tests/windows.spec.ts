@@ -1,6 +1,6 @@
 import moment from "moment-timezone";
-import TimezoneService from "../src/index.js";
-import { windowsZones } from "../src/generated/windowsZones.js";
+import TimezoneService from "../src/index.ts";
+import { windowsZones } from "../src/generated/windowsZones.ts";
 
 describe("Windows zones", () => {
   it.each(moment.tz.names())(

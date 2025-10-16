@@ -1,4 +1,4 @@
-import TimezoneService from "../src/index.js";
+import TimezoneService from "../src/index.ts";
 
 const validTzNames = [
   "Europe/Zurich",
