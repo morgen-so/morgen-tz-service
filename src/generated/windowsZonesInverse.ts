@@ -1,4 +1,4 @@
-// Generated from windowsZones.xml on 2025-02-27T10:38:28.961Z
+// Generated from windowsZones.xml on 2025-10-16T21:33:23.137Z
 // Source: https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml
 
 export const windowsZonesInverse: Record<string, string> = {
@@ -173,6 +173,7 @@ export const windowsZonesInverse: Record<string, string> = {
   "America/Nuuk": "Greenland Standard Time",
   "America/Montevideo": "Montevideo Standard Time",
   "America/Punta_Arenas": "Magallanes Standard Time",
+  "America/Coyhaique": "Magallanes Standard Time",
   "America/Miquelon": "Saint Pierre Standard Time",
   "America/Bahia": "Bahia Standard Time",
   "Etc/GMT+2": "UTC-02",

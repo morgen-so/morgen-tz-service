@@ -1,4 +1,4 @@
-// Generated from https://www.npmjs.com/package/tzdata data on 2025-02-27T10:38:29.184Z
+// Generated from https://www.npmjs.com/package/tzdata data on 2025-10-16T21:33:23.295Z
 
 export const canonicalNames: Record<string, string> = {
   "Africa/Accra": "Africa/Abidjan",

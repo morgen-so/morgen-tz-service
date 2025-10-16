@@ -351,6 +351,7 @@ var windowsZonesInverse = {
   "America/Nuuk": "Greenland Standard Time",
   "America/Montevideo": "Montevideo Standard Time",
   "America/Punta_Arenas": "Magallanes Standard Time",
+  "America/Coyhaique": "Magallanes Standard Time",
   "America/Miquelon": "Saint Pierre Standard Time",
   "America/Bahia": "Bahia Standard Time",
   "Etc/GMT+2": "UTC-02",
@@ -904,11 +905,10 @@ var canonicalNames = {
 
 // src/generated/regions.ts
 var regions = {
-  "alofi": "Pacific/Niue",
   "midway": "Pacific/Midway",
   "pago pago": "Pacific/Pago_Pago",
+  "alofi": "Pacific/Niue",
   "avarua": "Pacific/Rarotonga",
-  "adak": "America/Adak",
   "honolulu": "Pacific/Honolulu",
   "east honolulu": "Pacific/Honolulu",
   "pearl city": "Pacific/Honolulu",
@@ -917,11 +917,21 @@ var regions = {
   "papeete": "Pacific/Tahiti",
   "punaauia": "Pacific/Tahiti",
   "marquesas": "Pacific/Marquesas",
-  "anchorage": "America/Anchorage",
-  "juneau": "America/Anchorage",
-  "fairbanks": "America/Anchorage",
-  "eagle river": "America/Anchorage",
   "gambier": "Pacific/Gambier",
+  "adak": "America/Adak",
+  "anchorage": "America/Anchorage",
+  "fairbanks": "America/Anchorage",
+  "juneau": "America/Anchorage",
+  "eagle river": "America/Anchorage",
+  "adamstown": "Pacific/Pitcairn",
+  "hermosillo": "America/Hermosillo",
+  "culiac\xE1n": "America/Hermosillo",
+  "mazatl\xE1n": "America/Hermosillo",
+  "tepic": "America/Hermosillo",
+  "phoenix": "America/Phoenix",
+  "tucson": "America/Phoenix",
+  "mesa": "America/Phoenix",
+  "chandler": "America/Phoenix",
   "los angeles": "America/Los_Angeles",
   "san diego": "America/Los_Angeles",
   "san jose": "America/Los_Angeles",
@@ -932,38 +942,16 @@ var regions = {
   "rosarito": "America/Tijuana",
   "vancouver": "America/Vancouver",
   "surrey": "America/Vancouver",
-  "okanagan": "America/Vancouver",
   "victoria": "Indian/Mahe",
-  "adamstown": "Pacific/Pitcairn",
-  "hermosillo": "America/Hermosillo",
-  "culiac\xE1n": "America/Hermosillo",
-  "ciudad obreg\xF3n": "America/Hermosillo",
-  "mazatl\xE1n": "America/Hermosillo",
-  "calgary": "America/Edmonton",
-  "edmonton": "America/Edmonton",
-  "red deer": "America/Edmonton",
-  "sherwood park": "America/Edmonton",
-  "ciudad ju\xE1rez": "America/Ciudad_Juarez",
-  "denver": "America/Denver",
-  "el paso": "America/Denver",
-  "albuquerque": "America/Denver",
-  "colorado springs": "America/Denver",
-  "phoenix": "America/Phoenix",
-  "tucson": "America/Phoenix",
-  "mesa": "America/Phoenix",
-  "chandler": "America/Phoenix",
+  "burnaby": "America/Vancouver",
   "whitehorse": "America/Whitehorse",
   "fort st. john": "America/Whitehorse",
   "creston": "America/Whitehorse",
   "dawson": "America/Whitehorse",
   "belize city": "America/Belize",
-  "san ignacio": "America/Belize",
   "san pedro": "America/Belize",
   "orange walk": "America/Belize",
-  "chicago": "America/Chicago",
-  "houston": "America/Chicago",
-  "san antonio": "America/Chicago",
-  "dallas": "America/Chicago",
+  "belmopan": "America/Belize",
   "guatemala city": "America/Guatemala",
   "villa nueva": "America/Guatemala",
   "mixco": "America/Guatemala",
@@ -974,12 +962,8 @@ var regions = {
   "chinandega": "America/Managua",
   "mexico city": "America/Mexico_City",
   "iztapalapa": "America/Mexico_City",
-  "le\xF3n de los aldama": "America/Mexico_City",
   "puebla": "America/Mexico_City",
-  "reynosa": "America/Matamoros",
-  "heroica matamoros": "America/Matamoros",
-  "nuevo laredo": "America/Matamoros",
-  "piedras negras": "America/Matamoros",
+  "ecatepec de morelos": "America/Mexico_City",
   "san jos\xE9": "America/Costa_Rica",
   "lim\xF3n": "America/Costa_Rica",
   "alajuela": "America/Costa_Rica",
@@ -995,56 +979,52 @@ var regions = {
   "san pedro sula": "America/Tegucigalpa",
   "la ceiba": "America/Tegucigalpa",
   "choloma": "America/Tegucigalpa",
+  "galapagos": "Pacific/Galapagos",
+  "calgary": "America/Edmonton",
+  "edmonton": "America/Edmonton",
+  "lethbridge": "America/Edmonton",
+  "red deer": "America/Edmonton",
+  "ciudad ju\xE1rez": "America/Ciudad_Juarez",
+  "denver": "America/Denver",
+  "el paso": "America/Denver",
+  "albuquerque": "America/Denver",
+  "colorado springs": "America/Denver",
+  "rio branco": "America/Rio_Branco",
+  "cruzeiro do sul": "America/Rio_Branco",
+  "tarauac\xE1": "America/Rio_Branco",
+  "sena madureira": "America/Rio_Branco",
+  "chicago": "America/Chicago",
+  "houston": "America/Chicago",
+  "san antonio": "America/Chicago",
+  "dallas": "America/Chicago",
+  "reynosa": "America/Matamoros",
+  "heroica matamoros": "America/Matamoros",
+  "nuevo laredo": "America/Matamoros",
+  "piedras negras": "America/Matamoros",
   "winnipeg": "America/Winnipeg",
   "brandon": "America/Winnipeg",
   "steinbach": "America/Winnipeg",
   "kenora": "America/Winnipeg",
-  "galapagos": "Pacific/Galapagos",
-  "rio branco": "America/Rio_Branco",
-  "cruzeiro do sul": "America/Rio_Branco",
-  "senador guiomard": "America/Rio_Branco",
-  "sena madureira": "America/Rio_Branco",
   "bogot\xE1": "America/Bogota",
   "cali": "America/Bogota",
   "medell\xEDn": "America/Bogota",
   "barranquilla": "America/Bogota",
-  "havana": "America/Havana",
-  "santiago de cuba": "America/Havana",
-  "camag\xFCey": "America/Havana",
-  "holgu\xEDn": "America/Havana",
   "easter": "Pacific/Easter",
   "atikokan": "America/Atikokan",
   "canc\xFAn": "America/Cancun",
   "chetumal": "America/Cancun",
   "playa del carmen": "America/Cancun",
   "cozumel": "America/Cancun",
-  "cockburn town": "America/Grand_Turk",
   "george town": "America/Cayman",
   "west bay": "America/Cayman",
   "kingston": "Pacific/Norfolk",
   "new kingston": "America/Jamaica",
   "spanish town": "America/Jamaica",
   "portmore": "America/Jamaica",
-  "nassau": "America/Nassau",
-  "lucaya": "America/Nassau",
-  "freeport": "America/Nassau",
-  "killarney": "America/Nassau",
-  "new york city": "America/New_York",
-  "brooklyn": "America/New_York",
-  "queens": "America/New_York",
-  "philadelphia": "America/New_York",
   "panam\xE1": "America/Panama",
   "san miguelito": "America/Panama",
   "juan d\xEDaz": "America/Panama",
   "david": "America/Panama",
-  "port-au-prince": "America/Port-au-Prince",
-  "carrefour": "America/Port-au-Prince",
-  "delmas": "America/Port-au-Prince",
-  "port-de-paix": "America/Port-au-Prince",
-  "toronto": "America/Toronto",
-  "montr\xE9al": "America/Toronto",
-  "ottawa": "America/Toronto",
-  "mississauga": "America/Toronto",
   "quito": "America/Guayaquil",
   "guayaquil": "America/Guayaquil",
   "cuenca": "America/Guayaquil",
@@ -1073,11 +1053,6 @@ var regions = {
   "gros islet": "America/St_Lucia",
   "castries": "America/St_Lucia",
   "gustavia": "America/St_Barthelemy",
-  "halifax": "America/Halifax",
-  "moncton": "America/Halifax",
-  "sydney": "Australia/Sydney",
-  "dartmouth": "America/Halifax",
-  "hamilton": "Atlantic/Bermuda",
   "kingstown": "America/St_Vincent",
   "calliaqua": "America/St_Vincent",
   "kralendijk": "America/Kralendijk",
@@ -1106,27 +1081,51 @@ var regions = {
   "santo domingo oeste": "America/Santo_Domingo",
   "santo domingo este": "America/Santo_Domingo",
   "the valley": "America/Anguilla",
-  "thule": "America/Thule",
   "willemstad": "America/Curacao",
+  "bandariba": "America/Curacao",
   "la paz": "America/La_Paz",
   "santa cruz de la sierra": "America/La_Paz",
   "cochabamba": "America/La_Paz",
   "sucre": "America/La_Paz",
+  "havana": "America/Havana",
+  "santiago de cuba": "America/Havana",
+  "camag\xFCey": "America/Havana",
+  "holgu\xEDn": "America/Havana",
+  "nassau": "America/Nassau",
+  "lucaya": "America/Nassau",
+  "freeport": "America/Nassau",
+  "killarney": "America/Nassau",
+  "new york city": "America/New_York",
+  "brooklyn": "America/New_York",
+  "queens": "America/New_York",
+  "philadelphia": "America/New_York",
+  "port-au-prince": "America/Port-au-Prince",
+  "carrefour": "America/Port-au-Prince",
+  "delmas": "America/Port-au-Prince",
+  "port-de-paix": "America/Port-au-Prince",
+  "providenciales": "America/Grand_Turk",
+  "cockburn town": "America/Grand_Turk",
+  "toronto": "America/Toronto",
+  "montr\xE9al": "America/Toronto",
+  "ottawa": "America/Toronto",
+  "mississauga": "America/Toronto",
   "georgetown": "America/Guyana",
   "linden": "America/Guyana",
   "new amsterdam": "America/Guyana",
   "caracas": "America/Caracas",
   "maracaibo": "America/Caracas",
-  "maracay": "America/Caracas",
   "valencia": "Europe/Madrid",
-  "st. john's": "America/St_Johns",
-  "mount pearl": "America/St_Johns",
-  "corner brook": "America/St_Johns",
-  "conception bay south": "America/St_Johns",
+  "barquisimeto": "America/Caracas",
   "buenos aires": "America/Argentina/Buenos_Aires",
   "c\xF3rdoba": "America/Argentina/Buenos_Aires",
   "rosario": "America/Argentina/Buenos_Aires",
   "mar del plata": "America/Argentina/Buenos_Aires",
+  "halifax": "America/Halifax",
+  "sydney": "Australia/Sydney",
+  "dartmouth": "America/Halifax",
+  "moncton": "America/Halifax",
+  "hamilton": "Atlantic/Bermuda",
+  "thule": "America/Thule",
   "s\xE3o paulo": "America/Sao_Paulo",
   "rio de janeiro": "America/Sao_Paulo",
   "belo horizonte": "America/Sao_Paulo",
@@ -1134,11 +1133,13 @@ var regions = {
   "palmer": "Antarctica/Palmer",
   "rothera": "Antarctica/Palmer",
   "punta arenas": "America/Punta_Arenas",
+  "coyhaique": "America/Punta_Arenas",
   "puerto natales": "America/Punta_Arenas",
+  "puerto ays\xE9n": "America/Punta_Arenas",
   "santiago": "America/Santiago",
   "puente alto": "America/Santiago",
+  "maip\xFA": "America/Santiago",
   "antofagasta": "America/Santiago",
-  "vi\xF1a del mar": "America/Santiago",
   "stanley": "Atlantic/Stanley",
   "cayenne": "America/Cayenne",
   "matoury": "America/Cayenne",
@@ -1148,22 +1149,26 @@ var regions = {
   "ciudad del este": "America/Asuncion",
   "san lorenzo": "America/Asuncion",
   "capiat\xE1": "America/Asuncion",
-  "saint-pierre": "Indian/Reunion",
   "paramaribo": "America/Paramaribo",
   "lelydorp": "America/Paramaribo",
   "montevideo": "America/Montevideo",
   "salto": "America/Montevideo",
   "paysand\xFA": "America/Montevideo",
   "las piedras": "America/Montevideo",
-  "nuuk": "America/Nuuk",
-  "scoresbysund": "America/Nuuk",
+  "st. john's": "America/St_Johns",
+  "mount pearl": "America/St_Johns",
+  "paradise": "America/St_Johns",
+  "corner brook": "America/St_Johns",
   "noronha": "America/Noronha",
   "grytviken": "Atlantic/South_Georgia",
-  "ponta delgada": "Atlantic/Azores",
+  "saint-pierre": "Indian/Reunion",
   "praia": "Atlantic/Cape_Verde",
   "mindelo": "Atlantic/Cape_Verde",
   "espargos": "Atlantic/Cape_Verde",
   "assomada": "Atlantic/Cape_Verde",
+  "nuuk": "America/Nuuk",
+  "scoresbysund": "America/Nuuk",
+  "ponta delgada": "Atlantic/Azores",
   "": "Etc/UTC",
   "abidjan": "Africa/Abidjan",
   "abobo": "Africa/Abidjan",
@@ -1181,15 +1186,10 @@ var regions = {
   "nz\xE9r\xE9kor\xE9": "Africa/Conakry",
   "kankan": "Africa/Conakry",
   "dakar": "Africa/Dakar",
-  "pikine": "Africa/Dakar",
   "touba": "Africa/Dakar",
+  "pikine": "Africa/Dakar",
   "gu\xE9diawaye": "Africa/Dakar",
   "danmarkshavn": "America/Danmarkshavn",
-  "douglas": "Europe/Isle_of_Man",
-  "dublin": "Europe/Dublin",
-  "south dublin": "Europe/Dublin",
-  "cork": "Europe/Dublin",
-  "limerick": "Europe/Dublin",
   "freetown": "Africa/Freetown",
   "bo": "Africa/Freetown",
   "kenema": "Africa/Freetown",
@@ -1203,10 +1203,6 @@ var regions = {
   "sokod\xE9": "Africa/Lome",
   "kara": "Africa/Lome",
   "atakpam\xE9": "Africa/Lome",
-  "london": "Europe/London",
-  "birmingham": "Europe/London",
-  "liverpool": "Europe/London",
-  "glasgow": "Europe/London",
   "monrovia": "Africa/Monrovia",
   "gbarnga": "Africa/Monrovia",
   "buchanan": "Africa/Monrovia",
@@ -1223,14 +1219,73 @@ var regions = {
   "k\xF3pavogur": "Atlantic/Reykjavik",
   "hafnarfj\xF6r\xF0ur": "Atlantic/Reykjavik",
   "reykjanesb\xE6r": "Atlantic/Reykjavik",
-  "saint helier": "Europe/Jersey",
-  "saint peter port": "Europe/Guernsey",
   "s\xE3o tom\xE9": "Africa/Sao_Tome",
   "serekunda": "Africa/Banjul",
   "brikama": "Africa/Banjul",
   "bununka kunda": "Africa/Banjul",
   "sukuta": "Africa/Banjul",
-  "troll": "Antarctica/Troll",
+  "algiers": "Africa/Algiers",
+  "oran": "Africa/Algiers",
+  "constantine": "Africa/Algiers",
+  "annaba": "Africa/Algiers",
+  "tunis": "Africa/Tunis",
+  "sfax": "Africa/Tunis",
+  "sousse": "Africa/Tunis",
+  "kairouan": "Africa/Tunis",
+  "douglas": "Europe/Isle_of_Man",
+  "dublin": "Europe/Dublin",
+  "south dublin": "Europe/Dublin",
+  "cork": "Europe/Dublin",
+  "limerick": "Europe/Dublin",
+  "london": "Europe/London",
+  "birmingham": "Europe/London",
+  "glasgow": "Europe/London",
+  "manchester": "Europe/London",
+  "saint helier": "Europe/Jersey",
+  "saint peter port": "Europe/Guernsey",
+  "bangui": "Africa/Bangui",
+  "bimbo": "Africa/Bangui",
+  "b\xE9goua": "Africa/Bangui",
+  "carnot": "Africa/Bangui",
+  "bata": "Africa/Malabo",
+  "malabo": "Africa/Malabo",
+  "ebebiyin": "Africa/Malabo",
+  "brazzaville": "Africa/Brazzaville",
+  "pointe-noire": "Africa/Brazzaville",
+  "dolisie": "Africa/Brazzaville",
+  "nkayi": "Africa/Brazzaville",
+  "cotonou": "Africa/Porto-Novo",
+  "abomey-calavi": "Africa/Porto-Novo",
+  "porto-novo": "Africa/Porto-Novo",
+  "parakou": "Africa/Porto-Novo",
+  "douala": "Africa/Douala",
+  "yaound\xE9": "Africa/Douala",
+  "bamenda": "Africa/Douala",
+  "bafoussam": "Africa/Douala",
+  "kinshasa": "Africa/Kinshasa",
+  "kikwit": "Africa/Kinshasa",
+  "masina": "Africa/Kinshasa",
+  "mbandaka": "Africa/Kinshasa",
+  "lagos": "Africa/Lagos",
+  "kano": "Africa/Lagos",
+  "ibadan": "Africa/Lagos",
+  "abuja": "Africa/Lagos",
+  "libreville": "Africa/Libreville",
+  "port-gentil": "Africa/Libreville",
+  "franceville": "Africa/Libreville",
+  "owendo": "Africa/Libreville",
+  "luanda": "Africa/Luanda",
+  "lubango": "Africa/Luanda",
+  "huambo": "Africa/Luanda",
+  "benguela": "Africa/Luanda",
+  "n'djamena": "Africa/Ndjamena",
+  "moundou": "Africa/Ndjamena",
+  "ab\xE9ch\xE9": "Africa/Ndjamena",
+  "sarh": "Africa/Ndjamena",
+  "niamey": "Africa/Niamey",
+  "maradi": "Africa/Niamey",
+  "zinder": "Africa/Niamey",
+  "tahoua": "Africa/Niamey",
   "casablanca": "Africa/Casablanca",
   "rabat": "Africa/Casablanca",
   "fes": "Africa/Casablanca",
@@ -1247,10 +1302,50 @@ var regions = {
   "amadora": "Europe/Lisbon",
   "braga": "Europe/Lisbon",
   "t\xF3rshavn": "Atlantic/Faroe",
-  "algiers": "Africa/Algiers",
-  "oran": "Africa/Algiers",
-  "constantine": "Africa/Algiers",
-  "annaba": "Africa/Algiers",
+  "bujumbura": "Africa/Bujumbura",
+  "gitega": "Africa/Bujumbura",
+  "ngozi": "Africa/Bujumbura",
+  "rumonge": "Africa/Bujumbura",
+  "gaborone": "Africa/Gaborone",
+  "francistown": "Africa/Gaborone",
+  "mogoditshane": "Africa/Gaborone",
+  "maun": "Africa/Gaborone",
+  "harare": "Africa/Harare",
+  "bulawayo": "Africa/Harare",
+  "chitungwiza": "Africa/Harare",
+  "mutare": "Africa/Harare",
+  "juba": "Africa/Juba",
+  "winejok": "Africa/Juba",
+  "yei": "Africa/Juba",
+  "malakal": "Africa/Juba",
+  "khartoum": "Africa/Khartoum",
+  "omdurman": "Africa/Khartoum",
+  "khartoum north": "Africa/Khartoum",
+  "nyala": "Africa/Khartoum",
+  "kigali": "Africa/Kigali",
+  "gisenyi": "Africa/Kigali",
+  "nyagatare": "Africa/Kigali",
+  "butare": "Africa/Kigali",
+  "lilongwe": "Africa/Blantyre",
+  "blantyre": "Africa/Blantyre",
+  "mzuzu": "Africa/Blantyre",
+  "zomba": "Africa/Blantyre",
+  "lubumbashi": "Africa/Lubumbashi",
+  "mbuji-mayi": "Africa/Lubumbashi",
+  "kananga": "Africa/Lubumbashi",
+  "kisangani": "Africa/Lubumbashi",
+  "lusaka": "Africa/Lusaka",
+  "kitwe": "Africa/Lusaka",
+  "ndola": "Africa/Lusaka",
+  "chipata": "Africa/Lusaka",
+  "maputo": "Africa/Maputo",
+  "matola": "Africa/Maputo",
+  "nampula": "Africa/Maputo",
+  "beira": "Africa/Maputo",
+  "windhoek": "Africa/Windhoek",
+  "rundu": "Africa/Windhoek",
+  "walvis bay": "Africa/Windhoek",
+  "swakopmund": "Africa/Windhoek",
   "amsterdam": "Europe/Amsterdam",
   "rotterdam": "Europe/Amsterdam",
   "the hague": "Europe/Amsterdam",
@@ -1267,8 +1362,8 @@ var regions = {
   "k\xF6ln": "Europe/Berlin",
   "bratislava": "Europe/Bratislava",
   "ko\u0161ice": "Europe/Bratislava",
+  "petr\u017Ealka": "Europe/Bratislava",
   "nitra": "Europe/Bratislava",
-  "pre\u0161ov": "Europe/Bratislava",
   "brussels": "Europe/Brussels",
   "antwerpen": "Europe/Brussels",
   "gent": "Europe/Brussels",
@@ -1284,8 +1379,8 @@ var regions = {
   "gibraltar": "Europe/Gibraltar",
   "ljubljana": "Europe/Ljubljana",
   "maribor": "Europe/Ljubljana",
-  "kranj": "Europe/Ljubljana",
   "celje": "Europe/Ljubljana",
+  "kranj": "Europe/Ljubljana",
   "longyearbyen": "Arctic/Longyearbyen",
   "luxembourg": "Europe/Luxembourg",
   "esch-sur-alzette": "Europe/Luxembourg",
@@ -1334,12 +1429,8 @@ var regions = {
   "uppsala": "Europe/Stockholm",
   "tirana": "Europe/Tirane",
   "durr\xEBs": "Europe/Tirane",
-  "elbasan": "Europe/Tirane",
   "vlor\xEB": "Europe/Tirane",
-  "tunis": "Africa/Tunis",
-  "sfax": "Africa/Tunis",
-  "sousse": "Africa/Tunis",
-  "kairouan": "Africa/Tunis",
+  "elbasan": "Europe/Tirane",
   "vaduz": "Europe/Vaduz",
   "vatican city": "Europe/Vatican",
   "vienna": "Europe/Vienna",
@@ -1358,157 +1449,15 @@ var regions = {
   "gen\xE8ve": "Europe/Zurich",
   "basel": "Europe/Zurich",
   "lausanne": "Europe/Zurich",
-  "bangui": "Africa/Bangui",
-  "bimbo": "Africa/Bangui",
-  "b\xE9goua": "Africa/Bangui",
-  "carnot": "Africa/Bangui",
-  "bata": "Africa/Malabo",
-  "malabo": "Africa/Malabo",
-  "ebebiyin": "Africa/Malabo",
-  "brazzaville": "Africa/Brazzaville",
-  "pointe-noire": "Africa/Brazzaville",
-  "dolisie": "Africa/Brazzaville",
-  "nkayi": "Africa/Brazzaville",
-  "cotonou": "Africa/Porto-Novo",
-  "abomey-calavi": "Africa/Porto-Novo",
-  "porto-novo": "Africa/Porto-Novo",
-  "parakou": "Africa/Porto-Novo",
-  "douala": "Africa/Douala",
-  "yaound\xE9": "Africa/Douala",
-  "bamenda": "Africa/Douala",
-  "bafoussam": "Africa/Douala",
-  "kinshasa": "Africa/Kinshasa",
-  "kikwit": "Africa/Kinshasa",
-  "masina": "Africa/Kinshasa",
-  "mbandaka": "Africa/Kinshasa",
-  "lagos": "Africa/Lagos",
-  "kano": "Africa/Lagos",
-  "ibadan": "Africa/Lagos",
-  "abuja": "Africa/Lagos",
-  "libreville": "Africa/Libreville",
-  "port-gentil": "Africa/Libreville",
-  "franceville": "Africa/Libreville",
-  "owendo": "Africa/Libreville",
-  "luanda": "Africa/Luanda",
-  "lubango": "Africa/Luanda",
-  "huambo": "Africa/Luanda",
-  "benguela": "Africa/Luanda",
-  "n'djamena": "Africa/Ndjamena",
-  "moundou": "Africa/Ndjamena",
-  "ab\xE9ch\xE9": "Africa/Ndjamena",
-  "sarh": "Africa/Ndjamena",
-  "niamey": "Africa/Niamey",
-  "maradi": "Africa/Niamey",
-  "zinder": "Africa/Niamey",
-  "tahoua": "Africa/Niamey",
-  "bujumbura": "Africa/Bujumbura",
-  "gitega": "Africa/Bujumbura",
-  "ngozi": "Africa/Bujumbura",
-  "rumonge": "Africa/Bujumbura",
-  "gaborone": "Africa/Gaborone",
-  "francistown": "Africa/Gaborone",
-  "mogoditshane": "Africa/Gaborone",
-  "maun": "Africa/Gaborone",
-  "harare": "Africa/Harare",
-  "bulawayo": "Africa/Harare",
-  "chitungwiza": "Africa/Harare",
-  "mutare": "Africa/Harare",
-  "juba": "Africa/Juba",
-  "winejok": "Africa/Juba",
-  "yei": "Africa/Juba",
-  "malakal": "Africa/Juba",
-  "khartoum": "Africa/Khartoum",
-  "omdurman": "Africa/Khartoum",
-  "khartoum north": "Africa/Khartoum",
-  "nyala": "Africa/Khartoum",
-  "kigali": "Africa/Kigali",
-  "gisenyi": "Africa/Kigali",
-  "butare": "Africa/Kigali",
-  "gitarama": "Africa/Kigali",
-  "lilongwe": "Africa/Blantyre",
-  "blantyre": "Africa/Blantyre",
-  "mzuzu": "Africa/Blantyre",
-  "zomba": "Africa/Blantyre",
-  "lubumbashi": "Africa/Lubumbashi",
-  "mbuji-mayi": "Africa/Lubumbashi",
-  "kananga": "Africa/Lubumbashi",
-  "kisangani": "Africa/Lubumbashi",
-  "lusaka": "Africa/Lusaka",
-  "kitwe": "Africa/Lusaka",
-  "ndola": "Africa/Lusaka",
-  "chipata": "Africa/Lusaka",
-  "maputo": "Africa/Maputo",
-  "matola": "Africa/Maputo",
-  "nampula": "Africa/Maputo",
-  "beira": "Africa/Maputo",
-  "windhoek": "Africa/Windhoek",
-  "rundu": "Africa/Windhoek",
-  "walvis bay": "Africa/Windhoek",
-  "swakopmund": "Africa/Windhoek",
-  "athens": "Europe/Athens",
-  "thessalon\xEDki": "Europe/Athens",
-  "p\xE1tra": "Europe/Athens",
-  "piraeus": "Europe/Athens",
-  "beirut": "Asia/Beirut",
-  "ra\u2019s bayr\u016Bt": "Asia/Beirut",
-  "tripoli": "Africa/Tripoli",
-  "sidon": "Asia/Beirut",
-  "bucharest": "Europe/Bucharest",
-  "sector 3": "Europe/Bucharest",
-  "ia\u015Fi": "Europe/Bucharest",
-  "sector 6": "Europe/Bucharest",
-  "cairo": "Africa/Cairo",
-  "alexandria": "Africa/Cairo",
-  "giza": "Africa/Cairo",
-  "shubr\u0101 al khaymah": "Africa/Cairo",
-  "chisinau": "Europe/Chisinau",
-  "tiraspol": "Europe/Chisinau",
-  "b\u0103l\u0163i": "Europe/Chisinau",
-  "bender": "Europe/Chisinau",
-  "east jerusalem": "Asia/Hebron",
-  "gaza": "Asia/Hebron",
-  "kh\u0101n y\u016Bnis": "Asia/Hebron",
-  "jab\u0101ly\u0101": "Asia/Hebron",
-  "helsinki": "Europe/Helsinki",
-  "espoo": "Europe/Helsinki",
-  "tampere": "Europe/Helsinki",
-  "oulu": "Europe/Helsinki",
   "kaliningrad": "Europe/Kaliningrad",
   "chernyakhovsk": "Europe/Kaliningrad",
   "sovetsk": "Europe/Kaliningrad",
   "baltiysk": "Europe/Kaliningrad",
-  "kyiv": "Europe/Kyiv",
-  "kharkiv": "Europe/Kyiv",
-  "odesa": "Europe/Kyiv",
-  "dnipro": "Europe/Kyiv",
-  "mariehamn": "Europe/Mariehamn",
-  "nicosia": "Asia/Nicosia",
-  "limassol": "Asia/Nicosia",
-  "larnaca": "Asia/Nicosia",
-  "str\xF3volos": "Asia/Nicosia",
-  "riga": "Europe/Riga",
-  "daugavpils": "Europe/Riga",
-  "liep\u0101ja": "Europe/Riga",
-  "jelgava": "Europe/Riga",
-  "sofia": "Europe/Sofia",
-  "plovdiv": "Europe/Sofia",
-  "varna": "Europe/Sofia",
-  "burgas": "Europe/Sofia",
-  "tallinn": "Europe/Tallinn",
-  "tartu": "Europe/Tallinn",
-  "narva": "Europe/Tallinn",
-  "p\xE4rnu": "Europe/Tallinn",
+  "tripoli": "Asia/Beirut",
   "benghazi": "Africa/Tripoli",
   "misratah": "Africa/Tripoli",
   "zliten": "Africa/Tripoli",
-  "vilnius": "Europe/Vilnius",
-  "kaunas": "Europe/Vilnius",
-  "klaip\u0117da": "Europe/Vilnius",
-  "\u0161iauliai": "Europe/Vilnius",
-  "jerusalem": "Asia/Jerusalem",
-  "tel aviv": "Asia/Jerusalem",
-  "west jerusalem": "Asia/Jerusalem",
-  "haifa": "Asia/Jerusalem",
+  "troll": "Antarctica/Troll",
   "johannesburg": "Africa/Johannesburg",
   "cape town": "Africa/Johannesburg",
   "durban": "Africa/Johannesburg",
@@ -1542,8 +1491,8 @@ var regions = {
   "madinah": "Asia/Riyadh",
   "sanaa": "Asia/Aden",
   "aden": "Asia/Aden",
-  "al \u1E29udaydah": "Asia/Aden",
   "taiz": "Asia/Aden",
+  "ibb": "Asia/Aden",
   "amman": "Asia/Amman",
   "zarqa": "Asia/Amman",
   "irbid": "Asia/Amman",
@@ -1591,6 +1540,62 @@ var regions = {
   "kakamega": "Africa/Nairobi",
   "mombasa": "Africa/Nairobi",
   "nakuru": "Africa/Nairobi",
+  "athens": "Europe/Athens",
+  "thessalon\xEDki": "Europe/Athens",
+  "p\xE1tra": "Europe/Athens",
+  "piraeus": "Europe/Athens",
+  "beirut": "Asia/Beirut",
+  "ra\u2019s bayr\u016Bt": "Asia/Beirut",
+  "sidon": "Asia/Beirut",
+  "bucharest": "Europe/Bucharest",
+  "sector 3": "Europe/Bucharest",
+  "ia\u015Fi": "Europe/Bucharest",
+  "sector 6": "Europe/Bucharest",
+  "cairo": "Africa/Cairo",
+  "alexandria": "Africa/Cairo",
+  "giza": "Africa/Cairo",
+  "shubr\u0101 al khaymah": "Africa/Cairo",
+  "chisinau": "Europe/Chisinau",
+  "tiraspol": "Europe/Chisinau",
+  "b\u0103l\u0163i": "Europe/Chisinau",
+  "bender": "Europe/Chisinau",
+  "east jerusalem": "Asia/Hebron",
+  "gaza": "Asia/Hebron",
+  "kh\u0101n y\u016Bnis": "Asia/Hebron",
+  "jab\u0101ly\u0101": "Asia/Hebron",
+  "helsinki": "Europe/Helsinki",
+  "espoo": "Europe/Helsinki",
+  "tampere": "Europe/Helsinki",
+  "oulu": "Europe/Helsinki",
+  "kyiv": "Europe/Kyiv",
+  "kharkiv": "Europe/Kyiv",
+  "odesa": "Europe/Kyiv",
+  "dnipro": "Europe/Kyiv",
+  "mariehamn": "Europe/Mariehamn",
+  "nicosia": "Asia/Nicosia",
+  "limassol": "Asia/Nicosia",
+  "larnaca": "Asia/Nicosia",
+  "str\xF3volos": "Asia/Nicosia",
+  "riga": "Europe/Riga",
+  "daugavpils": "Europe/Riga",
+  "liep\u0101ja": "Europe/Riga",
+  "jelgava": "Europe/Riga",
+  "sofia": "Europe/Sofia",
+  "plovdiv": "Europe/Sofia",
+  "varna": "Europe/Sofia",
+  "burgas": "Europe/Sofia",
+  "tallinn": "Europe/Tallinn",
+  "tartu": "Europe/Tallinn",
+  "narva": "Europe/Tallinn",
+  "p\xE4rnu": "Europe/Tallinn",
+  "vilnius": "Europe/Vilnius",
+  "kaunas": "Europe/Vilnius",
+  "klaip\u0117da": "Europe/Vilnius",
+  "\u0161iauliai": "Europe/Vilnius",
+  "jerusalem": "Asia/Jerusalem",
+  "tel aviv": "Asia/Jerusalem",
+  "west jerusalem": "Asia/Jerusalem",
+  "haifa": "Asia/Jerusalem",
   "minsk": "Europe/Minsk",
   "homyel'": "Europe/Minsk",
   "hrodna": "Europe/Minsk",
@@ -1648,6 +1653,10 @@ var regions = {
   "maz\u0101r-e shar\u012Bf": "Asia/Kabul",
   "kandah\u0101r": "Asia/Kabul",
   "port-aux-fran\xE7ais": "Indian/Kerguelen",
+  "almaty": "Asia/Almaty",
+  "shymkent": "Asia/Almaty",
+  "aktobe": "Asia/Almaty",
+  "karagandy": "Asia/Almaty",
   "male": "Indian/Maldives",
   "mawson": "Antarctica/Mawson",
   "vostok": "Antarctica/Mawson",
@@ -1664,13 +1673,9 @@ var regions = {
   "da\u015Foguz": "Asia/Ashgabat",
   "mary": "Asia/Ashgabat",
   "tashkent": "Asia/Tashkent",
+  "andijon": "Asia/Tashkent",
   "namangan": "Asia/Tashkent",
   "samarkand": "Asia/Tashkent",
-  "andijon": "Asia/Tashkent",
-  "almaty": "Asia/Almaty",
-  "shymkent": "Asia/Almaty",
-  "aktobe": "Asia/Almaty",
-  "karagandy": "Asia/Almaty",
   "yekaterinburg": "Asia/Yekaterinburg",
   "chelyabinsk": "Asia/Yekaterinburg",
   "ufa": "Asia/Yekaterinburg",
@@ -1682,11 +1687,11 @@ var regions = {
   "mumbai": "Asia/Kolkata",
   "delhi": "Asia/Kolkata",
   "bengaluru": "Asia/Kolkata",
-  "hyder\u0101b\u0101d": "Asia/Kolkata",
+  "hyderabad": "Asia/Kolkata",
   "kathmandu": "Asia/Kathmandu",
+  "pokhara": "Asia/Kathmandu",
   "bharatpur": "Asia/Kathmandu",
   "p\u0101tan": "Asia/Kathmandu",
-  "birga\xF1j": "Asia/Kathmandu",
   "dhaka": "Asia/Dhaka",
   "chattogram": "Asia/Dhaka",
   "gazipur": "Asia/Dhaka",
@@ -1724,9 +1729,9 @@ var regions = {
   "mueang nonthaburi": "Asia/Bangkok",
   "chon buri": "Asia/Bangkok",
   "ho chi minh city": "Asia/Ho_Chi_Minh",
+  "c\u1EA7n th\u01A1": "Asia/Ho_Chi_Minh",
   "da nang": "Asia/Ho_Chi_Minh",
   "bi\xEAn h\xF2a": "Asia/Ho_Chi_Minh",
-  "c\u1EA7n th\u01A1": "Asia/Ho_Chi_Minh",
   "phnom penh": "Asia/Phnom_Penh",
   "takeo": "Asia/Phnom_Penh",
   "siem reap": "Asia/Phnom_Penh",
@@ -1747,7 +1752,7 @@ var regions = {
   "perth": "Australia/Perth",
   "mandurah": "Australia/Perth",
   "bunbury": "Australia/Perth",
-  "baldivis": "Australia/Perth",
+  "geraldton": "Australia/Perth",
   "bandar seri begawan": "Asia/Brunei",
   "sengkurong": "Asia/Brunei",
   "mentiri": "Asia/Brunei",
@@ -1758,8 +1763,8 @@ var regions = {
   "balikpapan": "Asia/Makassar",
   "macau": "Asia/Macau",
   "taipa": "Asia/Macau",
+  "s\xE9": "Asia/Macau",
   "luhuan": "Asia/Macau",
-  "lai chi van": "Asia/Macau",
   "shanghai": "Asia/Shanghai",
   "beijing": "Asia/Shanghai",
   "shenzhen": "Asia/Shanghai",
@@ -1773,30 +1778,26 @@ var regions = {
   "bratsk": "Asia/Irkutsk",
   "angarsk": "Asia/Irkutsk",
   "kuala lumpur": "Asia/Kuala_Lumpur",
-  "petaling jaya": "Asia/Kuala_Lumpur",
   "klang": "Asia/Kuala_Lumpur",
   "johor bahru": "Asia/Kuala_Lumpur",
+  "kampung baru subang": "Asia/Kuala_Lumpur",
   "quezon city": "Asia/Manila",
   "davao": "Asia/Manila",
-  "manila": "Asia/Manila",
   "caloocan city": "Asia/Manila",
+  "manila": "Asia/Manila",
   "singapore": "Asia/Singapore",
   "ulu bedok": "Asia/Singapore",
   "bedok new town": "Asia/Singapore",
   "tampines estate": "Asia/Singapore",
   "taipei": "Asia/Taipei",
   "new taipei city": "Asia/Taipei",
-  "kaohsiung": "Asia/Taipei",
   "taichung": "Asia/Taipei",
+  "kaohsiung": "Asia/Taipei",
   "ulan bator": "Asia/Ulaanbaatar",
   "erdenet": "Asia/Ulaanbaatar",
   "darhan": "Asia/Ulaanbaatar",
-  "m\xF6r\xF6n": "Asia/Ulaanbaatar",
+  "choibalsan": "Asia/Ulaanbaatar",
   "eucla": "Australia/Eucla",
-  "dili": "Asia/Dili",
-  "maliana": "Asia/Dili",
-  "suai": "Asia/Dili",
-  "likis\xE1": "Asia/Dili",
   "jayapura": "Asia/Jayapura",
   "ambon": "Asia/Jayapura",
   "sorong": "Asia/Jayapura",
@@ -1814,6 +1815,10 @@ var regions = {
   "incheon": "Asia/Seoul",
   "daegu": "Asia/Seoul",
   "ngerulmud": "Pacific/Palau",
+  "dili": "Asia/Dili",
+  "maliana": "Asia/Dili",
+  "suai": "Asia/Dili",
+  "likis\xE1": "Asia/Dili",
   "chita": "Asia/Chita",
   "yakutsk": "Asia/Chita",
   "blagoveshchensk": "Asia/Chita",
@@ -1823,8 +1828,8 @@ var regions = {
   "palmerston": "Australia/Darwin",
   "brisbane": "Australia/Brisbane",
   "gold coast": "Australia/Brisbane",
+  "sunshine coast": "Australia/Brisbane",
   "logan city": "Australia/Brisbane",
-  "townsville": "Australia/Brisbane",
   "dededo village": "Pacific/Guam",
   "yigo village": "Pacific/Guam",
   "tamuning-tumon-harmon village": "Pacific/Guam",
@@ -1845,11 +1850,11 @@ var regions = {
   "mount gambier": "Australia/Adelaide",
   "morphett vale": "Australia/Adelaide",
   "melbourne": "Australia/Sydney",
-  "canberra": "Australia/Sydney",
   "newcastle": "Australia/Sydney",
+  "canberra": "Australia/Sydney",
   "arawa": "Pacific/Bougainville",
   "kosrae": "Pacific/Kosrae",
-  "palikir - national government center": "Pacific/Kosrae",
+  "palikir": "Pacific/Kosrae",
   "lord howe": "Australia/Lord_Howe",
   "noum\xE9a": "Pacific/Noumea",
   "mont-dore": "Pacific/Noumea",
@@ -1859,30 +1864,32 @@ var regions = {
   "korsakov": "Asia/Sakhalin",
   "kholmsk": "Asia/Sakhalin",
   "honiara": "Pacific/Guadalcanal",
+  "panatina": "Pacific/Guadalcanal",
+  "nggosi": "Pacific/Guadalcanal",
+  "tandai": "Pacific/Guadalcanal",
   "port-vila": "Pacific/Efate",
   "nasinu": "Pacific/Fiji",
   "suva": "Pacific/Fiji",
   "lautoka": "Pacific/Fiji",
   "nadi": "Pacific/Fiji",
   "tarawa": "Pacific/Tarawa",
-  "majuro": "Pacific/Majuro",
-  "kwajalein": "Pacific/Majuro",
-  "rmi capitol": "Pacific/Majuro",
-  "yaren": "Pacific/Nauru",
   "petropavlovsk-kamchatsky": "Asia/Kamchatka",
   "yelizovo": "Asia/Kamchatka",
   "vilyuchinsk": "Asia/Kamchatka",
   "anadyr": "Asia/Kamchatka",
+  "majuro": "Pacific/Majuro",
+  "kwajalein": "Pacific/Majuro",
+  "yaren": "Pacific/Nauru",
   "funafuti": "Pacific/Funafuti",
   "wake": "Pacific/Wake",
   "mata-utu": "Pacific/Wallis",
-  "apia": "Pacific/Apia",
   "auckland": "Pacific/Auckland",
   "christchurch": "Pacific/Auckland",
   "wellington": "Pacific/Auckland",
   "manukau city": "Pacific/Auckland",
   "mcmurdo": "Antarctica/McMurdo",
   "kanton": "Pacific/Kanton",
+  "apia": "Pacific/Apia",
   "fakaofo": "Pacific/Fakaofo",
   "nuku\u2018alofa": "Pacific/Tongatapu",
   "chatham": "Pacific/Chatham",
@@ -1891,605 +1898,606 @@ var regions = {
 
 // src/generated/icsZones.ts
 var icsZones = {
-  "Africa/Abidjan": "BEGIN:VTIMEZONE\r\nTZID:Africa/Abidjan\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Accra": "BEGIN:VTIMEZONE\r\nTZID:Africa/Accra\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Addis_Ababa": "BEGIN:VTIMEZONE\r\nTZID:Africa/Addis_Ababa\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Algiers": "BEGIN:VTIMEZONE\r\nTZID:Africa/Algiers\r\nX-LIC-LOCATION:Africa/Algiers\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Algiers\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Asmara": "BEGIN:VTIMEZONE\r\nTZID:Africa/Asmara\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Asmera": "BEGIN:VTIMEZONE\r\nTZID:Africa/Asmera\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Bamako": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bamako\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Bangui": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bangui\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Banjul": "BEGIN:VTIMEZONE\r\nTZID:Africa/Banjul\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Bissau": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bissau\r\nX-LIC-LOCATION:Africa/Bissau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Bissau\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Blantyre": "BEGIN:VTIMEZONE\r\nTZID:Africa/Blantyre\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Brazzaville": "BEGIN:VTIMEZONE\r\nTZID:Africa/Brazzaville\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Bujumbura": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bujumbura\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Cairo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Cairo\r\nX-LIC-LOCATION:Africa/Cairo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Cairo\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700424T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701030T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1FR\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Casablanca": "BEGIN:VTIMEZONE\r\nTZID:Africa/Casablanca\r\nX-LIC-LOCATION:Africa/Casablanca\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Casablanca\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Ceuta": "BEGIN:VTIMEZONE\r\nTZID:Africa/Ceuta\r\nX-LIC-LOCATION:Africa/Ceuta\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Ceuta\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Conakry": "BEGIN:VTIMEZONE\r\nTZID:Africa/Conakry\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Dakar": "BEGIN:VTIMEZONE\r\nTZID:Africa/Dakar\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Dar_es_Salaam": "BEGIN:VTIMEZONE\r\nTZID:Africa/Dar_es_Salaam\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Djibouti": "BEGIN:VTIMEZONE\r\nTZID:Africa/Djibouti\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Douala": "BEGIN:VTIMEZONE\r\nTZID:Africa/Douala\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/El_Aaiun": "BEGIN:VTIMEZONE\r\nTZID:Africa/El_Aaiun\r\nX-LIC-LOCATION:Africa/El_Aaiun\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/El_Aaiun\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Freetown": "BEGIN:VTIMEZONE\r\nTZID:Africa/Freetown\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Gaborone": "BEGIN:VTIMEZONE\r\nTZID:Africa/Gaborone\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Harare": "BEGIN:VTIMEZONE\r\nTZID:Africa/Harare\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Johannesburg": "BEGIN:VTIMEZONE\r\nTZID:Africa/Johannesburg\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nBEGIN:STANDARD\r\nTZNAME:SAST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Juba": "BEGIN:VTIMEZONE\r\nTZID:Africa/Juba\r\nX-LIC-LOCATION:Africa/Juba\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Juba\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Kampala": "BEGIN:VTIMEZONE\r\nTZID:Africa/Kampala\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Khartoum": "BEGIN:VTIMEZONE\r\nTZID:Africa/Khartoum\r\nX-LIC-LOCATION:Africa/Khartoum\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Khartoum\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Kigali": "BEGIN:VTIMEZONE\r\nTZID:Africa/Kigali\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Kinshasa": "BEGIN:VTIMEZONE\r\nTZID:Africa/Kinshasa\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Lagos": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lagos\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Libreville": "BEGIN:VTIMEZONE\r\nTZID:Africa/Libreville\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Lome": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lome\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Luanda": "BEGIN:VTIMEZONE\r\nTZID:Africa/Luanda\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Lubumbashi": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lubumbashi\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Lusaka": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lusaka\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Malabo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Malabo\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Maputo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Maputo\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Maseru": "BEGIN:VTIMEZONE\r\nTZID:Africa/Maseru\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nBEGIN:STANDARD\r\nTZNAME:SAST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Mbabane": "BEGIN:VTIMEZONE\r\nTZID:Africa/Mbabane\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nBEGIN:STANDARD\r\nTZNAME:SAST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Mogadishu": "BEGIN:VTIMEZONE\r\nTZID:Africa/Mogadishu\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Monrovia": "BEGIN:VTIMEZONE\r\nTZID:Africa/Monrovia\r\nX-LIC-LOCATION:Africa/Monrovia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Monrovia\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Nairobi": "BEGIN:VTIMEZONE\r\nTZID:Africa/Nairobi\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Ndjamena": "BEGIN:VTIMEZONE\r\nTZID:Africa/Ndjamena\r\nX-LIC-LOCATION:Africa/Ndjamena\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Ndjamena\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Niamey": "BEGIN:VTIMEZONE\r\nTZID:Africa/Niamey\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Nouakchott": "BEGIN:VTIMEZONE\r\nTZID:Africa/Nouakchott\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Ouagadougou": "BEGIN:VTIMEZONE\r\nTZID:Africa/Ouagadougou\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Porto-Novo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Porto-Novo\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Sao_Tome": "BEGIN:VTIMEZONE\r\nTZID:Africa/Sao_Tome\r\nX-LIC-LOCATION:Africa/Sao_Tome\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Sao_Tome\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Timbuktu": "BEGIN:VTIMEZONE\r\nTZID:Africa/Timbuktu\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Tripoli": "BEGIN:VTIMEZONE\r\nTZID:Africa/Tripoli\r\nX-LIC-LOCATION:Africa/Tripoli\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Tripoli\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Tunis": "BEGIN:VTIMEZONE\r\nTZID:Africa/Tunis\r\nX-LIC-LOCATION:Africa/Tunis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Tunis\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Africa/Windhoek": "BEGIN:VTIMEZONE\r\nTZID:Africa/Windhoek\r\nX-LIC-LOCATION:Africa/Windhoek\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Windhoek\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Adak": "BEGIN:VTIMEZONE\r\nTZID:America/Adak\r\nX-LIC-LOCATION:America/Adak\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Adak\r\nBEGIN:DAYLIGHT\r\nTZNAME:HDT\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-0900\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-1000\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Anchorage": "BEGIN:VTIMEZONE\r\nTZID:America/Anchorage\r\nX-LIC-LOCATION:America/Anchorage\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Anchorage\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Anguilla": "BEGIN:VTIMEZONE\r\nTZID:America/Anguilla\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Antigua": "BEGIN:VTIMEZONE\r\nTZID:America/Antigua\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Araguaina": "BEGIN:VTIMEZONE\r\nTZID:America/Araguaina\r\nX-LIC-LOCATION:America/Araguaina\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Araguaina\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Buenos_Aires": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Buenos_Aires\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Catamarca": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Catamarca\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/ComodRivadavia": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/ComodRivadavia\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Cordoba": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Cordoba\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Jujuy": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Jujuy\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/La_Rioja": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/La_Rioja\r\nX-LIC-LOCATION:America/Argentina/La_Rioja\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/La_Rioja\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Mendoza": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Mendoza\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Rio_Gallegos": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Rio_Gallegos\r\nX-LIC-LOCATION:America/Argentina/Rio_Gallegos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Rio_Gallegos\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Salta": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Salta\r\nX-LIC-LOCATION:America/Argentina/Salta\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Salta\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/San_Juan": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/San_Juan\r\nX-LIC-LOCATION:America/Argentina/San_Juan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/San_Juan\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/San_Luis": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/San_Luis\r\nX-LIC-LOCATION:America/Argentina/San_Luis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/San_Luis\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Tucuman": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Tucuman\r\nX-LIC-LOCATION:America/Argentina/Tucuman\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Tucuman\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Argentina/Ushuaia": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Ushuaia\r\nX-LIC-LOCATION:America/Argentina/Ushuaia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Ushuaia\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Aruba": "BEGIN:VTIMEZONE\r\nTZID:America/Aruba\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Asuncion": "BEGIN:VTIMEZONE\r\nTZID:America/Asuncion\r\nX-LIC-LOCATION:America/Asuncion\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Asuncion\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19701004T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19700322T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=4SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Atikokan": "BEGIN:VTIMEZONE\r\nTZID:America/Atikokan\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Atka": "BEGIN:VTIMEZONE\r\nTZID:America/Atka\r\nX-LIC-LOCATION:America/Adak\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Adak\r\nBEGIN:DAYLIGHT\r\nTZNAME:HDT\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-0900\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-1000\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Bahia": "BEGIN:VTIMEZONE\r\nTZID:America/Bahia\r\nX-LIC-LOCATION:America/Bahia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Bahia\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Bahia_Banderas": "BEGIN:VTIMEZONE\r\nTZID:America/Bahia_Banderas\r\nX-LIC-LOCATION:America/Bahia_Banderas\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Bahia_Banderas\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Barbados": "BEGIN:VTIMEZONE\r\nTZID:America/Barbados\r\nX-LIC-LOCATION:America/Barbados\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Barbados\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Belem": "BEGIN:VTIMEZONE\r\nTZID:America/Belem\r\nX-LIC-LOCATION:America/Belem\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Belem\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Belize": "BEGIN:VTIMEZONE\r\nTZID:America/Belize\r\nX-LIC-LOCATION:America/Belize\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Belize\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Blanc-Sablon": "BEGIN:VTIMEZONE\r\nTZID:America/Blanc-Sablon\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Boa_Vista": "BEGIN:VTIMEZONE\r\nTZID:America/Boa_Vista\r\nX-LIC-LOCATION:America/Boa_Vista\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Boa_Vista\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Bogota": "BEGIN:VTIMEZONE\r\nTZID:America/Bogota\r\nX-LIC-LOCATION:America/Bogota\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Bogota\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Boise": "BEGIN:VTIMEZONE\r\nTZID:America/Boise\r\nX-LIC-LOCATION:America/Boise\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Boise\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Buenos_Aires": "BEGIN:VTIMEZONE\r\nTZID:America/Buenos_Aires\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Cambridge_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Cambridge_Bay\r\nX-LIC-LOCATION:America/Cambridge_Bay\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Cambridge_Bay\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Campo_Grande": "BEGIN:VTIMEZONE\r\nTZID:America/Campo_Grande\r\nX-LIC-LOCATION:America/Campo_Grande\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Campo_Grande\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Cancun": "BEGIN:VTIMEZONE\r\nTZID:America/Cancun\r\nX-LIC-LOCATION:America/Cancun\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Cancun\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Caracas": "BEGIN:VTIMEZONE\r\nTZID:America/Caracas\r\nX-LIC-LOCATION:America/Caracas\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Caracas\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Catamarca": "BEGIN:VTIMEZONE\r\nTZID:America/Catamarca\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Cayenne": "BEGIN:VTIMEZONE\r\nTZID:America/Cayenne\r\nX-LIC-LOCATION:America/Cayenne\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Cayenne\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Cayman": "BEGIN:VTIMEZONE\r\nTZID:America/Cayman\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Chicago": "BEGIN:VTIMEZONE\r\nTZID:America/Chicago\r\nX-LIC-LOCATION:America/Chicago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Chihuahua": "BEGIN:VTIMEZONE\r\nTZID:America/Chihuahua\r\nX-LIC-LOCATION:America/Chihuahua\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Chihuahua\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Ciudad_Juarez": "BEGIN:VTIMEZONE\r\nTZID:America/Ciudad_Juarez\r\nX-LIC-LOCATION:America/Ciudad_Juarez\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Ciudad_Juarez\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Coral_Harbour": "BEGIN:VTIMEZONE\r\nTZID:America/Coral_Harbour\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Cordoba": "BEGIN:VTIMEZONE\r\nTZID:America/Cordoba\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Costa_Rica": "BEGIN:VTIMEZONE\r\nTZID:America/Costa_Rica\r\nX-LIC-LOCATION:America/Costa_Rica\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Costa_Rica\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Creston": "BEGIN:VTIMEZONE\r\nTZID:America/Creston\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Cuiaba": "BEGIN:VTIMEZONE\r\nTZID:America/Cuiaba\r\nX-LIC-LOCATION:America/Cuiaba\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Cuiaba\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Curacao": "BEGIN:VTIMEZONE\r\nTZID:America/Curacao\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Danmarkshavn": "BEGIN:VTIMEZONE\r\nTZID:America/Danmarkshavn\r\nX-LIC-LOCATION:America/Danmarkshavn\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Danmarkshavn\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Dawson": "BEGIN:VTIMEZONE\r\nTZID:America/Dawson\r\nX-LIC-LOCATION:America/Dawson\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Dawson\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Dawson_Creek": "BEGIN:VTIMEZONE\r\nTZID:America/Dawson_Creek\r\nX-LIC-LOCATION:America/Dawson_Creek\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Dawson_Creek\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Denver": "BEGIN:VTIMEZONE\r\nTZID:America/Denver\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Detroit": "BEGIN:VTIMEZONE\r\nTZID:America/Detroit\r\nX-LIC-LOCATION:America/Detroit\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Detroit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Dominica": "BEGIN:VTIMEZONE\r\nTZID:America/Dominica\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Edmonton": "BEGIN:VTIMEZONE\r\nTZID:America/Edmonton\r\nX-LIC-LOCATION:America/Edmonton\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Edmonton\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Eirunepe": "BEGIN:VTIMEZONE\r\nTZID:America/Eirunepe\r\nX-LIC-LOCATION:America/Eirunepe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Eirunepe\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/El_Salvador": "BEGIN:VTIMEZONE\r\nTZID:America/El_Salvador\r\nX-LIC-LOCATION:America/El_Salvador\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/El_Salvador\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Ensenada": "BEGIN:VTIMEZONE\r\nTZID:America/Ensenada\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Fort_Nelson": "BEGIN:VTIMEZONE\r\nTZID:America/Fort_Nelson\r\nX-LIC-LOCATION:America/Fort_Nelson\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Fort_Nelson\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Fort_Wayne": "BEGIN:VTIMEZONE\r\nTZID:America/Fort_Wayne\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Fortaleza": "BEGIN:VTIMEZONE\r\nTZID:America/Fortaleza\r\nX-LIC-LOCATION:America/Fortaleza\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Fortaleza\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Glace_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Glace_Bay\r\nX-LIC-LOCATION:America/Glace_Bay\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Glace_Bay\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Godthab": "BEGIN:VTIMEZONE\r\nTZID:America/Godthab\r\nX-LIC-LOCATION:America/Nuuk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Nuuk\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0100\r\nDTSTART:19700328T230000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Goose_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Goose_Bay\r\nX-LIC-LOCATION:America/Goose_Bay\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Goose_Bay\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Grand_Turk": "BEGIN:VTIMEZONE\r\nTZID:America/Grand_Turk\r\nX-LIC-LOCATION:America/Grand_Turk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Grand_Turk\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Grenada": "BEGIN:VTIMEZONE\r\nTZID:America/Grenada\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Guadeloupe": "BEGIN:VTIMEZONE\r\nTZID:America/Guadeloupe\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Guatemala": "BEGIN:VTIMEZONE\r\nTZID:America/Guatemala\r\nX-LIC-LOCATION:America/Guatemala\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Guatemala\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Guayaquil": "BEGIN:VTIMEZONE\r\nTZID:America/Guayaquil\r\nX-LIC-LOCATION:America/Guayaquil\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Guayaquil\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Guyana": "BEGIN:VTIMEZONE\r\nTZID:America/Guyana\r\nX-LIC-LOCATION:America/Guyana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Guyana\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Halifax": "BEGIN:VTIMEZONE\r\nTZID:America/Halifax\r\nX-LIC-LOCATION:America/Halifax\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Halifax\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Havana": "BEGIN:VTIMEZONE\r\nTZID:America/Havana\r\nX-LIC-LOCATION:America/Havana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Havana\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Hermosillo": "BEGIN:VTIMEZONE\r\nTZID:America/Hermosillo\r\nX-LIC-LOCATION:America/Hermosillo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Hermosillo\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Indianapolis": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Indianapolis\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Knox": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Knox\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Marengo": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Marengo\r\nX-LIC-LOCATION:America/Indiana/Marengo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Marengo\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Petersburg": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Petersburg\r\nX-LIC-LOCATION:America/Indiana/Petersburg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Petersburg\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Tell_City": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Tell_City\r\nX-LIC-LOCATION:America/Indiana/Tell_City\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Tell_City\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Vevay": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Vevay\r\nX-LIC-LOCATION:America/Indiana/Vevay\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Vevay\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Vincennes": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Vincennes\r\nX-LIC-LOCATION:America/Indiana/Vincennes\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Vincennes\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Indiana/Winamac": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Winamac\r\nX-LIC-LOCATION:America/Indiana/Winamac\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Winamac\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Indianapolis": "BEGIN:VTIMEZONE\r\nTZID:America/Indianapolis\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Inuvik": "BEGIN:VTIMEZONE\r\nTZID:America/Inuvik\r\nX-LIC-LOCATION:America/Inuvik\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Inuvik\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Iqaluit": "BEGIN:VTIMEZONE\r\nTZID:America/Iqaluit\r\nX-LIC-LOCATION:America/Iqaluit\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Iqaluit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Jamaica": "BEGIN:VTIMEZONE\r\nTZID:America/Jamaica\r\nX-LIC-LOCATION:America/Jamaica\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Jamaica\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Jujuy": "BEGIN:VTIMEZONE\r\nTZID:America/Jujuy\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Juneau": "BEGIN:VTIMEZONE\r\nTZID:America/Juneau\r\nX-LIC-LOCATION:America/Juneau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Juneau\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Kentucky/Louisville": "BEGIN:VTIMEZONE\r\nTZID:America/Kentucky/Louisville\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Kentucky/Monticello": "BEGIN:VTIMEZONE\r\nTZID:America/Kentucky/Monticello\r\nX-LIC-LOCATION:America/Kentucky/Monticello\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Kentucky/Monticello\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Knox_IN": "BEGIN:VTIMEZONE\r\nTZID:America/Knox_IN\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Kralendijk": "BEGIN:VTIMEZONE\r\nTZID:America/Kralendijk\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/La_Paz": "BEGIN:VTIMEZONE\r\nTZID:America/La_Paz\r\nX-LIC-LOCATION:America/La_Paz\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/La_Paz\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Lima": "BEGIN:VTIMEZONE\r\nTZID:America/Lima\r\nX-LIC-LOCATION:America/Lima\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Lima\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Los_Angeles": "BEGIN:VTIMEZONE\r\nTZID:America/Los_Angeles\r\nX-LIC-LOCATION:America/Los_Angeles\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Los_Angeles\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Louisville": "BEGIN:VTIMEZONE\r\nTZID:America/Louisville\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Lower_Princes": "BEGIN:VTIMEZONE\r\nTZID:America/Lower_Princes\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Maceio": "BEGIN:VTIMEZONE\r\nTZID:America/Maceio\r\nX-LIC-LOCATION:America/Maceio\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Maceio\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Managua": "BEGIN:VTIMEZONE\r\nTZID:America/Managua\r\nX-LIC-LOCATION:America/Managua\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Managua\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Manaus": "BEGIN:VTIMEZONE\r\nTZID:America/Manaus\r\nX-LIC-LOCATION:America/Manaus\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Manaus\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Marigot": "BEGIN:VTIMEZONE\r\nTZID:America/Marigot\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Martinique": "BEGIN:VTIMEZONE\r\nTZID:America/Martinique\r\nX-LIC-LOCATION:America/Martinique\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Martinique\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Matamoros": "BEGIN:VTIMEZONE\r\nTZID:America/Matamoros\r\nX-LIC-LOCATION:America/Matamoros\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Matamoros\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Mazatlan": "BEGIN:VTIMEZONE\r\nTZID:America/Mazatlan\r\nX-LIC-LOCATION:America/Mazatlan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Mazatlan\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Mendoza": "BEGIN:VTIMEZONE\r\nTZID:America/Mendoza\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Menominee": "BEGIN:VTIMEZONE\r\nTZID:America/Menominee\r\nX-LIC-LOCATION:America/Menominee\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Menominee\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Merida": "BEGIN:VTIMEZONE\r\nTZID:America/Merida\r\nX-LIC-LOCATION:America/Merida\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Merida\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Metlakatla": "BEGIN:VTIMEZONE\r\nTZID:America/Metlakatla\r\nX-LIC-LOCATION:America/Metlakatla\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Metlakatla\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Mexico_City": "BEGIN:VTIMEZONE\r\nTZID:America/Mexico_City\r\nX-LIC-LOCATION:America/Mexico_City\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Mexico_City\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Miquelon": "BEGIN:VTIMEZONE\r\nTZID:America/Miquelon\r\nX-LIC-LOCATION:America/Miquelon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Miquelon\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0200\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0300\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Moncton": "BEGIN:VTIMEZONE\r\nTZID:America/Moncton\r\nX-LIC-LOCATION:America/Moncton\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Moncton\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Monterrey": "BEGIN:VTIMEZONE\r\nTZID:America/Monterrey\r\nX-LIC-LOCATION:America/Monterrey\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Monterrey\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Montevideo": "BEGIN:VTIMEZONE\r\nTZID:America/Montevideo\r\nX-LIC-LOCATION:America/Montevideo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Montevideo\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Montreal": "BEGIN:VTIMEZONE\r\nTZID:America/Montreal\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Montserrat": "BEGIN:VTIMEZONE\r\nTZID:America/Montserrat\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Nassau": "BEGIN:VTIMEZONE\r\nTZID:America/Nassau\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/New_York": "BEGIN:VTIMEZONE\r\nTZID:America/New_York\r\nX-LIC-LOCATION:America/New_York\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/New_York\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Nipigon": "BEGIN:VTIMEZONE\r\nTZID:America/Nipigon\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Nome": "BEGIN:VTIMEZONE\r\nTZID:America/Nome\r\nX-LIC-LOCATION:America/Nome\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Nome\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Noronha": "BEGIN:VTIMEZONE\r\nTZID:America/Noronha\r\nX-LIC-LOCATION:America/Noronha\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Noronha\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/North_Dakota/Beulah": "BEGIN:VTIMEZONE\r\nTZID:America/North_Dakota/Beulah\r\nX-LIC-LOCATION:America/North_Dakota/Beulah\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/North_Dakota/Beulah\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/North_Dakota/Center": "BEGIN:VTIMEZONE\r\nTZID:America/North_Dakota/Center\r\nX-LIC-LOCATION:America/North_Dakota/Center\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/North_Dakota/Center\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/North_Dakota/New_Salem": "BEGIN:VTIMEZONE\r\nTZID:America/North_Dakota/New_Salem\r\nX-LIC-LOCATION:America/North_Dakota/New_Salem\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/North_Dakota/New_Salem\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Nuuk": "BEGIN:VTIMEZONE\r\nTZID:America/Nuuk\r\nX-LIC-LOCATION:America/Nuuk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Nuuk\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0100\r\nDTSTART:19700328T230000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Ojinaga": "BEGIN:VTIMEZONE\r\nTZID:America/Ojinaga\r\nX-LIC-LOCATION:America/Ojinaga\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Ojinaga\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Panama": "BEGIN:VTIMEZONE\r\nTZID:America/Panama\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Pangnirtung": "BEGIN:VTIMEZONE\r\nTZID:America/Pangnirtung\r\nX-LIC-LOCATION:America/Iqaluit\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Iqaluit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Paramaribo": "BEGIN:VTIMEZONE\r\nTZID:America/Paramaribo\r\nX-LIC-LOCATION:America/Paramaribo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Paramaribo\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Phoenix": "BEGIN:VTIMEZONE\r\nTZID:America/Phoenix\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Port-au-Prince": "BEGIN:VTIMEZONE\r\nTZID:America/Port-au-Prince\r\nX-LIC-LOCATION:America/Port-au-Prince\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Port-au-Prince\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Port_of_Spain": "BEGIN:VTIMEZONE\r\nTZID:America/Port_of_Spain\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Porto_Acre": "BEGIN:VTIMEZONE\r\nTZID:America/Porto_Acre\r\nX-LIC-LOCATION:America/Rio_Branco\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Rio_Branco\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Porto_Velho": "BEGIN:VTIMEZONE\r\nTZID:America/Porto_Velho\r\nX-LIC-LOCATION:America/Porto_Velho\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Porto_Velho\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Puerto_Rico": "BEGIN:VTIMEZONE\r\nTZID:America/Puerto_Rico\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Punta_Arenas": "BEGIN:VTIMEZONE\r\nTZID:America/Punta_Arenas\r\nX-LIC-LOCATION:America/Punta_Arenas\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Punta_Arenas\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Rainy_River": "BEGIN:VTIMEZONE\r\nTZID:America/Rainy_River\r\nX-LIC-LOCATION:America/Winnipeg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Winnipeg\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Rankin_Inlet": "BEGIN:VTIMEZONE\r\nTZID:America/Rankin_Inlet\r\nX-LIC-LOCATION:America/Rankin_Inlet\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Rankin_Inlet\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Recife": "BEGIN:VTIMEZONE\r\nTZID:America/Recife\r\nX-LIC-LOCATION:America/Recife\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Recife\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Regina": "BEGIN:VTIMEZONE\r\nTZID:America/Regina\r\nX-LIC-LOCATION:America/Regina\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Regina\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Resolute": "BEGIN:VTIMEZONE\r\nTZID:America/Resolute\r\nX-LIC-LOCATION:America/Resolute\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Resolute\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Rio_Branco": "BEGIN:VTIMEZONE\r\nTZID:America/Rio_Branco\r\nX-LIC-LOCATION:America/Rio_Branco\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Rio_Branco\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Rosario": "BEGIN:VTIMEZONE\r\nTZID:America/Rosario\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Santa_Isabel": "BEGIN:VTIMEZONE\r\nTZID:America/Santa_Isabel\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Santarem": "BEGIN:VTIMEZONE\r\nTZID:America/Santarem\r\nX-LIC-LOCATION:America/Santarem\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Santarem\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Santiago": "BEGIN:VTIMEZONE\r\nTZID:America/Santiago\r\nX-LIC-LOCATION:America/Santiago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Santiago\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19700405T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700906T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Santo_Domingo": "BEGIN:VTIMEZONE\r\nTZID:America/Santo_Domingo\r\nX-LIC-LOCATION:America/Santo_Domingo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Santo_Domingo\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Sao_Paulo": "BEGIN:VTIMEZONE\r\nTZID:America/Sao_Paulo\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Scoresbysund": "BEGIN:VTIMEZONE\r\nTZID:America/Scoresbysund\r\nX-LIC-LOCATION:America/Scoresbysund\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Scoresbysund\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0100\r\nDTSTART:19700328T230000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/Shiprock": "BEGIN:VTIMEZONE\r\nTZID:America/Shiprock\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Sitka": "BEGIN:VTIMEZONE\r\nTZID:America/Sitka\r\nX-LIC-LOCATION:America/Sitka\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Sitka\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/St_Barthelemy": "BEGIN:VTIMEZONE\r\nTZID:America/St_Barthelemy\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/St_Johns": "BEGIN:VTIMEZONE\r\nTZID:America/St_Johns\r\nX-LIC-LOCATION:America/St_Johns\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/St_Johns\r\nBEGIN:STANDARD\r\nTZNAME:NST\r\nTZOFFSETFROM:-0230\r\nTZOFFSETTO:-0330\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:NDT\r\nTZOFFSETFROM:-0330\r\nTZOFFSETTO:-0230\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "America/St_Kitts": "BEGIN:VTIMEZONE\r\nTZID:America/St_Kitts\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/St_Lucia": "BEGIN:VTIMEZONE\r\nTZID:America/St_Lucia\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/St_Thomas": "BEGIN:VTIMEZONE\r\nTZID:America/St_Thomas\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/St_Vincent": "BEGIN:VTIMEZONE\r\nTZID:America/St_Vincent\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Swift_Current": "BEGIN:VTIMEZONE\r\nTZID:America/Swift_Current\r\nX-LIC-LOCATION:America/Swift_Current\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Swift_Current\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Tegucigalpa": "BEGIN:VTIMEZONE\r\nTZID:America/Tegucigalpa\r\nX-LIC-LOCATION:America/Tegucigalpa\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Tegucigalpa\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Thule": "BEGIN:VTIMEZONE\r\nTZID:America/Thule\r\nX-LIC-LOCATION:America/Thule\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Thule\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Thunder_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Thunder_Bay\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Tijuana": "BEGIN:VTIMEZONE\r\nTZID:America/Tijuana\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Toronto": "BEGIN:VTIMEZONE\r\nTZID:America/Toronto\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Tortola": "BEGIN:VTIMEZONE\r\nTZID:America/Tortola\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Vancouver": "BEGIN:VTIMEZONE\r\nTZID:America/Vancouver\r\nX-LIC-LOCATION:America/Vancouver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Vancouver\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Virgin": "BEGIN:VTIMEZONE\r\nTZID:America/Virgin\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Whitehorse": "BEGIN:VTIMEZONE\r\nTZID:America/Whitehorse\r\nX-LIC-LOCATION:America/Whitehorse\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Whitehorse\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Winnipeg": "BEGIN:VTIMEZONE\r\nTZID:America/Winnipeg\r\nX-LIC-LOCATION:America/Winnipeg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Winnipeg\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Yakutat": "BEGIN:VTIMEZONE\r\nTZID:America/Yakutat\r\nX-LIC-LOCATION:America/Yakutat\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Yakutat\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "America/Yellowknife": "BEGIN:VTIMEZONE\r\nTZID:America/Yellowknife\r\nX-LIC-LOCATION:America/Edmonton\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Edmonton\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Casey": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Casey\r\nX-LIC-LOCATION:Antarctica/Casey\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Casey\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Davis": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Davis\r\nX-LIC-LOCATION:Antarctica/Davis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Davis\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/DumontDUrville": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/DumontDUrville\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Macquarie": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Macquarie\r\nX-LIC-LOCATION:Antarctica/Macquarie\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Macquarie\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Antarctica/Mawson": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Mawson\r\nX-LIC-LOCATION:Antarctica/Mawson\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Mawson\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/McMurdo": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/McMurdo\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Palmer": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Palmer\r\nX-LIC-LOCATION:Antarctica/Palmer\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Palmer\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Rothera": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Rothera\r\nX-LIC-LOCATION:Antarctica/Rothera\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Rothera\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/South_Pole": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/South_Pole\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Syowa": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Syowa\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Troll": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Troll\r\nX-LIC-LOCATION:Antarctica/Troll\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Troll\r\nBEGIN:DAYLIGHT\r\nTZNAME:+02\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:+00\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Antarctica/Vostok": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Vostok\r\nX-LIC-LOCATION:Antarctica/Vostok\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Antarctica/Vostok\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Arctic/Longyearbyen": "BEGIN:VTIMEZONE\r\nTZID:Arctic/Longyearbyen\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Aden": "BEGIN:VTIMEZONE\r\nTZID:Asia/Aden\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Almaty": "BEGIN:VTIMEZONE\r\nTZID:Asia/Almaty\r\nX-LIC-LOCATION:Asia/Almaty\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Almaty\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Amman": "BEGIN:VTIMEZONE\r\nTZID:Asia/Amman\r\nX-LIC-LOCATION:Asia/Amman\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Amman\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Anadyr": "BEGIN:VTIMEZONE\r\nTZID:Asia/Anadyr\r\nX-LIC-LOCATION:Asia/Anadyr\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Anadyr\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Aqtau": "BEGIN:VTIMEZONE\r\nTZID:Asia/Aqtau\r\nX-LIC-LOCATION:Asia/Aqtau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Aqtau\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Aqtobe": "BEGIN:VTIMEZONE\r\nTZID:Asia/Aqtobe\r\nX-LIC-LOCATION:Asia/Aqtobe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Aqtobe\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ashgabat": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ashgabat\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ashkhabad": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ashkhabad\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Atyrau": "BEGIN:VTIMEZONE\r\nTZID:Asia/Atyrau\r\nX-LIC-LOCATION:Asia/Atyrau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Atyrau\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Baghdad": "BEGIN:VTIMEZONE\r\nTZID:Asia/Baghdad\r\nX-LIC-LOCATION:Asia/Baghdad\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Baghdad\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Bahrain": "BEGIN:VTIMEZONE\r\nTZID:Asia/Bahrain\r\nX-LIC-LOCATION:Asia/Qatar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Qatar\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Baku": "BEGIN:VTIMEZONE\r\nTZID:Asia/Baku\r\nX-LIC-LOCATION:Asia/Baku\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Baku\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Bangkok": "BEGIN:VTIMEZONE\r\nTZID:Asia/Bangkok\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Barnaul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Barnaul\r\nX-LIC-LOCATION:Asia/Barnaul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Barnaul\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Beirut": "BEGIN:VTIMEZONE\r\nTZID:Asia/Beirut\r\nX-LIC-LOCATION:Asia/Beirut\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Beirut\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Bishkek": "BEGIN:VTIMEZONE\r\nTZID:Asia/Bishkek\r\nX-LIC-LOCATION:Asia/Bishkek\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Bishkek\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Brunei": "BEGIN:VTIMEZONE\r\nTZID:Asia/Brunei\r\nX-LIC-LOCATION:Asia/Kuching\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kuching\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Calcutta": "BEGIN:VTIMEZONE\r\nTZID:Asia/Calcutta\r\nX-LIC-LOCATION:Asia/Kolkata\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kolkata\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0530\r\nTZOFFSETTO:+0530\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Chita": "BEGIN:VTIMEZONE\r\nTZID:Asia/Chita\r\nX-LIC-LOCATION:Asia/Chita\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Chita\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Choibalsan": "BEGIN:VTIMEZONE\r\nTZID:Asia/Choibalsan\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Chongqing": "BEGIN:VTIMEZONE\r\nTZID:Asia/Chongqing\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Chungking": "BEGIN:VTIMEZONE\r\nTZID:Asia/Chungking\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Colombo": "BEGIN:VTIMEZONE\r\nTZID:Asia/Colombo\r\nX-LIC-LOCATION:Asia/Colombo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Colombo\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0530\r\nTZOFFSETTO:+0530\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Dacca": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dacca\r\nX-LIC-LOCATION:Asia/Dhaka\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dhaka\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Damascus": "BEGIN:VTIMEZONE\r\nTZID:Asia/Damascus\r\nX-LIC-LOCATION:Asia/Damascus\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Damascus\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Dhaka": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dhaka\r\nX-LIC-LOCATION:Asia/Dhaka\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dhaka\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Dili": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dili\r\nX-LIC-LOCATION:Asia/Dili\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dili\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Dubai": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dubai\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Dushanbe": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dushanbe\r\nX-LIC-LOCATION:Asia/Dushanbe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dushanbe\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Famagusta": "BEGIN:VTIMEZONE\r\nTZID:Asia/Famagusta\r\nX-LIC-LOCATION:Asia/Famagusta\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Famagusta\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Gaza": "BEGIN:VTIMEZONE\r\nTZID:Asia/Gaza\r\nX-LIC-LOCATION:Asia/Gaza\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Gaza\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700328T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701024T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SA\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Harbin": "BEGIN:VTIMEZONE\r\nTZID:Asia/Harbin\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Hebron": "BEGIN:VTIMEZONE\r\nTZID:Asia/Hebron\r\nX-LIC-LOCATION:Asia/Hebron\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Hebron\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700328T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701024T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SA\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ho_Chi_Minh": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ho_Chi_Minh\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Hong_Kong": "BEGIN:VTIMEZONE\r\nTZID:Asia/Hong_Kong\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nBEGIN:STANDARD\r\nTZNAME:HKT\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Hovd": "BEGIN:VTIMEZONE\r\nTZID:Asia/Hovd\r\nX-LIC-LOCATION:Asia/Hovd\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Hovd\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Irkutsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Irkutsk\r\nX-LIC-LOCATION:Asia/Irkutsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Irkutsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Istanbul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Istanbul\r\nX-LIC-LOCATION:Europe/Istanbul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Istanbul\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Jakarta": "BEGIN:VTIMEZONE\r\nTZID:Asia/Jakarta\r\nX-LIC-LOCATION:Asia/Jakarta\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Jakarta\r\nBEGIN:STANDARD\r\nTZNAME:WIB\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Jayapura": "BEGIN:VTIMEZONE\r\nTZID:Asia/Jayapura\r\nX-LIC-LOCATION:Asia/Jayapura\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Jayapura\r\nBEGIN:STANDARD\r\nTZNAME:WIT\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Jerusalem": "BEGIN:VTIMEZONE\r\nTZID:Asia/Jerusalem\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nBEGIN:DAYLIGHT\r\nTZNAME:IDT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700327T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kabul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kabul\r\nX-LIC-LOCATION:Asia/Kabul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kabul\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0430\r\nTZOFFSETTO:+0430\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kamchatka": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kamchatka\r\nX-LIC-LOCATION:Asia/Kamchatka\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kamchatka\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Karachi": "BEGIN:VTIMEZONE\r\nTZID:Asia/Karachi\r\nX-LIC-LOCATION:Asia/Karachi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Karachi\r\nBEGIN:STANDARD\r\nTZNAME:PKT\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kashgar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kashgar\r\nX-LIC-LOCATION:Asia/Urumqi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Urumqi\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kathmandu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kathmandu\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0545\r\nTZOFFSETTO:+0545\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Katmandu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Katmandu\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0545\r\nTZOFFSETTO:+0545\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Khandyga": "BEGIN:VTIMEZONE\r\nTZID:Asia/Khandyga\r\nX-LIC-LOCATION:Asia/Khandyga\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Khandyga\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kolkata": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kolkata\r\nX-LIC-LOCATION:Asia/Kolkata\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kolkata\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0530\r\nTZOFFSETTO:+0530\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Krasnoyarsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Krasnoyarsk\r\nX-LIC-LOCATION:Asia/Krasnoyarsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Krasnoyarsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kuala_Lumpur": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kuala_Lumpur\r\nX-LIC-LOCATION:Asia/Singapore\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Singapore\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kuching": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kuching\r\nX-LIC-LOCATION:Asia/Kuching\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Kuching\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Kuwait": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kuwait\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Macao": "BEGIN:VTIMEZONE\r\nTZID:Asia/Macao\r\nX-LIC-LOCATION:Asia/Macau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Macau\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Macau": "BEGIN:VTIMEZONE\r\nTZID:Asia/Macau\r\nX-LIC-LOCATION:Asia/Macau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Macau\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Magadan": "BEGIN:VTIMEZONE\r\nTZID:Asia/Magadan\r\nX-LIC-LOCATION:Asia/Magadan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Magadan\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Makassar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Makassar\r\nX-LIC-LOCATION:Asia/Makassar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Makassar\r\nBEGIN:STANDARD\r\nTZNAME:WITA\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Manila": "BEGIN:VTIMEZONE\r\nTZID:Asia/Manila\r\nX-LIC-LOCATION:Asia/Manila\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Manila\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Muscat": "BEGIN:VTIMEZONE\r\nTZID:Asia/Muscat\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Nicosia": "BEGIN:VTIMEZONE\r\nTZID:Asia/Nicosia\r\nX-LIC-LOCATION:Asia/Nicosia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Nicosia\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Asia/Novokuznetsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Novokuznetsk\r\nX-LIC-LOCATION:Asia/Novokuznetsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Novokuznetsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Novosibirsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Novosibirsk\r\nX-LIC-LOCATION:Asia/Novosibirsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Novosibirsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Omsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Omsk\r\nX-LIC-LOCATION:Asia/Omsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Omsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Oral": "BEGIN:VTIMEZONE\r\nTZID:Asia/Oral\r\nX-LIC-LOCATION:Asia/Oral\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Oral\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Phnom_Penh": "BEGIN:VTIMEZONE\r\nTZID:Asia/Phnom_Penh\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Pontianak": "BEGIN:VTIMEZONE\r\nTZID:Asia/Pontianak\r\nX-LIC-LOCATION:Asia/Pontianak\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Pontianak\r\nBEGIN:STANDARD\r\nTZNAME:WIB\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Pyongyang": "BEGIN:VTIMEZONE\r\nTZID:Asia/Pyongyang\r\nX-LIC-LOCATION:Asia/Pyongyang\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Pyongyang\r\nBEGIN:STANDARD\r\nTZNAME:KST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Qatar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Qatar\r\nX-LIC-LOCATION:Asia/Qatar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Qatar\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Qostanay": "BEGIN:VTIMEZONE\r\nTZID:Asia/Qostanay\r\nX-LIC-LOCATION:Asia/Qostanay\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Qostanay\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Qyzylorda": "BEGIN:VTIMEZONE\r\nTZID:Asia/Qyzylorda\r\nX-LIC-LOCATION:Asia/Qyzylorda\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Qyzylorda\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Rangoon": "BEGIN:VTIMEZONE\r\nTZID:Asia/Rangoon\r\nX-LIC-LOCATION:Asia/Yangon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Yangon\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0630\r\nTZOFFSETTO:+0630\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Riyadh": "BEGIN:VTIMEZONE\r\nTZID:Asia/Riyadh\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Saigon": "BEGIN:VTIMEZONE\r\nTZID:Asia/Saigon\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Sakhalin": "BEGIN:VTIMEZONE\r\nTZID:Asia/Sakhalin\r\nX-LIC-LOCATION:Asia/Sakhalin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Sakhalin\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Samarkand": "BEGIN:VTIMEZONE\r\nTZID:Asia/Samarkand\r\nX-LIC-LOCATION:Asia/Samarkand\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Samarkand\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Seoul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Seoul\r\nX-LIC-LOCATION:Asia/Seoul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Seoul\r\nBEGIN:STANDARD\r\nTZNAME:KST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Shanghai": "BEGIN:VTIMEZONE\r\nTZID:Asia/Shanghai\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Singapore": "BEGIN:VTIMEZONE\r\nTZID:Asia/Singapore\r\nX-LIC-LOCATION:Asia/Singapore\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Singapore\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Srednekolymsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Srednekolymsk\r\nX-LIC-LOCATION:Asia/Srednekolymsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Srednekolymsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Taipei": "BEGIN:VTIMEZONE\r\nTZID:Asia/Taipei\r\nX-LIC-LOCATION:Asia/Taipei\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Taipei\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Tashkent": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tashkent\r\nX-LIC-LOCATION:Asia/Tashkent\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tashkent\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Tbilisi": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tbilisi\r\nX-LIC-LOCATION:Asia/Tbilisi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tbilisi\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Tehran": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tehran\r\nX-LIC-LOCATION:Asia/Tehran\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tehran\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0330\r\nTZOFFSETTO:+0330\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Tel_Aviv": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tel_Aviv\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nBEGIN:DAYLIGHT\r\nTZNAME:IDT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700327T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Thimbu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Thimbu\r\nX-LIC-LOCATION:Asia/Thimphu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Thimphu\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Thimphu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Thimphu\r\nX-LIC-LOCATION:Asia/Thimphu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Thimphu\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Tokyo": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tokyo\r\nX-LIC-LOCATION:Asia/Tokyo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tokyo\r\nBEGIN:STANDARD\r\nTZNAME:JST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Tomsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tomsk\r\nX-LIC-LOCATION:Asia/Tomsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tomsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ujung_Pandang": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ujung_Pandang\r\nX-LIC-LOCATION:Asia/Makassar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Makassar\r\nBEGIN:STANDARD\r\nTZNAME:WITA\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ulaanbaatar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ulaanbaatar\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ulan_Bator": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ulan_Bator\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Urumqi": "BEGIN:VTIMEZONE\r\nTZID:Asia/Urumqi\r\nX-LIC-LOCATION:Asia/Urumqi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Urumqi\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Ust-Nera": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ust-Nera\r\nX-LIC-LOCATION:Asia/Ust-Nera\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Ust-Nera\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Vientiane": "BEGIN:VTIMEZONE\r\nTZID:Asia/Vientiane\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Vladivostok": "BEGIN:VTIMEZONE\r\nTZID:Asia/Vladivostok\r\nX-LIC-LOCATION:Asia/Vladivostok\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Vladivostok\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Yakutsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yakutsk\r\nX-LIC-LOCATION:Asia/Yakutsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Yakutsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Yangon": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yangon\r\nX-LIC-LOCATION:Asia/Yangon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Yangon\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0630\r\nTZOFFSETTO:+0630\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Yekaterinburg": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yekaterinburg\r\nX-LIC-LOCATION:Asia/Yekaterinburg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Yekaterinburg\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Asia/Yerevan": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yerevan\r\nX-LIC-LOCATION:Asia/Yerevan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Yerevan\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Azores": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Azores\r\nX-LIC-LOCATION:Atlantic/Azores\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Azores\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19700329T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:-0100\r\nDTSTART:19701025T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Bermuda": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Bermuda\r\nX-LIC-LOCATION:Atlantic/Bermuda\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Bermuda\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Canary": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Canary\r\nX-LIC-LOCATION:Atlantic/Canary\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Canary\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Cape_Verde": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Cape_Verde\r\nX-LIC-LOCATION:Atlantic/Cape_Verde\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Cape_Verde\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Faeroe": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Faeroe\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Faroe": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Faroe\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Jan_Mayen": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Jan_Mayen\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Madeira": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Madeira\r\nX-LIC-LOCATION:Atlantic/Madeira\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Madeira\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Reykjavik": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Reykjavik\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/South_Georgia": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/South_Georgia\r\nX-LIC-LOCATION:Atlantic/South_Georgia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/South_Georgia\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/St_Helena": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/St_Helena\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Atlantic/Stanley": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Stanley\r\nX-LIC-LOCATION:Atlantic/Stanley\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Atlantic/Stanley\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/ACT": "BEGIN:VTIMEZONE\r\nTZID:Australia/ACT\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Adelaide": "BEGIN:VTIMEZONE\r\nTZID:Australia/Adelaide\r\nX-LIC-LOCATION:Australia/Adelaide\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Adelaide\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Brisbane": "BEGIN:VTIMEZONE\r\nTZID:Australia/Brisbane\r\nX-LIC-LOCATION:Australia/Brisbane\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Brisbane\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Broken_Hill": "BEGIN:VTIMEZONE\r\nTZID:Australia/Broken_Hill\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Canberra": "BEGIN:VTIMEZONE\r\nTZID:Australia/Canberra\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Currie": "BEGIN:VTIMEZONE\r\nTZID:Australia/Currie\r\nX-LIC-LOCATION:Australia/Hobart\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Hobart\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Darwin": "BEGIN:VTIMEZONE\r\nTZID:Australia/Darwin\r\nX-LIC-LOCATION:Australia/Darwin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Darwin\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+0930\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Eucla": "BEGIN:VTIMEZONE\r\nTZID:Australia/Eucla\r\nX-LIC-LOCATION:Australia/Eucla\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Eucla\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0845\r\nTZOFFSETTO:+0845\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Hobart": "BEGIN:VTIMEZONE\r\nTZID:Australia/Hobart\r\nX-LIC-LOCATION:Australia/Hobart\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Hobart\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/LHI": "BEGIN:VTIMEZONE\r\nTZID:Australia/LHI\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1030\r\nDTSTART:19700405T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Lindeman": "BEGIN:VTIMEZONE\r\nTZID:Australia/Lindeman\r\nX-LIC-LOCATION:Australia/Lindeman\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Lindeman\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Lord_Howe": "BEGIN:VTIMEZONE\r\nTZID:Australia/Lord_Howe\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1030\r\nDTSTART:19700405T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Melbourne": "BEGIN:VTIMEZONE\r\nTZID:Australia/Melbourne\r\nX-LIC-LOCATION:Australia/Melbourne\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Melbourne\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/NSW": "BEGIN:VTIMEZONE\r\nTZID:Australia/NSW\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/North": "BEGIN:VTIMEZONE\r\nTZID:Australia/North\r\nX-LIC-LOCATION:Australia/Darwin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Darwin\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+0930\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Perth": "BEGIN:VTIMEZONE\r\nTZID:Australia/Perth\r\nX-LIC-LOCATION:Australia/Perth\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Perth\r\nBEGIN:STANDARD\r\nTZNAME:AWST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Queensland": "BEGIN:VTIMEZONE\r\nTZID:Australia/Queensland\r\nX-LIC-LOCATION:Australia/Brisbane\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Brisbane\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/South": "BEGIN:VTIMEZONE\r\nTZID:Australia/South\r\nX-LIC-LOCATION:Australia/Adelaide\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Adelaide\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Sydney": "BEGIN:VTIMEZONE\r\nTZID:Australia/Sydney\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/Tasmania": "BEGIN:VTIMEZONE\r\nTZID:Australia/Tasmania\r\nX-LIC-LOCATION:Australia/Hobart\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Hobart\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Victoria": "BEGIN:VTIMEZONE\r\nTZID:Australia/Victoria\r\nX-LIC-LOCATION:Australia/Melbourne\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Melbourne\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Australia/West": "BEGIN:VTIMEZONE\r\nTZID:Australia/West\r\nX-LIC-LOCATION:Australia/Perth\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Perth\r\nBEGIN:STANDARD\r\nTZNAME:AWST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Australia/Yancowinna": "BEGIN:VTIMEZONE\r\nTZID:Australia/Yancowinna\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Brazil/Acre": "BEGIN:VTIMEZONE\r\nTZID:Brazil/Acre\r\nX-LIC-LOCATION:America/Rio_Branco\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Rio_Branco\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Brazil/DeNoronha": "BEGIN:VTIMEZONE\r\nTZID:Brazil/DeNoronha\r\nX-LIC-LOCATION:America/Noronha\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Noronha\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Brazil/East": "BEGIN:VTIMEZONE\r\nTZID:Brazil/East\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Brazil/West": "BEGIN:VTIMEZONE\r\nTZID:Brazil/West\r\nX-LIC-LOCATION:America/Manaus\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Manaus\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "CET": "BEGIN:VTIMEZONE\r\nTZID:CET\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "CST6CDT": "BEGIN:VTIMEZONE\r\nTZID:CST6CDT\r\nX-LIC-LOCATION:America/Chicago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Atlantic": "BEGIN:VTIMEZONE\r\nTZID:Canada/Atlantic\r\nX-LIC-LOCATION:America/Halifax\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Halifax\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Central": "BEGIN:VTIMEZONE\r\nTZID:Canada/Central\r\nX-LIC-LOCATION:America/Winnipeg\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Winnipeg\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Eastern": "BEGIN:VTIMEZONE\r\nTZID:Canada/Eastern\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Mountain": "BEGIN:VTIMEZONE\r\nTZID:Canada/Mountain\r\nX-LIC-LOCATION:America/Edmonton\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Edmonton\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Newfoundland": "BEGIN:VTIMEZONE\r\nTZID:Canada/Newfoundland\r\nX-LIC-LOCATION:America/St_Johns\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/St_Johns\r\nBEGIN:STANDARD\r\nTZNAME:NST\r\nTZOFFSETFROM:-0230\r\nTZOFFSETTO:-0330\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:NDT\r\nTZOFFSETFROM:-0330\r\nTZOFFSETTO:-0230\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Canada/Pacific": "BEGIN:VTIMEZONE\r\nTZID:Canada/Pacific\r\nX-LIC-LOCATION:America/Vancouver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Vancouver\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Saskatchewan": "BEGIN:VTIMEZONE\r\nTZID:Canada/Saskatchewan\r\nX-LIC-LOCATION:America/Regina\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Regina\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Canada/Yukon": "BEGIN:VTIMEZONE\r\nTZID:Canada/Yukon\r\nX-LIC-LOCATION:America/Whitehorse\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Whitehorse\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Chile/Continental": "BEGIN:VTIMEZONE\r\nTZID:Chile/Continental\r\nX-LIC-LOCATION:America/Santiago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Santiago\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19700405T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700906T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Chile/EasterIsland": "BEGIN:VTIMEZONE\r\nTZID:Chile/EasterIsland\r\nX-LIC-LOCATION:Pacific/Easter\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Easter\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19700404T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700905T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Cuba": "BEGIN:VTIMEZONE\r\nTZID:Cuba\r\nX-LIC-LOCATION:America/Havana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Havana\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "EET": "BEGIN:VTIMEZONE\r\nTZID:EET\r\nX-LIC-LOCATION:Europe/Athens\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Athens\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "EST": "BEGIN:VTIMEZONE\r\nTZID:EST\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "EST5EDT": "BEGIN:VTIMEZONE\r\nTZID:EST5EDT\r\nX-LIC-LOCATION:America/New_York\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/New_York\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Egypt": "BEGIN:VTIMEZONE\r\nTZID:Egypt\r\nX-LIC-LOCATION:Africa/Cairo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Cairo\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700424T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701030T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1FR\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Eire": "BEGIN:VTIMEZONE\r\nTZID:Eire\r\nX-LIC-LOCATION:Europe/Dublin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Dublin\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Etc/GMT": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+0": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+1": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+1\r\nX-LIC-LOCATION:Etc/GMT+1\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+1\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+10": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+10\r\nX-LIC-LOCATION:Etc/GMT+10\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+10\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+11": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+11\r\nX-LIC-LOCATION:Etc/GMT+11\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+11\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+12": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+12\r\nX-LIC-LOCATION:Etc/GMT+12\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+12\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-1200\r\nTZOFFSETTO:-1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+2": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+2\r\nX-LIC-LOCATION:Etc/GMT+2\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+2\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+3": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+3\r\nX-LIC-LOCATION:Etc/GMT+3\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+3\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+4": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+4\r\nX-LIC-LOCATION:Etc/GMT+4\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+4\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+5": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+5\r\nX-LIC-LOCATION:Etc/GMT+5\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+5\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+6": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+6\r\nX-LIC-LOCATION:Etc/GMT+6\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+6\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+7": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+7\r\nX-LIC-LOCATION:Etc/GMT+7\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+7\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+8": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+8\r\nX-LIC-LOCATION:Etc/GMT+8\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+8\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT+9": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+9\r\nX-LIC-LOCATION:Etc/GMT+9\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT+9\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-0": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-1": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-1\r\nX-LIC-LOCATION:Etc/GMT-1\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-1\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-10": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-10\r\nX-LIC-LOCATION:Etc/GMT-10\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-10\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-11": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-11\r\nX-LIC-LOCATION:Etc/GMT-11\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-11\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-12": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-12\r\nX-LIC-LOCATION:Etc/GMT-12\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-12\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-13": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-13\r\nX-LIC-LOCATION:Etc/GMT-13\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-13\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-14": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-14\r\nX-LIC-LOCATION:Etc/GMT-14\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-14\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1400\r\nTZOFFSETTO:+1400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-2": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-2\r\nX-LIC-LOCATION:Etc/GMT-2\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-2\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-3": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-3\r\nX-LIC-LOCATION:Etc/GMT-3\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-3\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-4": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-4\r\nX-LIC-LOCATION:Etc/GMT-4\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-4\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-5": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-5\r\nX-LIC-LOCATION:Etc/GMT-5\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-5\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-6": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-6\r\nX-LIC-LOCATION:Etc/GMT-6\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-6\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-7": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-7\r\nX-LIC-LOCATION:Etc/GMT-7\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-7\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-8": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-8\r\nX-LIC-LOCATION:Etc/GMT-8\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-8\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT-9": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-9\r\nX-LIC-LOCATION:Etc/GMT-9\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT-9\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/GMT0": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/Greenwich": "BEGIN:VTIMEZONE\r\nTZID:Etc/Greenwich\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/UCT": "BEGIN:VTIMEZONE\r\nTZID:Etc/UCT\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/UTC": "BEGIN:VTIMEZONE\r\nTZID:Etc/UTC\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/Universal": "BEGIN:VTIMEZONE\r\nTZID:Etc/Universal\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Etc/Zulu": "BEGIN:VTIMEZONE\r\nTZID:Etc/Zulu\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Amsterdam": "BEGIN:VTIMEZONE\r\nTZID:Europe/Amsterdam\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Andorra": "BEGIN:VTIMEZONE\r\nTZID:Europe/Andorra\r\nX-LIC-LOCATION:Europe/Andorra\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Andorra\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Astrakhan": "BEGIN:VTIMEZONE\r\nTZID:Europe/Astrakhan\r\nX-LIC-LOCATION:Europe/Astrakhan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Astrakhan\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Athens": "BEGIN:VTIMEZONE\r\nTZID:Europe/Athens\r\nX-LIC-LOCATION:Europe/Athens\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Athens\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Belfast": "BEGIN:VTIMEZONE\r\nTZID:Europe/Belfast\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Belgrade": "BEGIN:VTIMEZONE\r\nTZID:Europe/Belgrade\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Berlin": "BEGIN:VTIMEZONE\r\nTZID:Europe/Berlin\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Bratislava": "BEGIN:VTIMEZONE\r\nTZID:Europe/Bratislava\r\nX-LIC-LOCATION:Europe/Prague\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Prague\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Brussels": "BEGIN:VTIMEZONE\r\nTZID:Europe/Brussels\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Bucharest": "BEGIN:VTIMEZONE\r\nTZID:Europe/Bucharest\r\nX-LIC-LOCATION:Europe/Bucharest\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Bucharest\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Budapest": "BEGIN:VTIMEZONE\r\nTZID:Europe/Budapest\r\nX-LIC-LOCATION:Europe/Budapest\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Budapest\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Busingen": "BEGIN:VTIMEZONE\r\nTZID:Europe/Busingen\r\nX-LIC-LOCATION:Europe/Zurich\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Zurich\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Chisinau": "BEGIN:VTIMEZONE\r\nTZID:Europe/Chisinau\r\nX-LIC-LOCATION:Europe/Chisinau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Chisinau\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Copenhagen": "BEGIN:VTIMEZONE\r\nTZID:Europe/Copenhagen\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Dublin": "BEGIN:VTIMEZONE\r\nTZID:Europe/Dublin\r\nX-LIC-LOCATION:Europe/Dublin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Dublin\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Gibraltar": "BEGIN:VTIMEZONE\r\nTZID:Europe/Gibraltar\r\nX-LIC-LOCATION:Europe/Gibraltar\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Gibraltar\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Guernsey": "BEGIN:VTIMEZONE\r\nTZID:Europe/Guernsey\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Helsinki": "BEGIN:VTIMEZONE\r\nTZID:Europe/Helsinki\r\nX-LIC-LOCATION:Europe/Helsinki\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Helsinki\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Isle_of_Man": "BEGIN:VTIMEZONE\r\nTZID:Europe/Isle_of_Man\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Istanbul": "BEGIN:VTIMEZONE\r\nTZID:Europe/Istanbul\r\nX-LIC-LOCATION:Europe/Istanbul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Istanbul\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Jersey": "BEGIN:VTIMEZONE\r\nTZID:Europe/Jersey\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Kaliningrad": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kaliningrad\r\nX-LIC-LOCATION:Europe/Kaliningrad\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Kaliningrad\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Kiev": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kiev\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Kirov": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kirov\r\nX-LIC-LOCATION:Europe/Kirov\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Kirov\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Kyiv": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kyiv\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Lisbon": "BEGIN:VTIMEZONE\r\nTZID:Europe/Lisbon\r\nX-LIC-LOCATION:Europe/Lisbon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Lisbon\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Ljubljana": "BEGIN:VTIMEZONE\r\nTZID:Europe/Ljubljana\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/London": "BEGIN:VTIMEZONE\r\nTZID:Europe/London\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Luxembourg": "BEGIN:VTIMEZONE\r\nTZID:Europe/Luxembourg\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Madrid": "BEGIN:VTIMEZONE\r\nTZID:Europe/Madrid\r\nX-LIC-LOCATION:Europe/Madrid\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Madrid\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Malta": "BEGIN:VTIMEZONE\r\nTZID:Europe/Malta\r\nX-LIC-LOCATION:Europe/Malta\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Malta\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Mariehamn": "BEGIN:VTIMEZONE\r\nTZID:Europe/Mariehamn\r\nX-LIC-LOCATION:Europe/Helsinki\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Helsinki\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Minsk": "BEGIN:VTIMEZONE\r\nTZID:Europe/Minsk\r\nX-LIC-LOCATION:Europe/Minsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Minsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Monaco": "BEGIN:VTIMEZONE\r\nTZID:Europe/Monaco\r\nX-LIC-LOCATION:Europe/Paris\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Paris\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Moscow": "BEGIN:VTIMEZONE\r\nTZID:Europe/Moscow\r\nX-LIC-LOCATION:Europe/Moscow\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Moscow\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Nicosia": "BEGIN:VTIMEZONE\r\nTZID:Europe/Nicosia\r\nX-LIC-LOCATION:Asia/Nicosia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Nicosia\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Oslo": "BEGIN:VTIMEZONE\r\nTZID:Europe/Oslo\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Paris": "BEGIN:VTIMEZONE\r\nTZID:Europe/Paris\r\nX-LIC-LOCATION:Europe/Paris\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Paris\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Podgorica": "BEGIN:VTIMEZONE\r\nTZID:Europe/Podgorica\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Prague": "BEGIN:VTIMEZONE\r\nTZID:Europe/Prague\r\nX-LIC-LOCATION:Europe/Prague\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Prague\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Riga": "BEGIN:VTIMEZONE\r\nTZID:Europe/Riga\r\nX-LIC-LOCATION:Europe/Riga\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Riga\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Rome": "BEGIN:VTIMEZONE\r\nTZID:Europe/Rome\r\nX-LIC-LOCATION:Europe/Rome\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Rome\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Samara": "BEGIN:VTIMEZONE\r\nTZID:Europe/Samara\r\nX-LIC-LOCATION:Europe/Samara\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Samara\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/San_Marino": "BEGIN:VTIMEZONE\r\nTZID:Europe/San_Marino\r\nX-LIC-LOCATION:Europe/Rome\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Rome\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Sarajevo": "BEGIN:VTIMEZONE\r\nTZID:Europe/Sarajevo\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Saratov": "BEGIN:VTIMEZONE\r\nTZID:Europe/Saratov\r\nX-LIC-LOCATION:Europe/Saratov\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Saratov\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Simferopol": "BEGIN:VTIMEZONE\r\nTZID:Europe/Simferopol\r\nX-LIC-LOCATION:Europe/Simferopol\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Simferopol\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Skopje": "BEGIN:VTIMEZONE\r\nTZID:Europe/Skopje\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Sofia": "BEGIN:VTIMEZONE\r\nTZID:Europe/Sofia\r\nX-LIC-LOCATION:Europe/Sofia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Sofia\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Stockholm": "BEGIN:VTIMEZONE\r\nTZID:Europe/Stockholm\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Tallinn": "BEGIN:VTIMEZONE\r\nTZID:Europe/Tallinn\r\nX-LIC-LOCATION:Europe/Tallinn\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Tallinn\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Tirane": "BEGIN:VTIMEZONE\r\nTZID:Europe/Tirane\r\nX-LIC-LOCATION:Europe/Tirane\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Tirane\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Tiraspol": "BEGIN:VTIMEZONE\r\nTZID:Europe/Tiraspol\r\nX-LIC-LOCATION:Europe/Chisinau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Chisinau\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Ulyanovsk": "BEGIN:VTIMEZONE\r\nTZID:Europe/Ulyanovsk\r\nX-LIC-LOCATION:Europe/Ulyanovsk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Ulyanovsk\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Uzhgorod": "BEGIN:VTIMEZONE\r\nTZID:Europe/Uzhgorod\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Vaduz": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vaduz\r\nX-LIC-LOCATION:Europe/Zurich\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Zurich\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Vatican": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vatican\r\nX-LIC-LOCATION:Europe/Rome\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Rome\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Vienna": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vienna\r\nX-LIC-LOCATION:Europe/Vienna\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Vienna\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Vilnius": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vilnius\r\nX-LIC-LOCATION:Europe/Vilnius\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Vilnius\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Volgograd": "BEGIN:VTIMEZONE\r\nTZID:Europe/Volgograd\r\nX-LIC-LOCATION:Europe/Volgograd\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Volgograd\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Warsaw": "BEGIN:VTIMEZONE\r\nTZID:Europe/Warsaw\r\nX-LIC-LOCATION:Europe/Warsaw\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Warsaw\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Zagreb": "BEGIN:VTIMEZONE\r\nTZID:Europe/Zagreb\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Europe/Zaporozhye": "BEGIN:VTIMEZONE\r\nTZID:Europe/Zaporozhye\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Europe/Zurich": "BEGIN:VTIMEZONE\r\nTZID:Europe/Zurich\r\nX-LIC-LOCATION:Europe/Zurich\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Zurich\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "GB": "BEGIN:VTIMEZONE\r\nTZID:GB\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "GB-Eire": "BEGIN:VTIMEZONE\r\nTZID:GB-Eire\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "GMT": "BEGIN:VTIMEZONE\r\nTZID:GMT\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "GMT+0": "BEGIN:VTIMEZONE\r\nTZID:GMT+0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "GMT-0": "BEGIN:VTIMEZONE\r\nTZID:GMT-0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "GMT0": "BEGIN:VTIMEZONE\r\nTZID:GMT0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Greenwich": "BEGIN:VTIMEZONE\r\nTZID:Greenwich\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "HST": "BEGIN:VTIMEZONE\r\nTZID:HST\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Hongkong": "BEGIN:VTIMEZONE\r\nTZID:Hongkong\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nBEGIN:STANDARD\r\nTZNAME:HKT\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Iceland": "BEGIN:VTIMEZONE\r\nTZID:Iceland\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Antananarivo": "BEGIN:VTIMEZONE\r\nTZID:Indian/Antananarivo\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Chagos": "BEGIN:VTIMEZONE\r\nTZID:Indian/Chagos\r\nX-LIC-LOCATION:Indian/Chagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Indian/Chagos\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Christmas": "BEGIN:VTIMEZONE\r\nTZID:Indian/Christmas\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Cocos": "BEGIN:VTIMEZONE\r\nTZID:Indian/Cocos\r\nX-LIC-LOCATION:Asia/Yangon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Yangon\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0630\r\nTZOFFSETTO:+0630\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Comoro": "BEGIN:VTIMEZONE\r\nTZID:Indian/Comoro\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Kerguelen": "BEGIN:VTIMEZONE\r\nTZID:Indian/Kerguelen\r\nX-LIC-LOCATION:Indian/Maldives\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Indian/Maldives\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Mahe": "BEGIN:VTIMEZONE\r\nTZID:Indian/Mahe\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Maldives": "BEGIN:VTIMEZONE\r\nTZID:Indian/Maldives\r\nX-LIC-LOCATION:Indian/Maldives\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Indian/Maldives\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Mauritius": "BEGIN:VTIMEZONE\r\nTZID:Indian/Mauritius\r\nX-LIC-LOCATION:Indian/Mauritius\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Indian/Mauritius\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Mayotte": "BEGIN:VTIMEZONE\r\nTZID:Indian/Mayotte\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Indian/Reunion": "BEGIN:VTIMEZONE\r\nTZID:Indian/Reunion\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Iran": "BEGIN:VTIMEZONE\r\nTZID:Iran\r\nX-LIC-LOCATION:Asia/Tehran\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tehran\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0330\r\nTZOFFSETTO:+0330\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Israel": "BEGIN:VTIMEZONE\r\nTZID:Israel\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nBEGIN:DAYLIGHT\r\nTZNAME:IDT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700327T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Jamaica": "BEGIN:VTIMEZONE\r\nTZID:Jamaica\r\nX-LIC-LOCATION:America/Jamaica\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Jamaica\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Japan": "BEGIN:VTIMEZONE\r\nTZID:Japan\r\nX-LIC-LOCATION:Asia/Tokyo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Tokyo\r\nBEGIN:STANDARD\r\nTZNAME:JST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Kwajalein": "BEGIN:VTIMEZONE\r\nTZID:Kwajalein\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Libya": "BEGIN:VTIMEZONE\r\nTZID:Libya\r\nX-LIC-LOCATION:Africa/Tripoli\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Africa/Tripoli\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "MET": "BEGIN:VTIMEZONE\r\nTZID:MET\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "MST": "BEGIN:VTIMEZONE\r\nTZID:MST\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "MST7MDT": "BEGIN:VTIMEZONE\r\nTZID:MST7MDT\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Mexico/BajaNorte": "BEGIN:VTIMEZONE\r\nTZID:Mexico/BajaNorte\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Mexico/BajaSur": "BEGIN:VTIMEZONE\r\nTZID:Mexico/BajaSur\r\nX-LIC-LOCATION:America/Mazatlan\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Mazatlan\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Mexico/General": "BEGIN:VTIMEZONE\r\nTZID:Mexico/General\r\nX-LIC-LOCATION:America/Mexico_City\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Mexico_City\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "NZ": "BEGIN:VTIMEZONE\r\nTZID:NZ\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "NZ-CHAT": "BEGIN:VTIMEZONE\r\nTZID:NZ-CHAT\r\nX-LIC-LOCATION:Pacific/Chatham\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Chatham\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:+1245\r\nTZOFFSETTO:+1345\r\nDTSTART:19700927T024500\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1345\r\nTZOFFSETTO:+1245\r\nDTSTART:19700405T034500\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Navajo": "BEGIN:VTIMEZONE\r\nTZID:Navajo\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "PRC": "BEGIN:VTIMEZONE\r\nTZID:PRC\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "PST8PDT": "BEGIN:VTIMEZONE\r\nTZID:PST8PDT\r\nX-LIC-LOCATION:America/Los_Angeles\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Los_Angeles\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Apia": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Apia\r\nX-LIC-LOCATION:Pacific/Apia\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Apia\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Auckland": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Auckland\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Bougainville": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Bougainville\r\nX-LIC-LOCATION:Pacific/Bougainville\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Bougainville\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Chatham": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Chatham\r\nX-LIC-LOCATION:Pacific/Chatham\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Chatham\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:+1245\r\nTZOFFSETTO:+1345\r\nDTSTART:19700927T024500\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1345\r\nTZOFFSETTO:+1245\r\nDTSTART:19700405T034500\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Chuuk": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Chuuk\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Easter": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Easter\r\nX-LIC-LOCATION:Pacific/Easter\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Easter\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19700404T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700905T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Pacific/Efate": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Efate\r\nX-LIC-LOCATION:Pacific/Efate\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Efate\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Enderbury": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Enderbury\r\nX-LIC-LOCATION:Pacific/Kanton\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Kanton\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Fakaofo": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Fakaofo\r\nX-LIC-LOCATION:Pacific/Fakaofo\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Fakaofo\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Fiji": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Fiji\r\nX-LIC-LOCATION:Pacific/Fiji\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Fiji\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Funafuti": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Funafuti\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Galapagos": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Galapagos\r\nX-LIC-LOCATION:Pacific/Galapagos\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Galapagos\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Gambier": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Gambier\r\nX-LIC-LOCATION:Pacific/Gambier\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Gambier\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Guadalcanal": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Guadalcanal\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Guam": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Guam\r\nX-LIC-LOCATION:Pacific/Guam\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Guam\r\nBEGIN:STANDARD\r\nTZNAME:ChST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Honolulu": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Honolulu\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Johnston": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Johnston\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Kanton": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kanton\r\nX-LIC-LOCATION:Pacific/Kanton\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Kanton\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Kiritimati": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kiritimati\r\nX-LIC-LOCATION:Pacific/Kiritimati\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Kiritimati\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1400\r\nTZOFFSETTO:+1400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Kosrae": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kosrae\r\nX-LIC-LOCATION:Pacific/Kosrae\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Kosrae\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Kwajalein": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kwajalein\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Majuro": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Majuro\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Marquesas": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Marquesas\r\nX-LIC-LOCATION:Pacific/Marquesas\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Marquesas\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0930\r\nTZOFFSETTO:-0930\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Midway": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Midway\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Nauru": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Nauru\r\nX-LIC-LOCATION:Pacific/Nauru\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Nauru\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Niue": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Niue\r\nX-LIC-LOCATION:Pacific/Niue\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Niue\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Norfolk": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Norfolk\r\nX-LIC-LOCATION:Pacific/Norfolk\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Norfolk\r\nBEGIN:DAYLIGHT\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1200\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1100\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Noumea": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Noumea\r\nX-LIC-LOCATION:Pacific/Noumea\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Noumea\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Pago_Pago": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Pago_Pago\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Palau": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Palau\r\nX-LIC-LOCATION:Pacific/Palau\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Palau\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Pitcairn": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Pitcairn\r\nX-LIC-LOCATION:Pacific/Pitcairn\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Pitcairn\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Pohnpei": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Pohnpei\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Ponape": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Ponape\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Port_Moresby": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Port_Moresby\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Rarotonga": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Rarotonga\r\nX-LIC-LOCATION:Pacific/Rarotonga\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Rarotonga\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Saipan": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Saipan\r\nX-LIC-LOCATION:Pacific/Guam\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Guam\r\nBEGIN:STANDARD\r\nTZNAME:ChST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Samoa": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Samoa\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Tahiti": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Tahiti\r\nX-LIC-LOCATION:Pacific/Tahiti\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tahiti\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Tarawa": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Tarawa\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Tongatapu": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Tongatapu\r\nX-LIC-LOCATION:Pacific/Tongatapu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tongatapu\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Truk": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Truk\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Wake": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Wake\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Wallis": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Wallis\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Pacific/Yap": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Yap\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Poland": "BEGIN:VTIMEZONE\r\nTZID:Poland\r\nX-LIC-LOCATION:Europe/Warsaw\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Warsaw\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Portugal": "BEGIN:VTIMEZONE\r\nTZID:Portugal\r\nX-LIC-LOCATION:Europe/Lisbon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Lisbon\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "ROC": "BEGIN:VTIMEZONE\r\nTZID:ROC\r\nX-LIC-LOCATION:Asia/Taipei\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Taipei\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "ROK": "BEGIN:VTIMEZONE\r\nTZID:ROK\r\nX-LIC-LOCATION:Asia/Seoul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Seoul\r\nBEGIN:STANDARD\r\nTZNAME:KST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Singapore": "BEGIN:VTIMEZONE\r\nTZID:Singapore\r\nX-LIC-LOCATION:Asia/Singapore\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Asia/Singapore\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Turkey": "BEGIN:VTIMEZONE\r\nTZID:Turkey\r\nX-LIC-LOCATION:Europe/Istanbul\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Istanbul\r\nBEGIN:STANDARD\r\nTZNAME:z\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "UCT": "BEGIN:VTIMEZONE\r\nTZID:UCT\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Alaska": "BEGIN:VTIMEZONE\r\nTZID:US/Alaska\r\nX-LIC-LOCATION:America/Anchorage\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Anchorage\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Aleutian": "BEGIN:VTIMEZONE\r\nTZID:US/Aleutian\r\nX-LIC-LOCATION:America/Adak\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Adak\r\nBEGIN:DAYLIGHT\r\nTZNAME:HDT\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-0900\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-1000\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Arizona": "BEGIN:VTIMEZONE\r\nTZID:US/Arizona\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Central": "BEGIN:VTIMEZONE\r\nTZID:US/Central\r\nX-LIC-LOCATION:America/Chicago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/East-Indiana": "BEGIN:VTIMEZONE\r\nTZID:US/East-Indiana\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Eastern": "BEGIN:VTIMEZONE\r\nTZID:US/Eastern\r\nX-LIC-LOCATION:America/New_York\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/New_York\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Hawaii": "BEGIN:VTIMEZONE\r\nTZID:US/Hawaii\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Indiana-Starke": "BEGIN:VTIMEZONE\r\nTZID:US/Indiana-Starke\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Michigan": "BEGIN:VTIMEZONE\r\nTZID:US/Michigan\r\nX-LIC-LOCATION:America/Detroit\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Detroit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Mountain": "BEGIN:VTIMEZONE\r\nTZID:US/Mountain\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Pacific": "BEGIN:VTIMEZONE\r\nTZID:US/Pacific\r\nX-LIC-LOCATION:America/Los_Angeles\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:America/Los_Angeles\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "US/Samoa": "BEGIN:VTIMEZONE\r\nTZID:US/Samoa\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "UTC": "BEGIN:VTIMEZONE\r\nTZID:UTC\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "Universal": "BEGIN:VTIMEZONE\r\nTZID:Universal\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "W-SU": "BEGIN:VTIMEZONE\r\nTZID:W-SU\r\nX-LIC-LOCATION:Europe/Moscow\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Moscow\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
-  "WET": "BEGIN:VTIMEZONE\r\nTZID:WET\r\nX-LIC-LOCATION:Europe/Lisbon\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Europe/Lisbon\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
-  "Zulu": "BEGIN:VTIMEZONE\r\nTZID:Zulu\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250101T220159Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE"
+  "Africa/Abidjan": "BEGIN:VTIMEZONE\r\nTZID:Africa/Abidjan\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Accra": "BEGIN:VTIMEZONE\r\nTZID:Africa/Accra\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Addis_Ababa": "BEGIN:VTIMEZONE\r\nTZID:Africa/Addis_Ababa\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Algiers": "BEGIN:VTIMEZONE\r\nTZID:Africa/Algiers\r\nX-LIC-LOCATION:Africa/Algiers\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Algiers\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Asmara": "BEGIN:VTIMEZONE\r\nTZID:Africa/Asmara\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Asmera": "BEGIN:VTIMEZONE\r\nTZID:Africa/Asmera\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Bamako": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bamako\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Bangui": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bangui\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Banjul": "BEGIN:VTIMEZONE\r\nTZID:Africa/Banjul\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Bissau": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bissau\r\nX-LIC-LOCATION:Africa/Bissau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Bissau\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Blantyre": "BEGIN:VTIMEZONE\r\nTZID:Africa/Blantyre\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Brazzaville": "BEGIN:VTIMEZONE\r\nTZID:Africa/Brazzaville\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Bujumbura": "BEGIN:VTIMEZONE\r\nTZID:Africa/Bujumbura\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Cairo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Cairo\r\nX-LIC-LOCATION:Africa/Cairo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Cairo\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700424T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701030T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1FR\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Casablanca": "BEGIN:VTIMEZONE\r\nTZID:Africa/Casablanca\r\nX-LIC-LOCATION:Africa/Casablanca\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Casablanca\r\nBEGIN:STANDARD\r\nTZNAME:+01\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Ceuta": "BEGIN:VTIMEZONE\r\nTZID:Africa/Ceuta\r\nX-LIC-LOCATION:Africa/Ceuta\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Ceuta\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Conakry": "BEGIN:VTIMEZONE\r\nTZID:Africa/Conakry\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Dakar": "BEGIN:VTIMEZONE\r\nTZID:Africa/Dakar\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Dar_es_Salaam": "BEGIN:VTIMEZONE\r\nTZID:Africa/Dar_es_Salaam\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Djibouti": "BEGIN:VTIMEZONE\r\nTZID:Africa/Djibouti\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Douala": "BEGIN:VTIMEZONE\r\nTZID:Africa/Douala\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/El_Aaiun": "BEGIN:VTIMEZONE\r\nTZID:Africa/El_Aaiun\r\nX-LIC-LOCATION:Africa/El_Aaiun\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/El_Aaiun\r\nBEGIN:STANDARD\r\nTZNAME:+01\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Freetown": "BEGIN:VTIMEZONE\r\nTZID:Africa/Freetown\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Gaborone": "BEGIN:VTIMEZONE\r\nTZID:Africa/Gaborone\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Harare": "BEGIN:VTIMEZONE\r\nTZID:Africa/Harare\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Johannesburg": "BEGIN:VTIMEZONE\r\nTZID:Africa/Johannesburg\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nBEGIN:STANDARD\r\nTZNAME:SAST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Juba": "BEGIN:VTIMEZONE\r\nTZID:Africa/Juba\r\nX-LIC-LOCATION:Africa/Juba\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Juba\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Kampala": "BEGIN:VTIMEZONE\r\nTZID:Africa/Kampala\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Khartoum": "BEGIN:VTIMEZONE\r\nTZID:Africa/Khartoum\r\nX-LIC-LOCATION:Africa/Khartoum\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Khartoum\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Kigali": "BEGIN:VTIMEZONE\r\nTZID:Africa/Kigali\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Kinshasa": "BEGIN:VTIMEZONE\r\nTZID:Africa/Kinshasa\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Lagos": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lagos\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Libreville": "BEGIN:VTIMEZONE\r\nTZID:Africa/Libreville\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Lome": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lome\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Luanda": "BEGIN:VTIMEZONE\r\nTZID:Africa/Luanda\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Lubumbashi": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lubumbashi\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Lusaka": "BEGIN:VTIMEZONE\r\nTZID:Africa/Lusaka\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Malabo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Malabo\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Maputo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Maputo\r\nX-LIC-LOCATION:Africa/Maputo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Maputo\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Maseru": "BEGIN:VTIMEZONE\r\nTZID:Africa/Maseru\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nBEGIN:STANDARD\r\nTZNAME:SAST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Mbabane": "BEGIN:VTIMEZONE\r\nTZID:Africa/Mbabane\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Johannesburg\r\nBEGIN:STANDARD\r\nTZNAME:SAST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Mogadishu": "BEGIN:VTIMEZONE\r\nTZID:Africa/Mogadishu\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Monrovia": "BEGIN:VTIMEZONE\r\nTZID:Africa/Monrovia\r\nX-LIC-LOCATION:Africa/Monrovia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Monrovia\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Nairobi": "BEGIN:VTIMEZONE\r\nTZID:Africa/Nairobi\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Ndjamena": "BEGIN:VTIMEZONE\r\nTZID:Africa/Ndjamena\r\nX-LIC-LOCATION:Africa/Ndjamena\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Ndjamena\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Niamey": "BEGIN:VTIMEZONE\r\nTZID:Africa/Niamey\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Nouakchott": "BEGIN:VTIMEZONE\r\nTZID:Africa/Nouakchott\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Ouagadougou": "BEGIN:VTIMEZONE\r\nTZID:Africa/Ouagadougou\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Porto-Novo": "BEGIN:VTIMEZONE\r\nTZID:Africa/Porto-Novo\r\nX-LIC-LOCATION:Africa/Lagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Lagos\r\nBEGIN:STANDARD\r\nTZNAME:WAT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Sao_Tome": "BEGIN:VTIMEZONE\r\nTZID:Africa/Sao_Tome\r\nX-LIC-LOCATION:Africa/Sao_Tome\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Sao_Tome\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Timbuktu": "BEGIN:VTIMEZONE\r\nTZID:Africa/Timbuktu\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Tripoli": "BEGIN:VTIMEZONE\r\nTZID:Africa/Tripoli\r\nX-LIC-LOCATION:Africa/Tripoli\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Tripoli\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Tunis": "BEGIN:VTIMEZONE\r\nTZID:Africa/Tunis\r\nX-LIC-LOCATION:Africa/Tunis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Tunis\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Africa/Windhoek": "BEGIN:VTIMEZONE\r\nTZID:Africa/Windhoek\r\nX-LIC-LOCATION:Africa/Windhoek\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Windhoek\r\nBEGIN:STANDARD\r\nTZNAME:CAT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Adak": "BEGIN:VTIMEZONE\r\nTZID:America/Adak\r\nX-LIC-LOCATION:America/Adak\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Adak\r\nBEGIN:DAYLIGHT\r\nTZNAME:HDT\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-0900\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-1000\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Anchorage": "BEGIN:VTIMEZONE\r\nTZID:America/Anchorage\r\nX-LIC-LOCATION:America/Anchorage\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Anchorage\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Anguilla": "BEGIN:VTIMEZONE\r\nTZID:America/Anguilla\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Antigua": "BEGIN:VTIMEZONE\r\nTZID:America/Antigua\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Araguaina": "BEGIN:VTIMEZONE\r\nTZID:America/Araguaina\r\nX-LIC-LOCATION:America/Araguaina\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Araguaina\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Buenos_Aires": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Buenos_Aires\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Catamarca": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Catamarca\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/ComodRivadavia": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/ComodRivadavia\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Cordoba": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Cordoba\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Jujuy": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Jujuy\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/La_Rioja": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/La_Rioja\r\nX-LIC-LOCATION:America/Argentina/La_Rioja\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/La_Rioja\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Mendoza": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Mendoza\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Rio_Gallegos": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Rio_Gallegos\r\nX-LIC-LOCATION:America/Argentina/Rio_Gallegos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Rio_Gallegos\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Salta": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Salta\r\nX-LIC-LOCATION:America/Argentina/Salta\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Salta\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/San_Juan": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/San_Juan\r\nX-LIC-LOCATION:America/Argentina/San_Juan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/San_Juan\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/San_Luis": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/San_Luis\r\nX-LIC-LOCATION:America/Argentina/San_Luis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/San_Luis\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Tucuman": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Tucuman\r\nX-LIC-LOCATION:America/Argentina/Tucuman\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Tucuman\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Argentina/Ushuaia": "BEGIN:VTIMEZONE\r\nTZID:America/Argentina/Ushuaia\r\nX-LIC-LOCATION:America/Argentina/Ushuaia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Ushuaia\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Aruba": "BEGIN:VTIMEZONE\r\nTZID:America/Aruba\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Asuncion": "BEGIN:VTIMEZONE\r\nTZID:America/Asuncion\r\nX-LIC-LOCATION:America/Asuncion\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Asuncion\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Atikokan": "BEGIN:VTIMEZONE\r\nTZID:America/Atikokan\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Atka": "BEGIN:VTIMEZONE\r\nTZID:America/Atka\r\nX-LIC-LOCATION:America/Adak\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Adak\r\nBEGIN:DAYLIGHT\r\nTZNAME:HDT\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-0900\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-1000\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Bahia": "BEGIN:VTIMEZONE\r\nTZID:America/Bahia\r\nX-LIC-LOCATION:America/Bahia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Bahia\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Bahia_Banderas": "BEGIN:VTIMEZONE\r\nTZID:America/Bahia_Banderas\r\nX-LIC-LOCATION:America/Bahia_Banderas\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Bahia_Banderas\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Barbados": "BEGIN:VTIMEZONE\r\nTZID:America/Barbados\r\nX-LIC-LOCATION:America/Barbados\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Barbados\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Belem": "BEGIN:VTIMEZONE\r\nTZID:America/Belem\r\nX-LIC-LOCATION:America/Belem\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Belem\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Belize": "BEGIN:VTIMEZONE\r\nTZID:America/Belize\r\nX-LIC-LOCATION:America/Belize\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Belize\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Blanc-Sablon": "BEGIN:VTIMEZONE\r\nTZID:America/Blanc-Sablon\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Boa_Vista": "BEGIN:VTIMEZONE\r\nTZID:America/Boa_Vista\r\nX-LIC-LOCATION:America/Boa_Vista\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Boa_Vista\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Bogota": "BEGIN:VTIMEZONE\r\nTZID:America/Bogota\r\nX-LIC-LOCATION:America/Bogota\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Bogota\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Boise": "BEGIN:VTIMEZONE\r\nTZID:America/Boise\r\nX-LIC-LOCATION:America/Boise\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Boise\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Buenos_Aires": "BEGIN:VTIMEZONE\r\nTZID:America/Buenos_Aires\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Buenos_Aires\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Cambridge_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Cambridge_Bay\r\nX-LIC-LOCATION:America/Cambridge_Bay\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Cambridge_Bay\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Campo_Grande": "BEGIN:VTIMEZONE\r\nTZID:America/Campo_Grande\r\nX-LIC-LOCATION:America/Campo_Grande\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Campo_Grande\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Cancun": "BEGIN:VTIMEZONE\r\nTZID:America/Cancun\r\nX-LIC-LOCATION:America/Cancun\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Cancun\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Caracas": "BEGIN:VTIMEZONE\r\nTZID:America/Caracas\r\nX-LIC-LOCATION:America/Caracas\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Caracas\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Catamarca": "BEGIN:VTIMEZONE\r\nTZID:America/Catamarca\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Catamarca\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Cayenne": "BEGIN:VTIMEZONE\r\nTZID:America/Cayenne\r\nX-LIC-LOCATION:America/Cayenne\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Cayenne\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Cayman": "BEGIN:VTIMEZONE\r\nTZID:America/Cayman\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Chicago": "BEGIN:VTIMEZONE\r\nTZID:America/Chicago\r\nX-LIC-LOCATION:America/Chicago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Chihuahua": "BEGIN:VTIMEZONE\r\nTZID:America/Chihuahua\r\nX-LIC-LOCATION:America/Chihuahua\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Chihuahua\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Ciudad_Juarez": "BEGIN:VTIMEZONE\r\nTZID:America/Ciudad_Juarez\r\nX-LIC-LOCATION:America/Ciudad_Juarez\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Ciudad_Juarez\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Coral_Harbour": "BEGIN:VTIMEZONE\r\nTZID:America/Coral_Harbour\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Cordoba": "BEGIN:VTIMEZONE\r\nTZID:America/Cordoba\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Costa_Rica": "BEGIN:VTIMEZONE\r\nTZID:America/Costa_Rica\r\nX-LIC-LOCATION:America/Costa_Rica\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Costa_Rica\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Coyhaique": "BEGIN:VTIMEZONE\r\nTZID:America/Coyhaique\r\nX-LIC-LOCATION:America/Coyhaique\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Coyhaique\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Creston": "BEGIN:VTIMEZONE\r\nTZID:America/Creston\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Cuiaba": "BEGIN:VTIMEZONE\r\nTZID:America/Cuiaba\r\nX-LIC-LOCATION:America/Cuiaba\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Cuiaba\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Curacao": "BEGIN:VTIMEZONE\r\nTZID:America/Curacao\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Danmarkshavn": "BEGIN:VTIMEZONE\r\nTZID:America/Danmarkshavn\r\nX-LIC-LOCATION:America/Danmarkshavn\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Danmarkshavn\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Dawson": "BEGIN:VTIMEZONE\r\nTZID:America/Dawson\r\nX-LIC-LOCATION:America/Dawson\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Dawson\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Dawson_Creek": "BEGIN:VTIMEZONE\r\nTZID:America/Dawson_Creek\r\nX-LIC-LOCATION:America/Dawson_Creek\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Dawson_Creek\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Denver": "BEGIN:VTIMEZONE\r\nTZID:America/Denver\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Detroit": "BEGIN:VTIMEZONE\r\nTZID:America/Detroit\r\nX-LIC-LOCATION:America/Detroit\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Detroit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Dominica": "BEGIN:VTIMEZONE\r\nTZID:America/Dominica\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Edmonton": "BEGIN:VTIMEZONE\r\nTZID:America/Edmonton\r\nX-LIC-LOCATION:America/Edmonton\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Edmonton\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Eirunepe": "BEGIN:VTIMEZONE\r\nTZID:America/Eirunepe\r\nX-LIC-LOCATION:America/Eirunepe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Eirunepe\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/El_Salvador": "BEGIN:VTIMEZONE\r\nTZID:America/El_Salvador\r\nX-LIC-LOCATION:America/El_Salvador\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/El_Salvador\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Ensenada": "BEGIN:VTIMEZONE\r\nTZID:America/Ensenada\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Fort_Nelson": "BEGIN:VTIMEZONE\r\nTZID:America/Fort_Nelson\r\nX-LIC-LOCATION:America/Fort_Nelson\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Fort_Nelson\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Fort_Wayne": "BEGIN:VTIMEZONE\r\nTZID:America/Fort_Wayne\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Fortaleza": "BEGIN:VTIMEZONE\r\nTZID:America/Fortaleza\r\nX-LIC-LOCATION:America/Fortaleza\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Fortaleza\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Glace_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Glace_Bay\r\nX-LIC-LOCATION:America/Glace_Bay\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Glace_Bay\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Godthab": "BEGIN:VTIMEZONE\r\nTZID:America/Godthab\r\nX-LIC-LOCATION:America/Nuuk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Nuuk\r\nBEGIN:DAYLIGHT\r\nTZNAME:-01\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0100\r\nDTSTART:19700328T230000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Goose_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Goose_Bay\r\nX-LIC-LOCATION:America/Goose_Bay\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Goose_Bay\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Grand_Turk": "BEGIN:VTIMEZONE\r\nTZID:America/Grand_Turk\r\nX-LIC-LOCATION:America/Grand_Turk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Grand_Turk\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Grenada": "BEGIN:VTIMEZONE\r\nTZID:America/Grenada\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Guadeloupe": "BEGIN:VTIMEZONE\r\nTZID:America/Guadeloupe\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Guatemala": "BEGIN:VTIMEZONE\r\nTZID:America/Guatemala\r\nX-LIC-LOCATION:America/Guatemala\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Guatemala\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Guayaquil": "BEGIN:VTIMEZONE\r\nTZID:America/Guayaquil\r\nX-LIC-LOCATION:America/Guayaquil\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Guayaquil\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Guyana": "BEGIN:VTIMEZONE\r\nTZID:America/Guyana\r\nX-LIC-LOCATION:America/Guyana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Guyana\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Halifax": "BEGIN:VTIMEZONE\r\nTZID:America/Halifax\r\nX-LIC-LOCATION:America/Halifax\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Halifax\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Havana": "BEGIN:VTIMEZONE\r\nTZID:America/Havana\r\nX-LIC-LOCATION:America/Havana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Havana\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Hermosillo": "BEGIN:VTIMEZONE\r\nTZID:America/Hermosillo\r\nX-LIC-LOCATION:America/Hermosillo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Hermosillo\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Indianapolis": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Indianapolis\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Knox": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Knox\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Marengo": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Marengo\r\nX-LIC-LOCATION:America/Indiana/Marengo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Marengo\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Petersburg": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Petersburg\r\nX-LIC-LOCATION:America/Indiana/Petersburg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Petersburg\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Tell_City": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Tell_City\r\nX-LIC-LOCATION:America/Indiana/Tell_City\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Tell_City\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Vevay": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Vevay\r\nX-LIC-LOCATION:America/Indiana/Vevay\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Vevay\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Vincennes": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Vincennes\r\nX-LIC-LOCATION:America/Indiana/Vincennes\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Vincennes\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Indiana/Winamac": "BEGIN:VTIMEZONE\r\nTZID:America/Indiana/Winamac\r\nX-LIC-LOCATION:America/Indiana/Winamac\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Winamac\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Indianapolis": "BEGIN:VTIMEZONE\r\nTZID:America/Indianapolis\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Inuvik": "BEGIN:VTIMEZONE\r\nTZID:America/Inuvik\r\nX-LIC-LOCATION:America/Inuvik\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Inuvik\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Iqaluit": "BEGIN:VTIMEZONE\r\nTZID:America/Iqaluit\r\nX-LIC-LOCATION:America/Iqaluit\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Iqaluit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Jamaica": "BEGIN:VTIMEZONE\r\nTZID:America/Jamaica\r\nX-LIC-LOCATION:America/Jamaica\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Jamaica\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Jujuy": "BEGIN:VTIMEZONE\r\nTZID:America/Jujuy\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Jujuy\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Juneau": "BEGIN:VTIMEZONE\r\nTZID:America/Juneau\r\nX-LIC-LOCATION:America/Juneau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Juneau\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Kentucky/Louisville": "BEGIN:VTIMEZONE\r\nTZID:America/Kentucky/Louisville\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Kentucky/Monticello": "BEGIN:VTIMEZONE\r\nTZID:America/Kentucky/Monticello\r\nX-LIC-LOCATION:America/Kentucky/Monticello\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Kentucky/Monticello\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Knox_IN": "BEGIN:VTIMEZONE\r\nTZID:America/Knox_IN\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Kralendijk": "BEGIN:VTIMEZONE\r\nTZID:America/Kralendijk\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/La_Paz": "BEGIN:VTIMEZONE\r\nTZID:America/La_Paz\r\nX-LIC-LOCATION:America/La_Paz\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/La_Paz\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Lima": "BEGIN:VTIMEZONE\r\nTZID:America/Lima\r\nX-LIC-LOCATION:America/Lima\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Lima\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Los_Angeles": "BEGIN:VTIMEZONE\r\nTZID:America/Los_Angeles\r\nX-LIC-LOCATION:America/Los_Angeles\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Los_Angeles\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Louisville": "BEGIN:VTIMEZONE\r\nTZID:America/Louisville\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Kentucky/Louisville\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Lower_Princes": "BEGIN:VTIMEZONE\r\nTZID:America/Lower_Princes\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Maceio": "BEGIN:VTIMEZONE\r\nTZID:America/Maceio\r\nX-LIC-LOCATION:America/Maceio\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Maceio\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Managua": "BEGIN:VTIMEZONE\r\nTZID:America/Managua\r\nX-LIC-LOCATION:America/Managua\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Managua\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Manaus": "BEGIN:VTIMEZONE\r\nTZID:America/Manaus\r\nX-LIC-LOCATION:America/Manaus\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Manaus\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Marigot": "BEGIN:VTIMEZONE\r\nTZID:America/Marigot\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Martinique": "BEGIN:VTIMEZONE\r\nTZID:America/Martinique\r\nX-LIC-LOCATION:America/Martinique\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Martinique\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Matamoros": "BEGIN:VTIMEZONE\r\nTZID:America/Matamoros\r\nX-LIC-LOCATION:America/Matamoros\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Matamoros\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Mazatlan": "BEGIN:VTIMEZONE\r\nTZID:America/Mazatlan\r\nX-LIC-LOCATION:America/Mazatlan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Mazatlan\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Mendoza": "BEGIN:VTIMEZONE\r\nTZID:America/Mendoza\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Mendoza\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Menominee": "BEGIN:VTIMEZONE\r\nTZID:America/Menominee\r\nX-LIC-LOCATION:America/Menominee\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Menominee\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Merida": "BEGIN:VTIMEZONE\r\nTZID:America/Merida\r\nX-LIC-LOCATION:America/Merida\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Merida\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Metlakatla": "BEGIN:VTIMEZONE\r\nTZID:America/Metlakatla\r\nX-LIC-LOCATION:America/Metlakatla\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Metlakatla\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Mexico_City": "BEGIN:VTIMEZONE\r\nTZID:America/Mexico_City\r\nX-LIC-LOCATION:America/Mexico_City\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Mexico_City\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Miquelon": "BEGIN:VTIMEZONE\r\nTZID:America/Miquelon\r\nX-LIC-LOCATION:America/Miquelon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Miquelon\r\nBEGIN:DAYLIGHT\r\nTZNAME:-02\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0200\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0300\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Moncton": "BEGIN:VTIMEZONE\r\nTZID:America/Moncton\r\nX-LIC-LOCATION:America/Moncton\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Moncton\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Monterrey": "BEGIN:VTIMEZONE\r\nTZID:America/Monterrey\r\nX-LIC-LOCATION:America/Monterrey\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Monterrey\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Montevideo": "BEGIN:VTIMEZONE\r\nTZID:America/Montevideo\r\nX-LIC-LOCATION:America/Montevideo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Montevideo\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Montreal": "BEGIN:VTIMEZONE\r\nTZID:America/Montreal\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Montserrat": "BEGIN:VTIMEZONE\r\nTZID:America/Montserrat\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Nassau": "BEGIN:VTIMEZONE\r\nTZID:America/Nassau\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/New_York": "BEGIN:VTIMEZONE\r\nTZID:America/New_York\r\nX-LIC-LOCATION:America/New_York\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/New_York\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Nipigon": "BEGIN:VTIMEZONE\r\nTZID:America/Nipigon\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Nome": "BEGIN:VTIMEZONE\r\nTZID:America/Nome\r\nX-LIC-LOCATION:America/Nome\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Nome\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Noronha": "BEGIN:VTIMEZONE\r\nTZID:America/Noronha\r\nX-LIC-LOCATION:America/Noronha\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Noronha\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/North_Dakota/Beulah": "BEGIN:VTIMEZONE\r\nTZID:America/North_Dakota/Beulah\r\nX-LIC-LOCATION:America/North_Dakota/Beulah\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/North_Dakota/Beulah\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/North_Dakota/Center": "BEGIN:VTIMEZONE\r\nTZID:America/North_Dakota/Center\r\nX-LIC-LOCATION:America/North_Dakota/Center\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/North_Dakota/Center\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/North_Dakota/New_Salem": "BEGIN:VTIMEZONE\r\nTZID:America/North_Dakota/New_Salem\r\nX-LIC-LOCATION:America/North_Dakota/New_Salem\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/North_Dakota/New_Salem\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Nuuk": "BEGIN:VTIMEZONE\r\nTZID:America/Nuuk\r\nX-LIC-LOCATION:America/Nuuk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Nuuk\r\nBEGIN:DAYLIGHT\r\nTZNAME:-01\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0100\r\nDTSTART:19700328T230000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Ojinaga": "BEGIN:VTIMEZONE\r\nTZID:America/Ojinaga\r\nX-LIC-LOCATION:America/Ojinaga\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Ojinaga\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Panama": "BEGIN:VTIMEZONE\r\nTZID:America/Panama\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Pangnirtung": "BEGIN:VTIMEZONE\r\nTZID:America/Pangnirtung\r\nX-LIC-LOCATION:America/Iqaluit\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Iqaluit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Paramaribo": "BEGIN:VTIMEZONE\r\nTZID:America/Paramaribo\r\nX-LIC-LOCATION:America/Paramaribo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Paramaribo\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Phoenix": "BEGIN:VTIMEZONE\r\nTZID:America/Phoenix\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Port-au-Prince": "BEGIN:VTIMEZONE\r\nTZID:America/Port-au-Prince\r\nX-LIC-LOCATION:America/Port-au-Prince\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Port-au-Prince\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Port_of_Spain": "BEGIN:VTIMEZONE\r\nTZID:America/Port_of_Spain\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Porto_Acre": "BEGIN:VTIMEZONE\r\nTZID:America/Porto_Acre\r\nX-LIC-LOCATION:America/Rio_Branco\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Rio_Branco\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Porto_Velho": "BEGIN:VTIMEZONE\r\nTZID:America/Porto_Velho\r\nX-LIC-LOCATION:America/Porto_Velho\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Porto_Velho\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Puerto_Rico": "BEGIN:VTIMEZONE\r\nTZID:America/Puerto_Rico\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Punta_Arenas": "BEGIN:VTIMEZONE\r\nTZID:America/Punta_Arenas\r\nX-LIC-LOCATION:America/Punta_Arenas\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Punta_Arenas\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Rainy_River": "BEGIN:VTIMEZONE\r\nTZID:America/Rainy_River\r\nX-LIC-LOCATION:America/Winnipeg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Winnipeg\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Rankin_Inlet": "BEGIN:VTIMEZONE\r\nTZID:America/Rankin_Inlet\r\nX-LIC-LOCATION:America/Rankin_Inlet\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Rankin_Inlet\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Recife": "BEGIN:VTIMEZONE\r\nTZID:America/Recife\r\nX-LIC-LOCATION:America/Recife\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Recife\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Regina": "BEGIN:VTIMEZONE\r\nTZID:America/Regina\r\nX-LIC-LOCATION:America/Regina\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Regina\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Resolute": "BEGIN:VTIMEZONE\r\nTZID:America/Resolute\r\nX-LIC-LOCATION:America/Resolute\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Resolute\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Rio_Branco": "BEGIN:VTIMEZONE\r\nTZID:America/Rio_Branco\r\nX-LIC-LOCATION:America/Rio_Branco\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Rio_Branco\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Rosario": "BEGIN:VTIMEZONE\r\nTZID:America/Rosario\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Argentina/Cordoba\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Santa_Isabel": "BEGIN:VTIMEZONE\r\nTZID:America/Santa_Isabel\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Santarem": "BEGIN:VTIMEZONE\r\nTZID:America/Santarem\r\nX-LIC-LOCATION:America/Santarem\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Santarem\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Santiago": "BEGIN:VTIMEZONE\r\nTZID:America/Santiago\r\nX-LIC-LOCATION:America/Santiago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Santiago\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19700405T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:-03\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700906T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Santo_Domingo": "BEGIN:VTIMEZONE\r\nTZID:America/Santo_Domingo\r\nX-LIC-LOCATION:America/Santo_Domingo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Santo_Domingo\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Sao_Paulo": "BEGIN:VTIMEZONE\r\nTZID:America/Sao_Paulo\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Scoresbysund": "BEGIN:VTIMEZONE\r\nTZID:America/Scoresbysund\r\nX-LIC-LOCATION:America/Scoresbysund\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Scoresbysund\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:-01\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0100\r\nDTSTART:19700328T230000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/Shiprock": "BEGIN:VTIMEZONE\r\nTZID:America/Shiprock\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Sitka": "BEGIN:VTIMEZONE\r\nTZID:America/Sitka\r\nX-LIC-LOCATION:America/Sitka\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Sitka\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/St_Barthelemy": "BEGIN:VTIMEZONE\r\nTZID:America/St_Barthelemy\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/St_Johns": "BEGIN:VTIMEZONE\r\nTZID:America/St_Johns\r\nX-LIC-LOCATION:America/St_Johns\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/St_Johns\r\nBEGIN:STANDARD\r\nTZNAME:NST\r\nTZOFFSETFROM:-0230\r\nTZOFFSETTO:-0330\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:NDT\r\nTZOFFSETFROM:-0330\r\nTZOFFSETTO:-0230\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "America/St_Kitts": "BEGIN:VTIMEZONE\r\nTZID:America/St_Kitts\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/St_Lucia": "BEGIN:VTIMEZONE\r\nTZID:America/St_Lucia\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/St_Thomas": "BEGIN:VTIMEZONE\r\nTZID:America/St_Thomas\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/St_Vincent": "BEGIN:VTIMEZONE\r\nTZID:America/St_Vincent\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Swift_Current": "BEGIN:VTIMEZONE\r\nTZID:America/Swift_Current\r\nX-LIC-LOCATION:America/Swift_Current\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Swift_Current\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Tegucigalpa": "BEGIN:VTIMEZONE\r\nTZID:America/Tegucigalpa\r\nX-LIC-LOCATION:America/Tegucigalpa\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Tegucigalpa\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Thule": "BEGIN:VTIMEZONE\r\nTZID:America/Thule\r\nX-LIC-LOCATION:America/Thule\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Thule\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Thunder_Bay": "BEGIN:VTIMEZONE\r\nTZID:America/Thunder_Bay\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Tijuana": "BEGIN:VTIMEZONE\r\nTZID:America/Tijuana\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Toronto": "BEGIN:VTIMEZONE\r\nTZID:America/Toronto\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Tortola": "BEGIN:VTIMEZONE\r\nTZID:America/Tortola\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Vancouver": "BEGIN:VTIMEZONE\r\nTZID:America/Vancouver\r\nX-LIC-LOCATION:America/Vancouver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Vancouver\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Virgin": "BEGIN:VTIMEZONE\r\nTZID:America/Virgin\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Puerto_Rico\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Whitehorse": "BEGIN:VTIMEZONE\r\nTZID:America/Whitehorse\r\nX-LIC-LOCATION:America/Whitehorse\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Whitehorse\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Winnipeg": "BEGIN:VTIMEZONE\r\nTZID:America/Winnipeg\r\nX-LIC-LOCATION:America/Winnipeg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Winnipeg\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Yakutat": "BEGIN:VTIMEZONE\r\nTZID:America/Yakutat\r\nX-LIC-LOCATION:America/Yakutat\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Yakutat\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "America/Yellowknife": "BEGIN:VTIMEZONE\r\nTZID:America/Yellowknife\r\nX-LIC-LOCATION:America/Edmonton\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Edmonton\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Casey": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Casey\r\nX-LIC-LOCATION:Antarctica/Casey\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Casey\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Davis": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Davis\r\nX-LIC-LOCATION:Antarctica/Davis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Davis\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/DumontDUrville": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/DumontDUrville\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Macquarie": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Macquarie\r\nX-LIC-LOCATION:Antarctica/Macquarie\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Macquarie\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Antarctica/Mawson": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Mawson\r\nX-LIC-LOCATION:Antarctica/Mawson\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Mawson\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/McMurdo": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/McMurdo\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Palmer": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Palmer\r\nX-LIC-LOCATION:Antarctica/Palmer\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Palmer\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Rothera": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Rothera\r\nX-LIC-LOCATION:Antarctica/Rothera\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Rothera\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/South_Pole": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/South_Pole\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Syowa": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Syowa\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Troll": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Troll\r\nX-LIC-LOCATION:Antarctica/Troll\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Troll\r\nBEGIN:DAYLIGHT\r\nTZNAME:+02\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:+00\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Antarctica/Vostok": "BEGIN:VTIMEZONE\r\nTZID:Antarctica/Vostok\r\nX-LIC-LOCATION:Antarctica/Vostok\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Antarctica/Vostok\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Arctic/Longyearbyen": "BEGIN:VTIMEZONE\r\nTZID:Arctic/Longyearbyen\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Aden": "BEGIN:VTIMEZONE\r\nTZID:Asia/Aden\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Almaty": "BEGIN:VTIMEZONE\r\nTZID:Asia/Almaty\r\nX-LIC-LOCATION:Asia/Almaty\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Almaty\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Amman": "BEGIN:VTIMEZONE\r\nTZID:Asia/Amman\r\nX-LIC-LOCATION:Asia/Amman\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Amman\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Anadyr": "BEGIN:VTIMEZONE\r\nTZID:Asia/Anadyr\r\nX-LIC-LOCATION:Asia/Anadyr\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Anadyr\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Aqtau": "BEGIN:VTIMEZONE\r\nTZID:Asia/Aqtau\r\nX-LIC-LOCATION:Asia/Aqtau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Aqtau\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Aqtobe": "BEGIN:VTIMEZONE\r\nTZID:Asia/Aqtobe\r\nX-LIC-LOCATION:Asia/Aqtobe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Aqtobe\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ashgabat": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ashgabat\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ashkhabad": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ashkhabad\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ashgabat\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Atyrau": "BEGIN:VTIMEZONE\r\nTZID:Asia/Atyrau\r\nX-LIC-LOCATION:Asia/Atyrau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Atyrau\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Baghdad": "BEGIN:VTIMEZONE\r\nTZID:Asia/Baghdad\r\nX-LIC-LOCATION:Asia/Baghdad\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Baghdad\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Bahrain": "BEGIN:VTIMEZONE\r\nTZID:Asia/Bahrain\r\nX-LIC-LOCATION:Asia/Qatar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Qatar\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Baku": "BEGIN:VTIMEZONE\r\nTZID:Asia/Baku\r\nX-LIC-LOCATION:Asia/Baku\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Baku\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Bangkok": "BEGIN:VTIMEZONE\r\nTZID:Asia/Bangkok\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Barnaul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Barnaul\r\nX-LIC-LOCATION:Asia/Barnaul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Barnaul\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Beirut": "BEGIN:VTIMEZONE\r\nTZID:Asia/Beirut\r\nX-LIC-LOCATION:Asia/Beirut\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Beirut\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Bishkek": "BEGIN:VTIMEZONE\r\nTZID:Asia/Bishkek\r\nX-LIC-LOCATION:Asia/Bishkek\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Bishkek\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Brunei": "BEGIN:VTIMEZONE\r\nTZID:Asia/Brunei\r\nX-LIC-LOCATION:Asia/Kuching\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kuching\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Calcutta": "BEGIN:VTIMEZONE\r\nTZID:Asia/Calcutta\r\nX-LIC-LOCATION:Asia/Kolkata\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kolkata\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0530\r\nTZOFFSETTO:+0530\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Chita": "BEGIN:VTIMEZONE\r\nTZID:Asia/Chita\r\nX-LIC-LOCATION:Asia/Chita\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Chita\r\nBEGIN:STANDARD\r\nTZNAME:+09\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Choibalsan": "BEGIN:VTIMEZONE\r\nTZID:Asia/Choibalsan\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Chongqing": "BEGIN:VTIMEZONE\r\nTZID:Asia/Chongqing\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Chungking": "BEGIN:VTIMEZONE\r\nTZID:Asia/Chungking\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Colombo": "BEGIN:VTIMEZONE\r\nTZID:Asia/Colombo\r\nX-LIC-LOCATION:Asia/Colombo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Colombo\r\nBEGIN:STANDARD\r\nTZNAME:+0530\r\nTZOFFSETFROM:+0530\r\nTZOFFSETTO:+0530\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Dacca": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dacca\r\nX-LIC-LOCATION:Asia/Dhaka\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dhaka\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Damascus": "BEGIN:VTIMEZONE\r\nTZID:Asia/Damascus\r\nX-LIC-LOCATION:Asia/Damascus\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Damascus\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Dhaka": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dhaka\r\nX-LIC-LOCATION:Asia/Dhaka\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dhaka\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Dili": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dili\r\nX-LIC-LOCATION:Asia/Dili\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dili\r\nBEGIN:STANDARD\r\nTZNAME:+09\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Dubai": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dubai\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Dushanbe": "BEGIN:VTIMEZONE\r\nTZID:Asia/Dushanbe\r\nX-LIC-LOCATION:Asia/Dushanbe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dushanbe\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Famagusta": "BEGIN:VTIMEZONE\r\nTZID:Asia/Famagusta\r\nX-LIC-LOCATION:Asia/Famagusta\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Famagusta\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Gaza": "BEGIN:VTIMEZONE\r\nTZID:Asia/Gaza\r\nX-LIC-LOCATION:Asia/Gaza\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Gaza\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700328T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701024T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SA\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Harbin": "BEGIN:VTIMEZONE\r\nTZID:Asia/Harbin\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Hebron": "BEGIN:VTIMEZONE\r\nTZID:Asia/Hebron\r\nX-LIC-LOCATION:Asia/Hebron\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Hebron\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700328T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SA\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701024T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SA\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ho_Chi_Minh": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ho_Chi_Minh\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Hong_Kong": "BEGIN:VTIMEZONE\r\nTZID:Asia/Hong_Kong\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nBEGIN:STANDARD\r\nTZNAME:HKT\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Hovd": "BEGIN:VTIMEZONE\r\nTZID:Asia/Hovd\r\nX-LIC-LOCATION:Asia/Hovd\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Hovd\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Irkutsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Irkutsk\r\nX-LIC-LOCATION:Asia/Irkutsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Irkutsk\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Istanbul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Istanbul\r\nX-LIC-LOCATION:Europe/Istanbul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Istanbul\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Jakarta": "BEGIN:VTIMEZONE\r\nTZID:Asia/Jakarta\r\nX-LIC-LOCATION:Asia/Jakarta\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Jakarta\r\nBEGIN:STANDARD\r\nTZNAME:WIB\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Jayapura": "BEGIN:VTIMEZONE\r\nTZID:Asia/Jayapura\r\nX-LIC-LOCATION:Asia/Jayapura\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Jayapura\r\nBEGIN:STANDARD\r\nTZNAME:WIT\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Jerusalem": "BEGIN:VTIMEZONE\r\nTZID:Asia/Jerusalem\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nBEGIN:DAYLIGHT\r\nTZNAME:IDT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700327T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kabul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kabul\r\nX-LIC-LOCATION:Asia/Kabul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kabul\r\nBEGIN:STANDARD\r\nTZNAME:+0430\r\nTZOFFSETFROM:+0430\r\nTZOFFSETTO:+0430\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kamchatka": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kamchatka\r\nX-LIC-LOCATION:Asia/Kamchatka\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kamchatka\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Karachi": "BEGIN:VTIMEZONE\r\nTZID:Asia/Karachi\r\nX-LIC-LOCATION:Asia/Karachi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Karachi\r\nBEGIN:STANDARD\r\nTZNAME:PKT\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kashgar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kashgar\r\nX-LIC-LOCATION:Asia/Urumqi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Urumqi\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kathmandu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kathmandu\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nBEGIN:STANDARD\r\nTZNAME:+0545\r\nTZOFFSETFROM:+0545\r\nTZOFFSETTO:+0545\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Katmandu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Katmandu\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kathmandu\r\nBEGIN:STANDARD\r\nTZNAME:+0545\r\nTZOFFSETFROM:+0545\r\nTZOFFSETTO:+0545\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Khandyga": "BEGIN:VTIMEZONE\r\nTZID:Asia/Khandyga\r\nX-LIC-LOCATION:Asia/Khandyga\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Khandyga\r\nBEGIN:STANDARD\r\nTZNAME:+09\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kolkata": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kolkata\r\nX-LIC-LOCATION:Asia/Kolkata\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kolkata\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0530\r\nTZOFFSETTO:+0530\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Krasnoyarsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Krasnoyarsk\r\nX-LIC-LOCATION:Asia/Krasnoyarsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Krasnoyarsk\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kuala_Lumpur": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kuala_Lumpur\r\nX-LIC-LOCATION:Asia/Singapore\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Singapore\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kuching": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kuching\r\nX-LIC-LOCATION:Asia/Kuching\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Kuching\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Kuwait": "BEGIN:VTIMEZONE\r\nTZID:Asia/Kuwait\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Macao": "BEGIN:VTIMEZONE\r\nTZID:Asia/Macao\r\nX-LIC-LOCATION:Asia/Macau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Macau\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Macau": "BEGIN:VTIMEZONE\r\nTZID:Asia/Macau\r\nX-LIC-LOCATION:Asia/Macau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Macau\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Magadan": "BEGIN:VTIMEZONE\r\nTZID:Asia/Magadan\r\nX-LIC-LOCATION:Asia/Magadan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Magadan\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Makassar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Makassar\r\nX-LIC-LOCATION:Asia/Makassar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Makassar\r\nBEGIN:STANDARD\r\nTZNAME:WITA\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Manila": "BEGIN:VTIMEZONE\r\nTZID:Asia/Manila\r\nX-LIC-LOCATION:Asia/Manila\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Manila\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Muscat": "BEGIN:VTIMEZONE\r\nTZID:Asia/Muscat\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Nicosia": "BEGIN:VTIMEZONE\r\nTZID:Asia/Nicosia\r\nX-LIC-LOCATION:Asia/Nicosia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Nicosia\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Asia/Novokuznetsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Novokuznetsk\r\nX-LIC-LOCATION:Asia/Novokuznetsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Novokuznetsk\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Novosibirsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Novosibirsk\r\nX-LIC-LOCATION:Asia/Novosibirsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Novosibirsk\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Omsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Omsk\r\nX-LIC-LOCATION:Asia/Omsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Omsk\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Oral": "BEGIN:VTIMEZONE\r\nTZID:Asia/Oral\r\nX-LIC-LOCATION:Asia/Oral\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Oral\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Phnom_Penh": "BEGIN:VTIMEZONE\r\nTZID:Asia/Phnom_Penh\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Pontianak": "BEGIN:VTIMEZONE\r\nTZID:Asia/Pontianak\r\nX-LIC-LOCATION:Asia/Pontianak\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Pontianak\r\nBEGIN:STANDARD\r\nTZNAME:WIB\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Pyongyang": "BEGIN:VTIMEZONE\r\nTZID:Asia/Pyongyang\r\nX-LIC-LOCATION:Asia/Pyongyang\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Pyongyang\r\nBEGIN:STANDARD\r\nTZNAME:KST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Qatar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Qatar\r\nX-LIC-LOCATION:Asia/Qatar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Qatar\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Qostanay": "BEGIN:VTIMEZONE\r\nTZID:Asia/Qostanay\r\nX-LIC-LOCATION:Asia/Qostanay\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Qostanay\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Qyzylorda": "BEGIN:VTIMEZONE\r\nTZID:Asia/Qyzylorda\r\nX-LIC-LOCATION:Asia/Qyzylorda\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Qyzylorda\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Rangoon": "BEGIN:VTIMEZONE\r\nTZID:Asia/Rangoon\r\nX-LIC-LOCATION:Asia/Yangon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Yangon\r\nBEGIN:STANDARD\r\nTZNAME:+0630\r\nTZOFFSETFROM:+0630\r\nTZOFFSETTO:+0630\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Riyadh": "BEGIN:VTIMEZONE\r\nTZID:Asia/Riyadh\r\nX-LIC-LOCATION:Asia/Riyadh\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Riyadh\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Saigon": "BEGIN:VTIMEZONE\r\nTZID:Asia/Saigon\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ho_Chi_Minh\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Sakhalin": "BEGIN:VTIMEZONE\r\nTZID:Asia/Sakhalin\r\nX-LIC-LOCATION:Asia/Sakhalin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Sakhalin\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Samarkand": "BEGIN:VTIMEZONE\r\nTZID:Asia/Samarkand\r\nX-LIC-LOCATION:Asia/Samarkand\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Samarkand\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Seoul": "BEGIN:VTIMEZONE\r\nTZID:Asia/Seoul\r\nX-LIC-LOCATION:Asia/Seoul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Seoul\r\nBEGIN:STANDARD\r\nTZNAME:KST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Shanghai": "BEGIN:VTIMEZONE\r\nTZID:Asia/Shanghai\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Singapore": "BEGIN:VTIMEZONE\r\nTZID:Asia/Singapore\r\nX-LIC-LOCATION:Asia/Singapore\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Singapore\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Srednekolymsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Srednekolymsk\r\nX-LIC-LOCATION:Asia/Srednekolymsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Srednekolymsk\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Taipei": "BEGIN:VTIMEZONE\r\nTZID:Asia/Taipei\r\nX-LIC-LOCATION:Asia/Taipei\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Taipei\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Tashkent": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tashkent\r\nX-LIC-LOCATION:Asia/Tashkent\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tashkent\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Tbilisi": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tbilisi\r\nX-LIC-LOCATION:Asia/Tbilisi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tbilisi\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Tehran": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tehran\r\nX-LIC-LOCATION:Asia/Tehran\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tehran\r\nBEGIN:STANDARD\r\nTZNAME:+0330\r\nTZOFFSETFROM:+0330\r\nTZOFFSETTO:+0330\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Tel_Aviv": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tel_Aviv\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nBEGIN:DAYLIGHT\r\nTZNAME:IDT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700327T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Thimbu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Thimbu\r\nX-LIC-LOCATION:Asia/Thimphu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Thimphu\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Thimphu": "BEGIN:VTIMEZONE\r\nTZID:Asia/Thimphu\r\nX-LIC-LOCATION:Asia/Thimphu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Thimphu\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Tokyo": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tokyo\r\nX-LIC-LOCATION:Asia/Tokyo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tokyo\r\nBEGIN:STANDARD\r\nTZNAME:JST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Tomsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Tomsk\r\nX-LIC-LOCATION:Asia/Tomsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tomsk\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ujung_Pandang": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ujung_Pandang\r\nX-LIC-LOCATION:Asia/Makassar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Makassar\r\nBEGIN:STANDARD\r\nTZNAME:WITA\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ulaanbaatar": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ulaanbaatar\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ulan_Bator": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ulan_Bator\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ulaanbaatar\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Urumqi": "BEGIN:VTIMEZONE\r\nTZID:Asia/Urumqi\r\nX-LIC-LOCATION:Asia/Urumqi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Urumqi\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Ust-Nera": "BEGIN:VTIMEZONE\r\nTZID:Asia/Ust-Nera\r\nX-LIC-LOCATION:Asia/Ust-Nera\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Ust-Nera\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Vientiane": "BEGIN:VTIMEZONE\r\nTZID:Asia/Vientiane\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Vladivostok": "BEGIN:VTIMEZONE\r\nTZID:Asia/Vladivostok\r\nX-LIC-LOCATION:Asia/Vladivostok\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Vladivostok\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Yakutsk": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yakutsk\r\nX-LIC-LOCATION:Asia/Yakutsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Yakutsk\r\nBEGIN:STANDARD\r\nTZNAME:+09\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Yangon": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yangon\r\nX-LIC-LOCATION:Asia/Yangon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Yangon\r\nBEGIN:STANDARD\r\nTZNAME:+0630\r\nTZOFFSETFROM:+0630\r\nTZOFFSETTO:+0630\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Yekaterinburg": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yekaterinburg\r\nX-LIC-LOCATION:Asia/Yekaterinburg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Yekaterinburg\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Asia/Yerevan": "BEGIN:VTIMEZONE\r\nTZID:Asia/Yerevan\r\nX-LIC-LOCATION:Asia/Yerevan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Yerevan\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Azores": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Azores\r\nX-LIC-LOCATION:Atlantic/Azores\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Azores\r\nBEGIN:DAYLIGHT\r\nTZNAME:+00\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19700329T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:-01\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:-0100\r\nDTSTART:19701025T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Bermuda": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Bermuda\r\nX-LIC-LOCATION:Atlantic/Bermuda\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Bermuda\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Canary": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Canary\r\nX-LIC-LOCATION:Atlantic/Canary\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Canary\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Cape_Verde": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Cape_Verde\r\nX-LIC-LOCATION:Atlantic/Cape_Verde\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Cape_Verde\r\nBEGIN:STANDARD\r\nTZNAME:-01\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Faeroe": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Faeroe\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Faroe": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Faroe\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Faroe\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Jan_Mayen": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Jan_Mayen\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Madeira": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Madeira\r\nX-LIC-LOCATION:Atlantic/Madeira\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Madeira\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Reykjavik": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Reykjavik\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/South_Georgia": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/South_Georgia\r\nX-LIC-LOCATION:Atlantic/South_Georgia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/South_Georgia\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/St_Helena": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/St_Helena\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Atlantic/Stanley": "BEGIN:VTIMEZONE\r\nTZID:Atlantic/Stanley\r\nX-LIC-LOCATION:Atlantic/Stanley\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Atlantic/Stanley\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/ACT": "BEGIN:VTIMEZONE\r\nTZID:Australia/ACT\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Adelaide": "BEGIN:VTIMEZONE\r\nTZID:Australia/Adelaide\r\nX-LIC-LOCATION:Australia/Adelaide\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Adelaide\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Brisbane": "BEGIN:VTIMEZONE\r\nTZID:Australia/Brisbane\r\nX-LIC-LOCATION:Australia/Brisbane\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Brisbane\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Broken_Hill": "BEGIN:VTIMEZONE\r\nTZID:Australia/Broken_Hill\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Canberra": "BEGIN:VTIMEZONE\r\nTZID:Australia/Canberra\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Currie": "BEGIN:VTIMEZONE\r\nTZID:Australia/Currie\r\nX-LIC-LOCATION:Australia/Hobart\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Hobart\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Darwin": "BEGIN:VTIMEZONE\r\nTZID:Australia/Darwin\r\nX-LIC-LOCATION:Australia/Darwin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Darwin\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+0930\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Eucla": "BEGIN:VTIMEZONE\r\nTZID:Australia/Eucla\r\nX-LIC-LOCATION:Australia/Eucla\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Eucla\r\nBEGIN:STANDARD\r\nTZNAME:+0845\r\nTZOFFSETFROM:+0845\r\nTZOFFSETTO:+0845\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Hobart": "BEGIN:VTIMEZONE\r\nTZID:Australia/Hobart\r\nX-LIC-LOCATION:Australia/Hobart\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Hobart\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/LHI": "BEGIN:VTIMEZONE\r\nTZID:Australia/LHI\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nBEGIN:STANDARD\r\nTZNAME:+1030\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1030\r\nDTSTART:19700405T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:+11\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Lindeman": "BEGIN:VTIMEZONE\r\nTZID:Australia/Lindeman\r\nX-LIC-LOCATION:Australia/Lindeman\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Lindeman\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Lord_Howe": "BEGIN:VTIMEZONE\r\nTZID:Australia/Lord_Howe\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Lord_Howe\r\nBEGIN:STANDARD\r\nTZNAME:+1030\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1030\r\nDTSTART:19700405T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:+11\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Melbourne": "BEGIN:VTIMEZONE\r\nTZID:Australia/Melbourne\r\nX-LIC-LOCATION:Australia/Melbourne\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Melbourne\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/NSW": "BEGIN:VTIMEZONE\r\nTZID:Australia/NSW\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/North": "BEGIN:VTIMEZONE\r\nTZID:Australia/North\r\nX-LIC-LOCATION:Australia/Darwin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Darwin\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+0930\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Perth": "BEGIN:VTIMEZONE\r\nTZID:Australia/Perth\r\nX-LIC-LOCATION:Australia/Perth\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Perth\r\nBEGIN:STANDARD\r\nTZNAME:AWST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Queensland": "BEGIN:VTIMEZONE\r\nTZID:Australia/Queensland\r\nX-LIC-LOCATION:Australia/Brisbane\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Brisbane\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/South": "BEGIN:VTIMEZONE\r\nTZID:Australia/South\r\nX-LIC-LOCATION:Australia/Adelaide\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Adelaide\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Sydney": "BEGIN:VTIMEZONE\r\nTZID:Australia/Sydney\r\nX-LIC-LOCATION:Australia/Sydney\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Sydney\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/Tasmania": "BEGIN:VTIMEZONE\r\nTZID:Australia/Tasmania\r\nX-LIC-LOCATION:Australia/Hobart\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Hobart\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Victoria": "BEGIN:VTIMEZONE\r\nTZID:Australia/Victoria\r\nX-LIC-LOCATION:Australia/Melbourne\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Melbourne\r\nBEGIN:STANDARD\r\nTZNAME:AEST\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1000\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:AEDT\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1100\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Australia/West": "BEGIN:VTIMEZONE\r\nTZID:Australia/West\r\nX-LIC-LOCATION:Australia/Perth\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Perth\r\nBEGIN:STANDARD\r\nTZNAME:AWST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Australia/Yancowinna": "BEGIN:VTIMEZONE\r\nTZID:Australia/Yancowinna\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Australia/Broken_Hill\r\nBEGIN:STANDARD\r\nTZNAME:ACST\r\nTZOFFSETFROM:+1030\r\nTZOFFSETTO:+0930\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:ACDT\r\nTZOFFSETFROM:+0930\r\nTZOFFSETTO:+1030\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Brazil/Acre": "BEGIN:VTIMEZONE\r\nTZID:Brazil/Acre\r\nX-LIC-LOCATION:America/Rio_Branco\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Rio_Branco\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Brazil/DeNoronha": "BEGIN:VTIMEZONE\r\nTZID:Brazil/DeNoronha\r\nX-LIC-LOCATION:America/Noronha\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Noronha\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Brazil/East": "BEGIN:VTIMEZONE\r\nTZID:Brazil/East\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Sao_Paulo\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Brazil/West": "BEGIN:VTIMEZONE\r\nTZID:Brazil/West\r\nX-LIC-LOCATION:America/Manaus\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Manaus\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "CET": "BEGIN:VTIMEZONE\r\nTZID:CET\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "CST6CDT": "BEGIN:VTIMEZONE\r\nTZID:CST6CDT\r\nX-LIC-LOCATION:America/Chicago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Atlantic": "BEGIN:VTIMEZONE\r\nTZID:Canada/Atlantic\r\nX-LIC-LOCATION:America/Halifax\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Halifax\r\nBEGIN:DAYLIGHT\r\nTZNAME:ADT\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AST\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Central": "BEGIN:VTIMEZONE\r\nTZID:Canada/Central\r\nX-LIC-LOCATION:America/Winnipeg\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Winnipeg\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Eastern": "BEGIN:VTIMEZONE\r\nTZID:Canada/Eastern\r\nX-LIC-LOCATION:America/Toronto\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Toronto\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Mountain": "BEGIN:VTIMEZONE\r\nTZID:Canada/Mountain\r\nX-LIC-LOCATION:America/Edmonton\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Edmonton\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Newfoundland": "BEGIN:VTIMEZONE\r\nTZID:Canada/Newfoundland\r\nX-LIC-LOCATION:America/St_Johns\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/St_Johns\r\nBEGIN:STANDARD\r\nTZNAME:NST\r\nTZOFFSETFROM:-0230\r\nTZOFFSETTO:-0330\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:NDT\r\nTZOFFSETFROM:-0330\r\nTZOFFSETTO:-0230\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Canada/Pacific": "BEGIN:VTIMEZONE\r\nTZID:Canada/Pacific\r\nX-LIC-LOCATION:America/Vancouver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Vancouver\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Saskatchewan": "BEGIN:VTIMEZONE\r\nTZID:Canada/Saskatchewan\r\nX-LIC-LOCATION:America/Regina\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Regina\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Canada/Yukon": "BEGIN:VTIMEZONE\r\nTZID:Canada/Yukon\r\nX-LIC-LOCATION:America/Whitehorse\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Whitehorse\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Chile/Continental": "BEGIN:VTIMEZONE\r\nTZID:Chile/Continental\r\nX-LIC-LOCATION:America/Santiago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Santiago\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0400\r\nDTSTART:19700405T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:-03\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0300\r\nDTSTART:19700906T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Chile/EasterIsland": "BEGIN:VTIMEZONE\r\nTZID:Chile/EasterIsland\r\nX-LIC-LOCATION:Pacific/Easter\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Easter\r\nBEGIN:STANDARD\r\nTZNAME:-06\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19700404T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:-05\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700905T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Cuba": "BEGIN:VTIMEZONE\r\nTZID:Cuba\r\nX-LIC-LOCATION:America/Havana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Havana\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "EET": "BEGIN:VTIMEZONE\r\nTZID:EET\r\nX-LIC-LOCATION:Europe/Athens\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Athens\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "EST": "BEGIN:VTIMEZONE\r\nTZID:EST\r\nX-LIC-LOCATION:America/Panama\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Panama\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "EST5EDT": "BEGIN:VTIMEZONE\r\nTZID:EST5EDT\r\nX-LIC-LOCATION:America/New_York\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/New_York\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Egypt": "BEGIN:VTIMEZONE\r\nTZID:Egypt\r\nX-LIC-LOCATION:Africa/Cairo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Cairo\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700424T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701030T000000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1FR\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Eire": "BEGIN:VTIMEZONE\r\nTZID:Eire\r\nX-LIC-LOCATION:Europe/Dublin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Dublin\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Etc/GMT": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+0": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+1": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+1\r\nX-LIC-LOCATION:Etc/GMT+1\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+1\r\nBEGIN:STANDARD\r\nTZNAME:-01\r\nTZOFFSETFROM:-0100\r\nTZOFFSETTO:-0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+10": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+10\r\nX-LIC-LOCATION:Etc/GMT+10\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+10\r\nBEGIN:STANDARD\r\nTZNAME:-10\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+11": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+11\r\nX-LIC-LOCATION:Etc/GMT+11\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+11\r\nBEGIN:STANDARD\r\nTZNAME:-11\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+12": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+12\r\nX-LIC-LOCATION:Etc/GMT+12\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+12\r\nBEGIN:STANDARD\r\nTZNAME:-12\r\nTZOFFSETFROM:-1200\r\nTZOFFSETTO:-1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+2": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+2\r\nX-LIC-LOCATION:Etc/GMT+2\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+2\r\nBEGIN:STANDARD\r\nTZNAME:-02\r\nTZOFFSETFROM:-0200\r\nTZOFFSETTO:-0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+3": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+3\r\nX-LIC-LOCATION:Etc/GMT+3\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+3\r\nBEGIN:STANDARD\r\nTZNAME:-03\r\nTZOFFSETFROM:-0300\r\nTZOFFSETTO:-0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+4": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+4\r\nX-LIC-LOCATION:Etc/GMT+4\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+4\r\nBEGIN:STANDARD\r\nTZNAME:-04\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+5": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+5\r\nX-LIC-LOCATION:Etc/GMT+5\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+5\r\nBEGIN:STANDARD\r\nTZNAME:-05\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+6": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+6\r\nX-LIC-LOCATION:Etc/GMT+6\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+6\r\nBEGIN:STANDARD\r\nTZNAME:-06\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+7": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+7\r\nX-LIC-LOCATION:Etc/GMT+7\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+7\r\nBEGIN:STANDARD\r\nTZNAME:-07\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+8": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+8\r\nX-LIC-LOCATION:Etc/GMT+8\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+8\r\nBEGIN:STANDARD\r\nTZNAME:-08\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT+9": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT+9\r\nX-LIC-LOCATION:Etc/GMT+9\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT+9\r\nBEGIN:STANDARD\r\nTZNAME:-09\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-0": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-1": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-1\r\nX-LIC-LOCATION:Etc/GMT-1\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-1\r\nBEGIN:STANDARD\r\nTZNAME:+01\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-10": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-10\r\nX-LIC-LOCATION:Etc/GMT-10\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-10\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-11": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-11\r\nX-LIC-LOCATION:Etc/GMT-11\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-11\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-12": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-12\r\nX-LIC-LOCATION:Etc/GMT-12\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-12\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-13": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-13\r\nX-LIC-LOCATION:Etc/GMT-13\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-13\r\nBEGIN:STANDARD\r\nTZNAME:+13\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-14": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-14\r\nX-LIC-LOCATION:Etc/GMT-14\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-14\r\nBEGIN:STANDARD\r\nTZNAME:+14\r\nTZOFFSETFROM:+1400\r\nTZOFFSETTO:+1400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-2": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-2\r\nX-LIC-LOCATION:Etc/GMT-2\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-2\r\nBEGIN:STANDARD\r\nTZNAME:+02\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-3": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-3\r\nX-LIC-LOCATION:Etc/GMT-3\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-3\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-4": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-4\r\nX-LIC-LOCATION:Etc/GMT-4\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-4\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-5": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-5\r\nX-LIC-LOCATION:Etc/GMT-5\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-5\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-6": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-6\r\nX-LIC-LOCATION:Etc/GMT-6\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-6\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-7": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-7\r\nX-LIC-LOCATION:Etc/GMT-7\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-7\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-8": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-8\r\nX-LIC-LOCATION:Etc/GMT-8\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-8\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT-9": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT-9\r\nX-LIC-LOCATION:Etc/GMT-9\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT-9\r\nBEGIN:STANDARD\r\nTZNAME:+09\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/GMT0": "BEGIN:VTIMEZONE\r\nTZID:Etc/GMT0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/Greenwich": "BEGIN:VTIMEZONE\r\nTZID:Etc/Greenwich\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/UCT": "BEGIN:VTIMEZONE\r\nTZID:Etc/UCT\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/UTC": "BEGIN:VTIMEZONE\r\nTZID:Etc/UTC\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/Universal": "BEGIN:VTIMEZONE\r\nTZID:Etc/Universal\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Etc/Zulu": "BEGIN:VTIMEZONE\r\nTZID:Etc/Zulu\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Amsterdam": "BEGIN:VTIMEZONE\r\nTZID:Europe/Amsterdam\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Andorra": "BEGIN:VTIMEZONE\r\nTZID:Europe/Andorra\r\nX-LIC-LOCATION:Europe/Andorra\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Andorra\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Astrakhan": "BEGIN:VTIMEZONE\r\nTZID:Europe/Astrakhan\r\nX-LIC-LOCATION:Europe/Astrakhan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Astrakhan\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Athens": "BEGIN:VTIMEZONE\r\nTZID:Europe/Athens\r\nX-LIC-LOCATION:Europe/Athens\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Athens\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Belfast": "BEGIN:VTIMEZONE\r\nTZID:Europe/Belfast\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Belgrade": "BEGIN:VTIMEZONE\r\nTZID:Europe/Belgrade\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Berlin": "BEGIN:VTIMEZONE\r\nTZID:Europe/Berlin\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Bratislava": "BEGIN:VTIMEZONE\r\nTZID:Europe/Bratislava\r\nX-LIC-LOCATION:Europe/Prague\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Prague\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Brussels": "BEGIN:VTIMEZONE\r\nTZID:Europe/Brussels\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Bucharest": "BEGIN:VTIMEZONE\r\nTZID:Europe/Bucharest\r\nX-LIC-LOCATION:Europe/Bucharest\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Bucharest\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Budapest": "BEGIN:VTIMEZONE\r\nTZID:Europe/Budapest\r\nX-LIC-LOCATION:Europe/Budapest\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Budapest\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Busingen": "BEGIN:VTIMEZONE\r\nTZID:Europe/Busingen\r\nX-LIC-LOCATION:Europe/Zurich\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Zurich\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Chisinau": "BEGIN:VTIMEZONE\r\nTZID:Europe/Chisinau\r\nX-LIC-LOCATION:Europe/Chisinau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Chisinau\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Copenhagen": "BEGIN:VTIMEZONE\r\nTZID:Europe/Copenhagen\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Dublin": "BEGIN:VTIMEZONE\r\nTZID:Europe/Dublin\r\nX-LIC-LOCATION:Europe/Dublin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Dublin\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Gibraltar": "BEGIN:VTIMEZONE\r\nTZID:Europe/Gibraltar\r\nX-LIC-LOCATION:Europe/Gibraltar\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Gibraltar\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Guernsey": "BEGIN:VTIMEZONE\r\nTZID:Europe/Guernsey\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Helsinki": "BEGIN:VTIMEZONE\r\nTZID:Europe/Helsinki\r\nX-LIC-LOCATION:Europe/Helsinki\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Helsinki\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Isle_of_Man": "BEGIN:VTIMEZONE\r\nTZID:Europe/Isle_of_Man\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Istanbul": "BEGIN:VTIMEZONE\r\nTZID:Europe/Istanbul\r\nX-LIC-LOCATION:Europe/Istanbul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Istanbul\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Jersey": "BEGIN:VTIMEZONE\r\nTZID:Europe/Jersey\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Kaliningrad": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kaliningrad\r\nX-LIC-LOCATION:Europe/Kaliningrad\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Kaliningrad\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Kiev": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kiev\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Kirov": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kirov\r\nX-LIC-LOCATION:Europe/Kirov\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Kirov\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Kyiv": "BEGIN:VTIMEZONE\r\nTZID:Europe/Kyiv\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Lisbon": "BEGIN:VTIMEZONE\r\nTZID:Europe/Lisbon\r\nX-LIC-LOCATION:Europe/Lisbon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Lisbon\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Ljubljana": "BEGIN:VTIMEZONE\r\nTZID:Europe/Ljubljana\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/London": "BEGIN:VTIMEZONE\r\nTZID:Europe/London\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Luxembourg": "BEGIN:VTIMEZONE\r\nTZID:Europe/Luxembourg\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Madrid": "BEGIN:VTIMEZONE\r\nTZID:Europe/Madrid\r\nX-LIC-LOCATION:Europe/Madrid\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Madrid\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Malta": "BEGIN:VTIMEZONE\r\nTZID:Europe/Malta\r\nX-LIC-LOCATION:Europe/Malta\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Malta\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Mariehamn": "BEGIN:VTIMEZONE\r\nTZID:Europe/Mariehamn\r\nX-LIC-LOCATION:Europe/Helsinki\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Helsinki\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Minsk": "BEGIN:VTIMEZONE\r\nTZID:Europe/Minsk\r\nX-LIC-LOCATION:Europe/Minsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Minsk\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Monaco": "BEGIN:VTIMEZONE\r\nTZID:Europe/Monaco\r\nX-LIC-LOCATION:Europe/Paris\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Paris\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Moscow": "BEGIN:VTIMEZONE\r\nTZID:Europe/Moscow\r\nX-LIC-LOCATION:Europe/Moscow\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Moscow\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Nicosia": "BEGIN:VTIMEZONE\r\nTZID:Europe/Nicosia\r\nX-LIC-LOCATION:Asia/Nicosia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Nicosia\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Oslo": "BEGIN:VTIMEZONE\r\nTZID:Europe/Oslo\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Paris": "BEGIN:VTIMEZONE\r\nTZID:Europe/Paris\r\nX-LIC-LOCATION:Europe/Paris\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Paris\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Podgorica": "BEGIN:VTIMEZONE\r\nTZID:Europe/Podgorica\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Prague": "BEGIN:VTIMEZONE\r\nTZID:Europe/Prague\r\nX-LIC-LOCATION:Europe/Prague\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Prague\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Riga": "BEGIN:VTIMEZONE\r\nTZID:Europe/Riga\r\nX-LIC-LOCATION:Europe/Riga\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Riga\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Rome": "BEGIN:VTIMEZONE\r\nTZID:Europe/Rome\r\nX-LIC-LOCATION:Europe/Rome\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Rome\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Samara": "BEGIN:VTIMEZONE\r\nTZID:Europe/Samara\r\nX-LIC-LOCATION:Europe/Samara\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Samara\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/San_Marino": "BEGIN:VTIMEZONE\r\nTZID:Europe/San_Marino\r\nX-LIC-LOCATION:Europe/Rome\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Rome\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Sarajevo": "BEGIN:VTIMEZONE\r\nTZID:Europe/Sarajevo\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Saratov": "BEGIN:VTIMEZONE\r\nTZID:Europe/Saratov\r\nX-LIC-LOCATION:Europe/Saratov\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Saratov\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Simferopol": "BEGIN:VTIMEZONE\r\nTZID:Europe/Simferopol\r\nX-LIC-LOCATION:Europe/Simferopol\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Simferopol\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Skopje": "BEGIN:VTIMEZONE\r\nTZID:Europe/Skopje\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Sofia": "BEGIN:VTIMEZONE\r\nTZID:Europe/Sofia\r\nX-LIC-LOCATION:Europe/Sofia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Sofia\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Stockholm": "BEGIN:VTIMEZONE\r\nTZID:Europe/Stockholm\r\nX-LIC-LOCATION:Europe/Berlin\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Berlin\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Tallinn": "BEGIN:VTIMEZONE\r\nTZID:Europe/Tallinn\r\nX-LIC-LOCATION:Europe/Tallinn\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Tallinn\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Tirane": "BEGIN:VTIMEZONE\r\nTZID:Europe/Tirane\r\nX-LIC-LOCATION:Europe/Tirane\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Tirane\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Tiraspol": "BEGIN:VTIMEZONE\r\nTZID:Europe/Tiraspol\r\nX-LIC-LOCATION:Europe/Chisinau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Chisinau\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Ulyanovsk": "BEGIN:VTIMEZONE\r\nTZID:Europe/Ulyanovsk\r\nX-LIC-LOCATION:Europe/Ulyanovsk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Ulyanovsk\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Uzhgorod": "BEGIN:VTIMEZONE\r\nTZID:Europe/Uzhgorod\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Vaduz": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vaduz\r\nX-LIC-LOCATION:Europe/Zurich\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Zurich\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Vatican": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vatican\r\nX-LIC-LOCATION:Europe/Rome\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Rome\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Vienna": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vienna\r\nX-LIC-LOCATION:Europe/Vienna\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Vienna\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Vilnius": "BEGIN:VTIMEZONE\r\nTZID:Europe/Vilnius\r\nX-LIC-LOCATION:Europe/Vilnius\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Vilnius\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Volgograd": "BEGIN:VTIMEZONE\r\nTZID:Europe/Volgograd\r\nX-LIC-LOCATION:Europe/Volgograd\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Volgograd\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Warsaw": "BEGIN:VTIMEZONE\r\nTZID:Europe/Warsaw\r\nX-LIC-LOCATION:Europe/Warsaw\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Warsaw\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Zagreb": "BEGIN:VTIMEZONE\r\nTZID:Europe/Zagreb\r\nX-LIC-LOCATION:Europe/Belgrade\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Belgrade\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Europe/Zaporozhye": "BEGIN:VTIMEZONE\r\nTZID:Europe/Zaporozhye\r\nX-LIC-LOCATION:Europe/Kyiv\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Kyiv\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T040000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:EEST\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700329T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Europe/Zurich": "BEGIN:VTIMEZONE\r\nTZID:Europe/Zurich\r\nX-LIC-LOCATION:Europe/Zurich\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Zurich\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "GB": "BEGIN:VTIMEZONE\r\nTZID:GB\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "GB-Eire": "BEGIN:VTIMEZONE\r\nTZID:GB-Eire\r\nX-LIC-LOCATION:Europe/London\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/London\r\nBEGIN:DAYLIGHT\r\nTZNAME:BST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "GMT": "BEGIN:VTIMEZONE\r\nTZID:GMT\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "GMT+0": "BEGIN:VTIMEZONE\r\nTZID:GMT+0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "GMT-0": "BEGIN:VTIMEZONE\r\nTZID:GMT-0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "GMT0": "BEGIN:VTIMEZONE\r\nTZID:GMT0\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Greenwich": "BEGIN:VTIMEZONE\r\nTZID:Greenwich\r\nX-LIC-LOCATION:Etc/GMT\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/GMT\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "HST": "BEGIN:VTIMEZONE\r\nTZID:HST\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Hongkong": "BEGIN:VTIMEZONE\r\nTZID:Hongkong\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Hong_Kong\r\nBEGIN:STANDARD\r\nTZNAME:HKT\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Iceland": "BEGIN:VTIMEZONE\r\nTZID:Iceland\r\nX-LIC-LOCATION:Africa/Abidjan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Abidjan\r\nBEGIN:STANDARD\r\nTZNAME:GMT\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Antananarivo": "BEGIN:VTIMEZONE\r\nTZID:Indian/Antananarivo\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Chagos": "BEGIN:VTIMEZONE\r\nTZID:Indian/Chagos\r\nX-LIC-LOCATION:Indian/Chagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Indian/Chagos\r\nBEGIN:STANDARD\r\nTZNAME:+06\r\nTZOFFSETFROM:+0600\r\nTZOFFSETTO:+0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Christmas": "BEGIN:VTIMEZONE\r\nTZID:Indian/Christmas\r\nX-LIC-LOCATION:Asia/Bangkok\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Bangkok\r\nBEGIN:STANDARD\r\nTZNAME:+07\r\nTZOFFSETFROM:+0700\r\nTZOFFSETTO:+0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Cocos": "BEGIN:VTIMEZONE\r\nTZID:Indian/Cocos\r\nX-LIC-LOCATION:Asia/Yangon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Yangon\r\nBEGIN:STANDARD\r\nTZNAME:+0630\r\nTZOFFSETFROM:+0630\r\nTZOFFSETTO:+0630\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Comoro": "BEGIN:VTIMEZONE\r\nTZID:Indian/Comoro\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Kerguelen": "BEGIN:VTIMEZONE\r\nTZID:Indian/Kerguelen\r\nX-LIC-LOCATION:Indian/Maldives\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Indian/Maldives\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Mahe": "BEGIN:VTIMEZONE\r\nTZID:Indian/Mahe\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Maldives": "BEGIN:VTIMEZONE\r\nTZID:Indian/Maldives\r\nX-LIC-LOCATION:Indian/Maldives\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Indian/Maldives\r\nBEGIN:STANDARD\r\nTZNAME:+05\r\nTZOFFSETFROM:+0500\r\nTZOFFSETTO:+0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Mauritius": "BEGIN:VTIMEZONE\r\nTZID:Indian/Mauritius\r\nX-LIC-LOCATION:Indian/Mauritius\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Indian/Mauritius\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Mayotte": "BEGIN:VTIMEZONE\r\nTZID:Indian/Mayotte\r\nX-LIC-LOCATION:Africa/Nairobi\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Nairobi\r\nBEGIN:STANDARD\r\nTZNAME:EAT\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Indian/Reunion": "BEGIN:VTIMEZONE\r\nTZID:Indian/Reunion\r\nX-LIC-LOCATION:Asia/Dubai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Dubai\r\nBEGIN:STANDARD\r\nTZNAME:+04\r\nTZOFFSETFROM:+0400\r\nTZOFFSETTO:+0400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Iran": "BEGIN:VTIMEZONE\r\nTZID:Iran\r\nX-LIC-LOCATION:Asia/Tehran\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tehran\r\nBEGIN:STANDARD\r\nTZNAME:+0330\r\nTZOFFSETFROM:+0330\r\nTZOFFSETTO:+0330\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Israel": "BEGIN:VTIMEZONE\r\nTZID:Israel\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Jerusalem\r\nBEGIN:DAYLIGHT\r\nTZNAME:IDT\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0300\r\nDTSTART:19700327T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1FR\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:IST\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0200\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Jamaica": "BEGIN:VTIMEZONE\r\nTZID:Jamaica\r\nX-LIC-LOCATION:America/Jamaica\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Jamaica\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0500\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Japan": "BEGIN:VTIMEZONE\r\nTZID:Japan\r\nX-LIC-LOCATION:Asia/Tokyo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Tokyo\r\nBEGIN:STANDARD\r\nTZNAME:JST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Kwajalein": "BEGIN:VTIMEZONE\r\nTZID:Kwajalein\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Libya": "BEGIN:VTIMEZONE\r\nTZID:Libya\r\nX-LIC-LOCATION:Africa/Tripoli\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Africa/Tripoli\r\nBEGIN:STANDARD\r\nTZNAME:EET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "MET": "BEGIN:VTIMEZONE\r\nTZID:MET\r\nX-LIC-LOCATION:Europe/Brussels\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Brussels\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "MST": "BEGIN:VTIMEZONE\r\nTZID:MST\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "MST7MDT": "BEGIN:VTIMEZONE\r\nTZID:MST7MDT\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Mexico/BajaNorte": "BEGIN:VTIMEZONE\r\nTZID:Mexico/BajaNorte\r\nX-LIC-LOCATION:America/Tijuana\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Tijuana\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Mexico/BajaSur": "BEGIN:VTIMEZONE\r\nTZID:Mexico/BajaSur\r\nX-LIC-LOCATION:America/Mazatlan\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Mazatlan\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Mexico/General": "BEGIN:VTIMEZONE\r\nTZID:Mexico/General\r\nX-LIC-LOCATION:America/Mexico_City\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Mexico_City\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "NZ": "BEGIN:VTIMEZONE\r\nTZID:NZ\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "NZ-CHAT": "BEGIN:VTIMEZONE\r\nTZID:NZ-CHAT\r\nX-LIC-LOCATION:Pacific/Chatham\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Chatham\r\nBEGIN:DAYLIGHT\r\nTZNAME:+1345\r\nTZOFFSETFROM:+1245\r\nTZOFFSETTO:+1345\r\nDTSTART:19700927T024500\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:+1245\r\nTZOFFSETFROM:+1345\r\nTZOFFSETTO:+1245\r\nDTSTART:19700405T034500\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Navajo": "BEGIN:VTIMEZONE\r\nTZID:Navajo\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "PRC": "BEGIN:VTIMEZONE\r\nTZID:PRC\r\nX-LIC-LOCATION:Asia/Shanghai\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Shanghai\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "PST8PDT": "BEGIN:VTIMEZONE\r\nTZID:PST8PDT\r\nX-LIC-LOCATION:America/Los_Angeles\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Los_Angeles\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Apia": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Apia\r\nX-LIC-LOCATION:Pacific/Apia\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Apia\r\nBEGIN:STANDARD\r\nTZNAME:+13\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Auckland": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Auckland\r\nX-LIC-LOCATION:Pacific/Auckland\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Auckland\r\nBEGIN:DAYLIGHT\r\nTZNAME:NZDT\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1300\r\nDTSTART:19700927T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:NZST\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1200\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Bougainville": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Bougainville\r\nX-LIC-LOCATION:Pacific/Bougainville\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Bougainville\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Chatham": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Chatham\r\nX-LIC-LOCATION:Pacific/Chatham\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Chatham\r\nBEGIN:DAYLIGHT\r\nTZNAME:+1345\r\nTZOFFSETFROM:+1245\r\nTZOFFSETTO:+1345\r\nDTSTART:19700927T024500\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:+1245\r\nTZOFFSETFROM:+1345\r\nTZOFFSETTO:+1245\r\nDTSTART:19700405T034500\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Chuuk": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Chuuk\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Easter": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Easter\r\nX-LIC-LOCATION:Pacific/Easter\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Easter\r\nBEGIN:STANDARD\r\nTZNAME:-06\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19700404T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SA\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:-05\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700905T220000\r\nRRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SA\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Pacific/Efate": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Efate\r\nX-LIC-LOCATION:Pacific/Efate\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Efate\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Enderbury": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Enderbury\r\nX-LIC-LOCATION:Pacific/Kanton\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Kanton\r\nBEGIN:STANDARD\r\nTZNAME:+13\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Fakaofo": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Fakaofo\r\nX-LIC-LOCATION:Pacific/Fakaofo\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Fakaofo\r\nBEGIN:STANDARD\r\nTZNAME:+13\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Fiji": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Fiji\r\nX-LIC-LOCATION:Pacific/Fiji\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Fiji\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Funafuti": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Funafuti\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Galapagos": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Galapagos\r\nX-LIC-LOCATION:Pacific/Galapagos\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Galapagos\r\nBEGIN:STANDARD\r\nTZNAME:-06\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0600\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Gambier": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Gambier\r\nX-LIC-LOCATION:Pacific/Gambier\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Gambier\r\nBEGIN:STANDARD\r\nTZNAME:-09\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Guadalcanal": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Guadalcanal\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Guam": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Guam\r\nX-LIC-LOCATION:Pacific/Guam\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Guam\r\nBEGIN:STANDARD\r\nTZNAME:ChST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Honolulu": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Honolulu\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Johnston": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Johnston\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Kanton": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kanton\r\nX-LIC-LOCATION:Pacific/Kanton\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Kanton\r\nBEGIN:STANDARD\r\nTZNAME:+13\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Kiritimati": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kiritimati\r\nX-LIC-LOCATION:Pacific/Kiritimati\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Kiritimati\r\nBEGIN:STANDARD\r\nTZNAME:+14\r\nTZOFFSETFROM:+1400\r\nTZOFFSETTO:+1400\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Kosrae": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kosrae\r\nX-LIC-LOCATION:Pacific/Kosrae\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Kosrae\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Kwajalein": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Kwajalein\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Kwajalein\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Majuro": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Majuro\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Marquesas": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Marquesas\r\nX-LIC-LOCATION:Pacific/Marquesas\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Marquesas\r\nBEGIN:STANDARD\r\nTZNAME:-0930\r\nTZOFFSETFROM:-0930\r\nTZOFFSETTO:-0930\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Midway": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Midway\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Nauru": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Nauru\r\nX-LIC-LOCATION:Pacific/Nauru\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Nauru\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Niue": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Niue\r\nX-LIC-LOCATION:Pacific/Niue\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Niue\r\nBEGIN:STANDARD\r\nTZNAME:-11\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Norfolk": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Norfolk\r\nX-LIC-LOCATION:Pacific/Norfolk\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Norfolk\r\nBEGIN:DAYLIGHT\r\nTZNAME:+12\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1200\r\nDTSTART:19701004T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1100\r\nDTSTART:19700405T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Noumea": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Noumea\r\nX-LIC-LOCATION:Pacific/Noumea\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Noumea\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Pago_Pago": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Pago_Pago\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Palau": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Palau\r\nX-LIC-LOCATION:Pacific/Palau\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Palau\r\nBEGIN:STANDARD\r\nTZNAME:+09\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Pitcairn": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Pitcairn\r\nX-LIC-LOCATION:Pacific/Pitcairn\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Pitcairn\r\nBEGIN:STANDARD\r\nTZNAME:-08\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Pohnpei": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Pohnpei\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Ponape": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Ponape\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Guadalcanal\r\nBEGIN:STANDARD\r\nTZNAME:+11\r\nTZOFFSETFROM:+1100\r\nTZOFFSETTO:+1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Port_Moresby": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Port_Moresby\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Rarotonga": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Rarotonga\r\nX-LIC-LOCATION:Pacific/Rarotonga\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Rarotonga\r\nBEGIN:STANDARD\r\nTZNAME:-10\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Saipan": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Saipan\r\nX-LIC-LOCATION:Pacific/Guam\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Guam\r\nBEGIN:STANDARD\r\nTZNAME:ChST\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Samoa": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Samoa\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Tahiti": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Tahiti\r\nX-LIC-LOCATION:Pacific/Tahiti\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tahiti\r\nBEGIN:STANDARD\r\nTZNAME:-10\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Tarawa": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Tarawa\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Tongatapu": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Tongatapu\r\nX-LIC-LOCATION:Pacific/Tongatapu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tongatapu\r\nBEGIN:STANDARD\r\nTZNAME:+13\r\nTZOFFSETFROM:+1300\r\nTZOFFSETTO:+1300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Truk": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Truk\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Wake": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Wake\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Wallis": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Wallis\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Tarawa\r\nBEGIN:STANDARD\r\nTZNAME:+12\r\nTZOFFSETFROM:+1200\r\nTZOFFSETTO:+1200\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Pacific/Yap": "BEGIN:VTIMEZONE\r\nTZID:Pacific/Yap\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Port_Moresby\r\nBEGIN:STANDARD\r\nTZNAME:+10\r\nTZOFFSETFROM:+1000\r\nTZOFFSETTO:+1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Poland": "BEGIN:VTIMEZONE\r\nTZID:Poland\r\nX-LIC-LOCATION:Europe/Warsaw\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Warsaw\r\nBEGIN:DAYLIGHT\r\nTZNAME:CEST\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0200\r\nDTSTART:19700329T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CET\r\nTZOFFSETFROM:+0200\r\nTZOFFSETTO:+0100\r\nDTSTART:19701025T030000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Portugal": "BEGIN:VTIMEZONE\r\nTZID:Portugal\r\nX-LIC-LOCATION:Europe/Lisbon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Lisbon\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "ROC": "BEGIN:VTIMEZONE\r\nTZID:ROC\r\nX-LIC-LOCATION:Asia/Taipei\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Taipei\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "ROK": "BEGIN:VTIMEZONE\r\nTZID:ROK\r\nX-LIC-LOCATION:Asia/Seoul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Seoul\r\nBEGIN:STANDARD\r\nTZNAME:KST\r\nTZOFFSETFROM:+0900\r\nTZOFFSETTO:+0900\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Singapore": "BEGIN:VTIMEZONE\r\nTZID:Singapore\r\nX-LIC-LOCATION:Asia/Singapore\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Asia/Singapore\r\nBEGIN:STANDARD\r\nTZNAME:+08\r\nTZOFFSETFROM:+0800\r\nTZOFFSETTO:+0800\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Turkey": "BEGIN:VTIMEZONE\r\nTZID:Turkey\r\nX-LIC-LOCATION:Europe/Istanbul\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Istanbul\r\nBEGIN:STANDARD\r\nTZNAME:+03\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "UCT": "BEGIN:VTIMEZONE\r\nTZID:UCT\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Alaska": "BEGIN:VTIMEZONE\r\nTZID:US/Alaska\r\nX-LIC-LOCATION:America/Anchorage\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Anchorage\r\nBEGIN:DAYLIGHT\r\nTZNAME:AKDT\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-0800\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:AKST\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0900\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Aleutian": "BEGIN:VTIMEZONE\r\nTZID:US/Aleutian\r\nX-LIC-LOCATION:America/Adak\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Adak\r\nBEGIN:DAYLIGHT\r\nTZNAME:HDT\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-0900\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-0900\r\nTZOFFSETTO:-1000\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Arizona": "BEGIN:VTIMEZONE\r\nTZID:US/Arizona\r\nX-LIC-LOCATION:America/Phoenix\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Phoenix\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0700\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Central": "BEGIN:VTIMEZONE\r\nTZID:US/Central\r\nX-LIC-LOCATION:America/Chicago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Chicago\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/East-Indiana": "BEGIN:VTIMEZONE\r\nTZID:US/East-Indiana\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Indianapolis\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Eastern": "BEGIN:VTIMEZONE\r\nTZID:US/Eastern\r\nX-LIC-LOCATION:America/New_York\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/New_York\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Hawaii": "BEGIN:VTIMEZONE\r\nTZID:US/Hawaii\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Honolulu\r\nBEGIN:STANDARD\r\nTZNAME:HST\r\nTZOFFSETFROM:-1000\r\nTZOFFSETTO:-1000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Indiana-Starke": "BEGIN:VTIMEZONE\r\nTZID:US/Indiana-Starke\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Indiana/Knox\r\nBEGIN:DAYLIGHT\r\nTZNAME:CDT\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0500\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:CST\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0600\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Michigan": "BEGIN:VTIMEZONE\r\nTZID:US/Michigan\r\nX-LIC-LOCATION:America/Detroit\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Detroit\r\nBEGIN:DAYLIGHT\r\nTZNAME:EDT\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:EST\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Mountain": "BEGIN:VTIMEZONE\r\nTZID:US/Mountain\r\nX-LIC-LOCATION:America/Denver\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Denver\r\nBEGIN:DAYLIGHT\r\nTZNAME:MDT\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0600\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:MST\r\nTZOFFSETFROM:-0600\r\nTZOFFSETTO:-0700\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Pacific": "BEGIN:VTIMEZONE\r\nTZID:US/Pacific\r\nX-LIC-LOCATION:America/Los_Angeles\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:America/Los_Angeles\r\nBEGIN:DAYLIGHT\r\nTZNAME:PDT\r\nTZOFFSETFROM:-0800\r\nTZOFFSETTO:-0700\r\nDTSTART:19700308T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\nEND:DAYLIGHT\r\nBEGIN:STANDARD\r\nTZNAME:PST\r\nTZOFFSETFROM:-0700\r\nTZOFFSETTO:-0800\r\nDTSTART:19701101T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "US/Samoa": "BEGIN:VTIMEZONE\r\nTZID:US/Samoa\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Pacific/Pago_Pago\r\nBEGIN:STANDARD\r\nTZNAME:SST\r\nTZOFFSETFROM:-1100\r\nTZOFFSETTO:-1100\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "UTC": "BEGIN:VTIMEZONE\r\nTZID:UTC\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "Universal": "BEGIN:VTIMEZONE\r\nTZID:Universal\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "W-SU": "BEGIN:VTIMEZONE\r\nTZID:W-SU\r\nX-LIC-LOCATION:Europe/Moscow\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Moscow\r\nBEGIN:STANDARD\r\nTZNAME:MSK\r\nTZOFFSETFROM:+0300\r\nTZOFFSETTO:+0300\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE",
+  "WET": "BEGIN:VTIMEZONE\r\nTZID:WET\r\nX-LIC-LOCATION:Europe/Lisbon\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Europe/Lisbon\r\nBEGIN:STANDARD\r\nTZNAME:WET\r\nTZOFFSETFROM:+0100\r\nTZOFFSETTO:+0000\r\nDTSTART:19701025T020000\r\nRRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nTZNAME:WEST\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0100\r\nDTSTART:19700329T010000\r\nRRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE",
+  "Zulu": "BEGIN:VTIMEZONE\r\nTZID:Zulu\r\nX-LIC-LOCATION:Etc/UTC\r\nLAST-MODIFIED:20250523T094234Z\r\nX-LIC-LOCATION:Etc/UTC\r\nBEGIN:STANDARD\r\nTZNAME:UTC\r\nTZOFFSETFROM:+0000\r\nTZOFFSETTO:+0000\r\nDTSTART:19700101T000000\r\nEND:STANDARD\r\nEND:VTIMEZONE"
 };
 
-// node_modules/luxon/src/errors.js
+// node_modules/luxon/build/es6/luxon.mjs
 var LuxonError = class extends Error {
 };
 var InvalidDateTimeError = class extends LuxonError {
@@ -2521,8 +2529,6 @@ var ZoneIsAbstractError = class extends LuxonError {
     super("Zone is an abstract class");
   }
 };
-
-// node_modules/luxon/src/impl/formats.js
 var n = "numeric";
 var s = "short";
 var l = "long";
@@ -2673,8 +2679,6 @@ var DATETIME_HUGE_WITH_SECONDS = {
   second: n,
   timeZoneName: l
 };
-
-// node_modules/luxon/src/zone.js
 var Zone = class {
   /**
    * The type of zone
@@ -2759,19 +2763,17 @@ var Zone = class {
     throw new ZoneIsAbstractError();
   }
 };
-
-// node_modules/luxon/src/zones/systemZone.js
-var singleton = null;
+var singleton$1 = null;
 var SystemZone = class _SystemZone extends Zone {
   /**
    * Get a singleton instance of the local zone
    * @return {SystemZone}
    */
   static get instance() {
-    if (singleton === null) {
-      singleton = new _SystemZone();
+    if (singleton$1 === null) {
+      singleton$1 = new _SystemZone();
     }
-    return singleton;
+    return singleton$1;
   }
   /** @override **/
   get type() {
@@ -2806,14 +2808,13 @@ var SystemZone = class _SystemZone extends Zone {
     return true;
   }
 };
-
-// node_modules/luxon/src/zones/IANAZone.js
-var dtfCache = {};
-function makeDTF(zone) {
-  if (!dtfCache[zone]) {
-    dtfCache[zone] = new Intl.DateTimeFormat("en-US", {
+var dtfCache = /* @__PURE__ */ new Map();
+function makeDTF(zoneName) {
+  let dtf = dtfCache.get(zoneName);
+  if (dtf === void 0) {
+    dtf = new Intl.DateTimeFormat("en-US", {
       hour12: false,
-      timeZone: zone,
+      timeZone: zoneName,
       year: "numeric",
       month: "2-digit",
       day: "2-digit",
@@ -2822,8 +2823,9 @@ function makeDTF(zone) {
       second: "2-digit",
       era: "short"
     });
+    dtfCache.set(zoneName, dtf);
   }
-  return dtfCache[zone];
+  return dtf;
 }
 var typeToPos = {
   year: 0,
@@ -2852,25 +2854,26 @@ function partsOffset(dtf, date) {
   }
   return filled;
 }
-var ianaZoneCache = {};
+var ianaZoneCache = /* @__PURE__ */ new Map();
 var IANAZone = class _IANAZone extends Zone {
   /**
    * @param {string} name - Zone name
    * @return {IANAZone}
    */
   static create(name) {
-    if (!ianaZoneCache[name]) {
-      ianaZoneCache[name] = new _IANAZone(name);
+    let zone = ianaZoneCache.get(name);
+    if (zone === void 0) {
+      ianaZoneCache.set(name, zone = new _IANAZone(name));
     }
-    return ianaZoneCache[name];
+    return zone;
   }
   /**
    * Reset local caches. Should only be necessary in testing scenarios.
    * @return {void}
    */
   static resetCache() {
-    ianaZoneCache = {};
-    dtfCache = {};
+    ianaZoneCache.clear();
+    dtfCache.clear();
   }
   /**
    * Returns whether the provided string is a valid specifier. This only checks the string's format, not that the specifier identifies a known zone; see isValidZone for that.
@@ -2962,6 +2965,7 @@ var IANAZone = class _IANAZone extends Zone {
    * @return {number}
    */
   offset(ts) {
+    if (!this.valid) return NaN;
     const date = new Date(ts);
     if (isNaN(date)) return NaN;
     const dtf = makeDTF(this.name);
@@ -3002,8 +3006,6 @@ var IANAZone = class _IANAZone extends Zone {
     return this.valid;
   }
 };
-
-// node_modules/luxon/src/impl/locale.js
 var intlLFCache = {};
 function getCachedLF(locString, opts = {}) {
   const key = JSON.stringify([locString, opts]);
@@ -3014,34 +3016,34 @@ function getCachedLF(locString, opts = {}) {
   }
   return dtf;
 }
-var intlDTCache = {};
+var intlDTCache = /* @__PURE__ */ new Map();
 function getCachedDTF(locString, opts = {}) {
   const key = JSON.stringify([locString, opts]);
-  let dtf = intlDTCache[key];
-  if (!dtf) {
+  let dtf = intlDTCache.get(key);
+  if (dtf === void 0) {
     dtf = new Intl.DateTimeFormat(locString, opts);
-    intlDTCache[key] = dtf;
+    intlDTCache.set(key, dtf);
   }
   return dtf;
 }
-var intlNumCache = {};
+var intlNumCache = /* @__PURE__ */ new Map();
 function getCachedINF(locString, opts = {}) {
   const key = JSON.stringify([locString, opts]);
-  let inf = intlNumCache[key];
-  if (!inf) {
+  let inf = intlNumCache.get(key);
+  if (inf === void 0) {
     inf = new Intl.NumberFormat(locString, opts);
-    intlNumCache[key] = inf;
+    intlNumCache.set(key, inf);
   }
   return inf;
 }
-var intlRelCache = {};
+var intlRelCache = /* @__PURE__ */ new Map();
 function getCachedRTF(locString, opts = {}) {
   const { base, ...cacheKeyOpts } = opts;
   const key = JSON.stringify([locString, cacheKeyOpts]);
-  let inf = intlRelCache[key];
-  if (!inf) {
+  let inf = intlRelCache.get(key);
+  if (inf === void 0) {
     inf = new Intl.RelativeTimeFormat(locString, opts);
-    intlRelCache[key] = inf;
+    intlRelCache.set(key, inf);
   }
   return inf;
 }
@@ -3054,13 +3056,25 @@ function systemLocale() {
     return sysLocaleCache;
   }
 }
-var weekInfoCache = {};
+var intlResolvedOptionsCache = /* @__PURE__ */ new Map();
+function getCachedIntResolvedOptions(locString) {
+  let opts = intlResolvedOptionsCache.get(locString);
+  if (opts === void 0) {
+    opts = new Intl.DateTimeFormat(locString).resolvedOptions();
+    intlResolvedOptionsCache.set(locString, opts);
+  }
+  return opts;
+}
+var weekInfoCache = /* @__PURE__ */ new Map();
 function getCachedWeekInfo(locString) {
-  let data = weekInfoCache[locString];
+  let data = weekInfoCache.get(locString);
   if (!data) {
     const locale = new Intl.Locale(locString);
     data = "getWeekInfo" in locale ? locale.getWeekInfo() : locale.weekInfo;
-    weekInfoCache[locString] = data;
+    if (!("minimalDays" in data)) {
+      data = { ...fallbackWeekSettings, ...data };
+    }
+    weekInfoCache.set(locString, data);
   }
   return data;
 }
@@ -3133,7 +3147,7 @@ function supportsFastNumbers(loc) {
   if (loc.numberingSystem && loc.numberingSystem !== "latn") {
     return false;
   } else {
-    return loc.numberingSystem === "latn" || !loc.locale || loc.locale.startsWith("en") || new Intl.DateTimeFormat(loc.intl).resolvedOptions().numberingSystem === "latn";
+    return loc.numberingSystem === "latn" || !loc.locale || loc.locale.startsWith("en") || getCachedIntResolvedOptions(loc.locale).numberingSystem === "latn";
   }
 }
 var PolyNumberFormatter = class {
@@ -3266,9 +3280,11 @@ var Locale = class _Locale {
   }
   static resetCache() {
     sysLocaleCache = null;
-    intlDTCache = {};
-    intlNumCache = {};
-    intlRelCache = {};
+    intlDTCache.clear();
+    intlNumCache.clear();
+    intlRelCache.clear();
+    intlResolvedOptionsCache.clear();
+    weekInfoCache.clear();
   }
   static fromObject({ locale, numberingSystem, outputCalendar, weekSettings } = {}) {
     return _Locale.create(locale, numberingSystem, outputCalendar, weekSettings);
@@ -3319,9 +3335,12 @@ var Locale = class _Locale {
   }
   months(length, format = false) {
     return listStuff(this, length, months, () => {
+      const monthSpecialCase = this.intl === "ja" || this.intl.startsWith("ja-");
+      format &= !monthSpecialCase;
       const intl = format ? { month: length, day: "numeric" } : { month: length }, formatStr = format ? "format" : "standalone";
       if (!this.monthsCache[formatStr][length]) {
-        this.monthsCache[formatStr][length] = mapMonths((dt) => this.extract(dt, intl, "month"));
+        const mapper = !monthSpecialCase ? (dt) => this.extract(dt, intl, "month") : (dt) => this.dtFormatter(dt, intl).format();
+        this.monthsCache[formatStr][length] = mapMonths(mapper);
       }
       return this.monthsCache[formatStr][length];
     });
@@ -3381,7 +3400,7 @@ var Locale = class _Locale {
     return getCachedLF(this.intl, opts);
   }
   isEnglish() {
-    return this.locale === "en" || this.locale.toLowerCase() === "en-us" || new Intl.DateTimeFormat(this.intl).resolvedOptions().locale.startsWith("en-us");
+    return this.locale === "en" || this.locale.toLowerCase() === "en-us" || getCachedIntResolvedOptions(this.intl).locale.startsWith("en-us");
   }
   getWeekSettings() {
     if (this.weekSettings) {
@@ -3408,19 +3427,17 @@ var Locale = class _Locale {
     return `Locale(${this.locale}, ${this.numberingSystem}, ${this.outputCalendar})`;
   }
 };
-
-// node_modules/luxon/src/zones/fixedOffsetZone.js
-var singleton2 = null;
+var singleton = null;
 var FixedOffsetZone = class _FixedOffsetZone extends Zone {
   /**
    * Get a singleton instance of UTC
    * @return {FixedOffsetZone}
    */
   static get utcInstance() {
-    if (singleton2 === null) {
-      singleton2 = new _FixedOffsetZone(0);
+    if (singleton === null) {
+      singleton = new _FixedOffsetZone(0);
     }
-    return singleton2;
+    return singleton;
   }
   /**
    * Get an instance with a specified offset
@@ -3539,8 +3556,6 @@ var FixedOffsetZone = class _FixedOffsetZone extends Zone {
     return true;
   }
 };
-
-// node_modules/luxon/src/zones/invalidZone.js
 var InvalidZone = class extends Zone {
   constructor(zoneName) {
     super();
@@ -3579,10 +3594,7 @@ var InvalidZone = class extends Zone {
     return false;
   }
 };
-
-// node_modules/luxon/src/impl/zoneUtil.js
 function normalizeZone(input, defaultZone2) {
-  let offset2;
   if (isUndefined(input) || input === null) {
     return defaultZone2;
   } else if (input instanceof Zone) {
@@ -3601,8 +3613,6 @@ function normalizeZone(input, defaultZone2) {
     return new InvalidZone(input);
   }
 }
-
-// node_modules/luxon/src/impl/digits.js
 var numberingSystems = {
   arab: "[\u0660-\u0669]",
   arabext: "[\u06F0-\u06F9]",
@@ -3670,22 +3680,24 @@ function parseDigits(str) {
     return value;
   }
 }
-var digitRegexCache = {};
+var digitRegexCache = /* @__PURE__ */ new Map();
 function resetDigitRegexCache() {
-  digitRegexCache = {};
+  digitRegexCache.clear();
 }
 function digitRegex({ numberingSystem }, append = "") {
   const ns = numberingSystem || "latn";
-  if (!digitRegexCache[ns]) {
-    digitRegexCache[ns] = {};
+  let appendCache = digitRegexCache.get(ns);
+  if (appendCache === void 0) {
+    appendCache = /* @__PURE__ */ new Map();
+    digitRegexCache.set(ns, appendCache);
   }
-  if (!digitRegexCache[ns][append]) {
-    digitRegexCache[ns][append] = new RegExp(`${numberingSystems[ns]}${append}`);
+  let regex = appendCache.get(append);
+  if (regex === void 0) {
+    regex = new RegExp(`${numberingSystems[ns]}${append}`);
+    appendCache.set(append, regex);
   }
-  return digitRegexCache[ns][append];
+  return regex;
 }
-
-// node_modules/luxon/src/settings.js
 var now = () => Date.now();
 var defaultZone = "system";
 var defaultLocale = null;
@@ -3836,8 +3848,6 @@ var Settings = class {
     resetDigitRegexCache();
   }
 };
-
-// node_modules/luxon/src/impl/invalid.js
 var Invalid = class {
   constructor(reason, explanation) {
     this.reason = reason;
@@ -3851,8 +3861,6 @@ var Invalid = class {
     }
   }
 };
-
-// node_modules/luxon/src/impl/conversions.js
 var nonLeapLadder = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
 var leapLadder = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
 function unitOutOfRange(unit, value) {
@@ -3986,8 +3994,6 @@ function hasInvalidTimeData(obj) {
     return unitOutOfRange("millisecond", millisecond);
   } else return false;
 }
-
-// node_modules/luxon/src/impl/util.js
 function isUndefined(o) {
   return typeof o === "undefined";
 }
@@ -4098,9 +4104,22 @@ function parseMillis(fraction) {
     return Math.floor(f);
   }
 }
-function roundTo(number, digits, towardZero = false) {
-  const factor = 10 ** digits, rounder = towardZero ? Math.trunc : Math.round;
-  return rounder(number * factor) / factor;
+function roundTo(number, digits, rounding = "round") {
+  const factor = 10 ** digits;
+  switch (rounding) {
+    case "expand":
+      return number > 0 ? Math.ceil(number * factor) / factor : Math.floor(number * factor) / factor;
+    case "trunc":
+      return Math.trunc(number * factor) / factor;
+    case "round":
+      return Math.round(number * factor) / factor;
+    case "floor":
+      return Math.floor(number * factor) / factor;
+    case "ceil":
+      return Math.ceil(number * factor) / factor;
+    default:
+      throw new RangeError(`Value rounding ${rounding} is out of range`);
+  }
 }
 function isLeapYear(year) {
   return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
@@ -4172,7 +4191,7 @@ function signedOffset(offHourStr, offMinuteStr) {
 }
 function asNumber(value) {
   const numericValue = Number(value);
-  if (typeof value === "boolean" || value === "" || Number.isNaN(numericValue))
+  if (typeof value === "boolean" || value === "" || !Number.isFinite(numericValue))
     throw new InvalidArgumentError(`Invalid unit value ${value}`);
   return numericValue;
 }
@@ -4203,8 +4222,6 @@ function formatOffset(offset2, format) {
 function timeObject(obj) {
   return pick(obj, ["hour", "minute", "second", "millisecond"]);
 }
-
-// node_modules/luxon/src/impl/english.js
 var monthsLong = [
   "January",
   "February",
@@ -4324,14 +4341,11 @@ function formatRelativeTime(unit, count, numeric = "always", narrow = false) {
         return isDay ? "yesterday" : `last ${units[unit][0]}`;
       case 0:
         return isDay ? "today" : `this ${units[unit][0]}`;
-      default:
     }
   }
   const isInPast = Object.is(count, -0) || count < 0, fmtValue = Math.abs(count), singular = fmtValue === 1, lilUnits = units[unit], fmtUnit = narrow ? singular ? lilUnits[1] : lilUnits[2] || lilUnits[1] : singular ? units[unit][0] : unit;
   return isInPast ? `${fmtValue} ${fmtUnit} ago` : `in ${fmtValue} ${fmtUnit}`;
 }
-
-// node_modules/luxon/src/impl/formatter.js
 function stringifyTokens(splits, tokenToString) {
   let s2 = "";
   for (const token of splits) {
@@ -4375,8 +4389,11 @@ var Formatter = class _Formatter {
     for (let i = 0; i < fmt.length; i++) {
       const c = fmt.charAt(i);
       if (c === "'") {
-        if (currentFull.length > 0) {
-          splits.push({ literal: bracketed || /^\s+$/.test(currentFull), val: currentFull });
+        if (currentFull.length > 0 || bracketed) {
+          splits.push({
+            literal: bracketed || /^\s+$/.test(currentFull),
+            val: currentFull === "" ? "'" : currentFull
+          });
         }
         current = null;
         currentFull = "";
@@ -4429,13 +4446,16 @@ var Formatter = class _Formatter {
   resolvedOptions(dt, opts) {
     return this.dtFormatter(dt, opts).resolvedOptions();
   }
-  num(n2, p = 0) {
+  num(n2, p = 0, signDisplay = void 0) {
     if (this.opts.forceSimple) {
       return padStart(n2, p);
     }
     const opts = { ...this.opts };
     if (p > 0) {
       opts.padTo = p;
+    }
+    if (signDisplay) {
+      opts.signDisplay = signDisplay;
     }
     return this.loc.numberFormatter(opts).format(n2);
   }
@@ -4601,43 +4621,56 @@ var Formatter = class _Formatter {
     return stringifyTokens(_Formatter.parseFormat(fmt), tokenToString);
   }
   formatDurationFromString(dur, fmt) {
+    const invertLargest = this.opts.signMode === "negativeLargestOnly" ? -1 : 1;
     const tokenToField = (token) => {
       switch (token[0]) {
         case "S":
-          return "millisecond";
+          return "milliseconds";
         case "s":
-          return "second";
+          return "seconds";
         case "m":
-          return "minute";
+          return "minutes";
         case "h":
-          return "hour";
+          return "hours";
         case "d":
-          return "day";
+          return "days";
         case "w":
-          return "week";
+          return "weeks";
         case "M":
-          return "month";
+          return "months";
         case "y":
-          return "year";
+          return "years";
         default:
           return null;
       }
-    }, tokenToString = (lildur) => (token) => {
+    }, tokenToString = (lildur, info) => (token) => {
       const mapped = tokenToField(token);
       if (mapped) {
-        return this.num(lildur.get(mapped), token.length);
+        const inversionFactor = info.isNegativeDuration && mapped !== info.largestUnit ? invertLargest : 1;
+        let signDisplay;
+        if (this.opts.signMode === "negativeLargestOnly" && mapped !== info.largestUnit) {
+          signDisplay = "never";
+        } else if (this.opts.signMode === "all") {
+          signDisplay = "always";
+        } else {
+          signDisplay = "auto";
+        }
+        return this.num(lildur.get(mapped) * inversionFactor, token.length, signDisplay);
       } else {
         return token;
       }
     }, tokens = _Formatter.parseFormat(fmt), realTokens = tokens.reduce(
       (found, { literal, val }) => literal ? found : found.concat(val),
       []
-    ), collapsed = dur.shiftTo(...realTokens.map(tokenToField).filter((t) => t));
-    return stringifyTokens(tokens, tokenToString(collapsed));
+    ), collapsed = dur.shiftTo(...realTokens.map(tokenToField).filter((t) => t)), durationInfo = {
+      isNegativeDuration: collapsed < 0,
+      // this relies on "collapsed" being based on "shiftTo", which builds up the object
+      // in order
+      largestUnit: Object.keys(collapsed.values)[0]
+    };
+    return stringifyTokens(tokens, tokenToString(collapsed, durationInfo));
   }
 };
-
-// node_modules/luxon/src/impl/regexParser.js
 var ianaRegex = /[A-Za-z_+-]{1,256}(?::?\/[A-Za-z0-9_+-]{1,256}(?:\/[A-Za-z0-9_+-]{1,256})?)?/;
 function combineRegexes(...regexes) {
   const full = regexes.reduce((f, r) => f + r.source, "");
@@ -4674,11 +4707,11 @@ function simpleParse(...keys) {
     return [ret, null, cursor + i];
   };
 }
-var offsetRegex = /(?:(Z)|([+-]\d\d)(?::?(\d\d))?)/;
+var offsetRegex = /(?:([Zz])|([+-]\d\d)(?::?(\d\d))?)/;
 var isoExtendedZone = `(?:${offsetRegex.source}?(?:\\[(${ianaRegex.source})\\])?)?`;
 var isoTimeBaseRegex = /(\d\d)(?::?(\d\d)(?::?(\d\d)(?:[.,](\d{1,30}))?)?)?/;
 var isoTimeRegex = RegExp(`${isoTimeBaseRegex.source}${isoExtendedZone}`);
-var isoTimeExtensionRegex = RegExp(`(?:T${isoTimeRegex.source})?`);
+var isoTimeExtensionRegex = RegExp(`(?:[Tt]${isoTimeRegex.source})?`);
 var isoYmdRegex = /([+-]\d{6}|\d{4})(?:-?(\d\d)(?:-?(\d\d))?)?/;
 var isoWeekRegex = /(\d{4})-?W(\d\d)(?:-?(\d))?/;
 var isoOrdinalRegex = /(\d{4})-?(\d{3})/;
@@ -4871,9 +4904,7 @@ function parseSQL(s2) {
     [sqlTimeCombinedRegex, extractISOTimeOffsetAndIANAZone]
   );
 }
-
-// node_modules/luxon/src/duration.js
-var INVALID = "Invalid Duration";
+var INVALID$2 = "Invalid Duration";
 var lowOrderMatrix = {
   weeks: {
     days: 7,
@@ -4954,7 +4985,7 @@ var accurateMatrix = {
   },
   ...lowOrderMatrix
 };
-var orderedUnits = [
+var orderedUnits$1 = [
   "years",
   "quarters",
   "months",
@@ -4965,8 +4996,8 @@ var orderedUnits = [
   "seconds",
   "milliseconds"
 ];
-var reverseUnits = orderedUnits.slice(0).reverse();
-function clone(dur, alts, clear = false) {
+var reverseUnits = orderedUnits$1.slice(0).reverse();
+function clone$1(dur, alts, clear = false) {
   const conf = {
     values: clear ? alts.values : { ...dur.values, ...alts.values || {} },
     loc: dur.loc.clone(alts.loc),
@@ -4986,7 +5017,7 @@ function durationToMillis(matrix, vals) {
 }
 function normalizeValues(matrix, vals) {
   const factor = durationToMillis(matrix, vals) < 0 ? -1 : 1;
-  orderedUnits.reduceRight((previous, current) => {
+  orderedUnits$1.reduceRight((previous, current) => {
     if (!isUndefined(vals[current])) {
       if (previous) {
         const previousVal = vals[previous] * factor;
@@ -5000,7 +5031,7 @@ function normalizeValues(matrix, vals) {
       return previous;
     }
   }, null);
-  orderedUnits.reduce((previous, current) => {
+  orderedUnits$1.reduce((previous, current) => {
     if (!isUndefined(vals[current])) {
       if (previous) {
         const fraction = vals[previous] % 1;
@@ -5237,9 +5268,13 @@ var Duration = class _Duration {
    * @param {string} fmt - the format string
    * @param {Object} opts - options
    * @param {boolean} [opts.floor=true] - floor numerical values
+   * @param {'negative'|'all'|'negativeLargestOnly'} [opts.signMode=negative] - How to handle signs
    * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("y d s") //=> "1 6 2"
    * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("yy dd sss") //=> "01 06 002"
    * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("M S") //=> "12 518402000"
+   * @example Duration.fromObject({ days: 6, seconds: 2 }).toFormat("d s", { signMode: "all" }) //=> "+6 +2"
+   * @example Duration.fromObject({ days: -6, seconds: -2 }).toFormat("d s", { signMode: "all" }) //=> "-6 -2"
+   * @example Duration.fromObject({ days: -6, seconds: -2 }).toFormat("d s", { signMode: "negativeLargestOnly" }) //=> "-6 2"
    * @return {string}
    */
   toFormat(fmt, opts = {}) {
@@ -5247,7 +5282,7 @@ var Duration = class _Duration {
       ...opts,
       floor: opts.round !== false && opts.floor !== false
     };
-    return this.isValid ? Formatter.create(this.loc, fmtOpts).formatDurationFromString(this, fmt) : INVALID;
+    return this.isValid ? Formatter.create(this.loc, fmtOpts).formatDurationFromString(this, fmt) : INVALID$2;
   }
   /**
    * Returns a string representation of a Duration with all units included.
@@ -5255,19 +5290,22 @@ var Duration = class _Duration {
    * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#options
    * @param {Object} opts - Formatting options. Accepts the same keys as the options parameter of the native `Intl.NumberFormat` constructor, as well as `listStyle`.
    * @param {string} [opts.listStyle='narrow'] - How to format the merged list. Corresponds to the `style` property of the options parameter of the native `Intl.ListFormat` constructor.
+   * @param {boolean} [opts.showZeros=true] - Show all units previously used by the duration even if they are zero
    * @example
    * ```js
-   * var dur = Duration.fromObject({ days: 1, hours: 5, minutes: 6 })
-   * dur.toHuman() //=> '1 day, 5 hours, 6 minutes'
-   * dur.toHuman({ listStyle: "long" }) //=> '1 day, 5 hours, and 6 minutes'
-   * dur.toHuman({ unitDisplay: "short" }) //=> '1 day, 5 hr, 6 min'
+   * var dur = Duration.fromObject({ months: 1, weeks: 0, hours: 5, minutes: 6 })
+   * dur.toHuman() //=> '1 month, 0 weeks, 5 hours, 6 minutes'
+   * dur.toHuman({ listStyle: "long" }) //=> '1 month, 0 weeks, 5 hours, and 6 minutes'
+   * dur.toHuman({ unitDisplay: "short" }) //=> '1 mth, 0 wks, 5 hr, 6 min'
+   * dur.toHuman({ showZeros: false }) //=> '1 month, 5 hours, 6 minutes'
    * ```
    */
   toHuman(opts = {}) {
-    if (!this.isValid) return INVALID;
-    const l2 = orderedUnits.map((unit) => {
+    if (!this.isValid) return INVALID$2;
+    const showZeros = opts.showZeros !== false;
+    const l2 = orderedUnits$1.map((unit) => {
       const val = this.values[unit];
-      if (isUndefined(val)) {
+      if (isUndefined(val) || val === 0 && !showZeros) {
         return null;
       }
       return this.loc.numberFormatter({ style: "unit", unitDisplay: "long", ...opts, unit: unit.slice(0, -1) }).format(val);
@@ -5388,12 +5426,12 @@ var Duration = class _Duration {
   plus(duration) {
     if (!this.isValid) return this;
     const dur = _Duration.fromDurationLike(duration), result = {};
-    for (const k of orderedUnits) {
+    for (const k of orderedUnits$1) {
       if (hasOwnProperty(dur.values, k) || hasOwnProperty(this.values, k)) {
         result[k] = dur.get(k) + this.get(k);
       }
     }
-    return clone(this, { values: result }, true);
+    return clone$1(this, { values: result }, true);
   }
   /**
    * Make this Duration shorter by the specified amount. Return a newly-constructed Duration.
@@ -5418,7 +5456,7 @@ var Duration = class _Duration {
     for (const k of Object.keys(this.values)) {
       result[k] = asNumber(fn(this.values[k], k));
     }
-    return clone(this, { values: result }, true);
+    return clone$1(this, { values: result }, true);
   }
   /**
    * Get the value of unit.
@@ -5441,7 +5479,7 @@ var Duration = class _Duration {
   set(values) {
     if (!this.isValid) return this;
     const mixed = { ...this.values, ...normalizeObject(values, _Duration.normalizeUnit) };
-    return clone(this, { values: mixed });
+    return clone$1(this, { values: mixed });
   }
   /**
    * "Set" the locale and/or numberingSystem.  Returns a newly-constructed Duration.
@@ -5451,7 +5489,7 @@ var Duration = class _Duration {
   reconfigure({ locale, numberingSystem, conversionAccuracy, matrix } = {}) {
     const loc = this.loc.clone({ locale, numberingSystem });
     const opts = { loc, matrix, conversionAccuracy };
-    return clone(this, opts);
+    return clone$1(this, opts);
   }
   /**
    * Return the length of the duration in the specified unit.
@@ -5483,7 +5521,7 @@ var Duration = class _Duration {
     if (!this.isValid) return this;
     const vals = this.toObject();
     normalizeValues(this.matrix, vals);
-    return clone(this, { values: vals }, true);
+    return clone$1(this, { values: vals }, true);
   }
   /**
    * Rescale units to its largest representation
@@ -5493,7 +5531,7 @@ var Duration = class _Duration {
   rescale() {
     if (!this.isValid) return this;
     const vals = removeZeroes(this.normalize().shiftToAll().toObject());
-    return clone(this, { values: vals }, true);
+    return clone$1(this, { values: vals }, true);
   }
   /**
    * Convert this Duration into its representation in a different set of units.
@@ -5508,7 +5546,7 @@ var Duration = class _Duration {
     units = units.map((u) => _Duration.normalizeUnit(u));
     const built = {}, accumulated = {}, vals = this.toObject();
     let lastUnit;
-    for (const k of orderedUnits) {
+    for (const k of orderedUnits$1) {
       if (units.indexOf(k) >= 0) {
         lastUnit = k;
         let own = 0;
@@ -5532,7 +5570,7 @@ var Duration = class _Duration {
       }
     }
     normalizeValues(this.matrix, built);
-    return clone(this, { values: built }, true);
+    return clone$1(this, { values: built }, true);
   }
   /**
    * Shift this Duration to all available units.
@@ -5563,7 +5601,17 @@ var Duration = class _Duration {
     for (const k of Object.keys(this.values)) {
       negated[k] = this.values[k] === 0 ? 0 : -this.values[k];
     }
-    return clone(this, { values: negated }, true);
+    return clone$1(this, { values: negated }, true);
+  }
+  /**
+   * Removes all units with values equal to 0 from this Duration.
+   * @example Duration.fromObject({ years: 2, days: 0, hours: 0, minutes: 0 }).removeZeros().toObject() //=> { years: 2 }
+   * @return {Duration}
+   */
+  removeZeros() {
+    if (!this.isValid) return this;
+    const vals = removeZeroes(this.values);
+    return clone$1(this, { values: vals }, true);
   }
   /**
    * Get the years.
@@ -5667,7 +5715,7 @@ var Duration = class _Duration {
       if (v1 === void 0 || v1 === 0) return v2 === void 0 || v2 === 0;
       return v1 === v2;
     }
-    for (const u of orderedUnits) {
+    for (const u of orderedUnits$1) {
       if (!eq(this.values[u], other.values[u])) {
         return false;
       }
@@ -5675,9 +5723,7 @@ var Duration = class _Duration {
     return true;
   }
 };
-
-// node_modules/luxon/src/interval.js
-var INVALID2 = "Invalid Interval";
+var INVALID$1 = "Invalid Interval";
 function validateStartEnd(start, end) {
   if (!start || !start.isValid) {
     return Interval.invalid("missing or invalid start");
@@ -5815,11 +5861,19 @@ var Interval = class _Interval {
     return this.isValid ? this.s : null;
   }
   /**
-   * Returns the end of the Interval
+   * Returns the end of the Interval. This is the first instant which is not part of the interval
+   * (Interval is half-open).
    * @type {DateTime}
    */
   get end() {
     return this.isValid ? this.e : null;
+  }
+  /**
+   * Returns the last DateTime included in the interval (since end is not part of the interval)
+   * @type {DateTime}
+   */
+  get lastDateTime() {
+    return this.isValid ? this.e ? this.e.minus(1) : null : null;
   }
   /**
    * Returns whether this Interval's end is at least its start, meaning that the Interval isn't 'backwards'.
@@ -6046,8 +6100,11 @@ var Interval = class _Interval {
     return _Interval.fromDateTimes(s2, e);
   }
   /**
-   * Merge an array of Intervals into a equivalent minimal set of Intervals.
+   * Merge an array of Intervals into an equivalent minimal set of Intervals.
    * Combines overlapping and adjacent Intervals.
+   * The resulting array will contain the Intervals in ascending order, that is, starting with the earliest Interval
+   * and ending with the latest.
+   *
    * @param {Array} intervals
    * @return {Array}
    */
@@ -6106,7 +6163,7 @@ var Interval = class _Interval {
    * @return {string}
    */
   toString() {
-    if (!this.isValid) return INVALID2;
+    if (!this.isValid) return INVALID$1;
     return `[${this.s.toISO()} \u2013 ${this.e.toISO()})`;
   }
   /**
@@ -6139,7 +6196,7 @@ var Interval = class _Interval {
    * @return {string}
    */
   toLocaleString(formatOpts = DATE_SHORT, opts = {}) {
-    return this.isValid ? Formatter.create(this.s.loc.clone(opts), formatOpts).formatInterval(this) : INVALID2;
+    return this.isValid ? Formatter.create(this.s.loc.clone(opts), formatOpts).formatInterval(this) : INVALID$1;
   }
   /**
    * Returns an ISO 8601-compliant string representation of this Interval.
@@ -6148,7 +6205,7 @@ var Interval = class _Interval {
    * @return {string}
    */
   toISO(opts) {
-    if (!this.isValid) return INVALID2;
+    if (!this.isValid) return INVALID$1;
     return `${this.s.toISO(opts)}/${this.e.toISO(opts)}`;
   }
   /**
@@ -6158,7 +6215,7 @@ var Interval = class _Interval {
    * @return {string}
    */
   toISODate() {
-    if (!this.isValid) return INVALID2;
+    if (!this.isValid) return INVALID$1;
     return `${this.s.toISODate()}/${this.e.toISODate()}`;
   }
   /**
@@ -6169,7 +6226,7 @@ var Interval = class _Interval {
    * @return {string}
    */
   toISOTime(opts) {
-    if (!this.isValid) return INVALID2;
+    if (!this.isValid) return INVALID$1;
     return `${this.s.toISOTime(opts)}/${this.e.toISOTime(opts)}`;
   }
   /**
@@ -6184,7 +6241,7 @@ var Interval = class _Interval {
    * @return {string}
    */
   toFormat(dateFormat, { separator = " \u2013 " } = {}) {
-    if (!this.isValid) return INVALID2;
+    if (!this.isValid) return INVALID$1;
     return `${this.s.toFormat(dateFormat)}${separator}${this.e.toFormat(dateFormat)}`;
   }
   /**
@@ -6216,8 +6273,6 @@ var Interval = class _Interval {
     return _Interval.fromDateTimes(mapFn(this.s), mapFn(this.e));
   }
 };
-
-// node_modules/luxon/src/info.js
 var Info = class {
   /**
    * Return whether the specified zone contains a DST.
@@ -6389,8 +6444,6 @@ var Info = class {
     return { relative: hasRelative(), localeWeek: hasLocaleWeekInfo() };
   }
 };
-
-// node_modules/luxon/src/impl/diff.js
 function dayDiff(earlier, later) {
   const utcDayStart = (dt) => dt.toUTC(0, { keepLocalTime: true }).startOf("day").valueOf(), ms = utcDayStart(later) - utcDayStart(earlier);
   return Math.floor(Duration.fromMillis(ms).as("days"));
@@ -6432,7 +6485,7 @@ function highOrderDiffs(cursor, later, units) {
   }
   return [cursor, results, highWater, lowestOrder];
 }
-function diff_default(earlier, later, units, opts) {
+function diff(earlier, later, units, opts) {
   let [cursor, results, highWater, lowestOrder] = highOrderDiffs(earlier, later, units);
   const remainingMillis = later - cursor;
   const lowerOrderUnits = units.filter(
@@ -6453,8 +6506,6 @@ function diff_default(earlier, later, units, opts) {
     return duration;
   }
 }
-
-// node_modules/luxon/src/impl/tokenParser.js
 var MISSING_FTP = "missing Intl.DateTimeFormat.formatToParts support";
 function intUnit(regex, post = (i) => i) {
   return { regex, deser: ([s2]) => post(parseDigits(s2)) };
@@ -6868,9 +6919,7 @@ function formatOptsToTokens(formatOpts, locale) {
   const resolvedOpts = df.resolvedOptions();
   return parts.map((p) => tokenForPart(p, formatOpts, resolvedOpts));
 }
-
-// node_modules/luxon/src/datetime.js
-var INVALID3 = "Invalid DateTime";
+var INVALID = "Invalid DateTime";
 var MAX_DATE = 864e13;
 function unsupportedZone(zone) {
   return new Invalid("unsupported zone", `the zone "${zone.name}" is not supported`);
@@ -6891,7 +6940,7 @@ function possiblyCachedLocalWeekData(dt) {
   }
   return dt.localWeekData;
 }
-function clone2(inst, alts) {
+function clone(inst, alts) {
   const current = {
     ts: inst.ts,
     zone: inst.zone,
@@ -6976,39 +7025,54 @@ function toTechFormat(dt, format, allowZ = true) {
     forceSimple: true
   }).formatDateTimeFromString(dt, format) : null;
 }
-function toISODate(o, extended) {
+function toISODate(o, extended, precision) {
   const longFormat = o.c.year > 9999 || o.c.year < 0;
   let c = "";
   if (longFormat && o.c.year >= 0) c += "+";
   c += padStart(o.c.year, longFormat ? 6 : 4);
+  if (precision === "year") return c;
   if (extended) {
     c += "-";
     c += padStart(o.c.month);
+    if (precision === "month") return c;
     c += "-";
-    c += padStart(o.c.day);
   } else {
     c += padStart(o.c.month);
-    c += padStart(o.c.day);
+    if (precision === "month") return c;
   }
+  c += padStart(o.c.day);
   return c;
 }
-function toISOTime(o, extended, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone) {
-  let c = padStart(o.c.hour);
-  if (extended) {
-    c += ":";
-    c += padStart(o.c.minute);
-    if (o.c.millisecond !== 0 || o.c.second !== 0 || !suppressSeconds) {
-      c += ":";
-    }
-  } else {
-    c += padStart(o.c.minute);
-  }
-  if (o.c.millisecond !== 0 || o.c.second !== 0 || !suppressSeconds) {
-    c += padStart(o.c.second);
-    if (o.c.millisecond !== 0 || !suppressMilliseconds) {
-      c += ".";
-      c += padStart(o.c.millisecond, 3);
-    }
+function toISOTime(o, extended, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone, precision) {
+  let showSeconds = !suppressSeconds || o.c.millisecond !== 0 || o.c.second !== 0, c = "";
+  switch (precision) {
+    case "day":
+    case "month":
+    case "year":
+      break;
+    default:
+      c += padStart(o.c.hour);
+      if (precision === "hour") break;
+      if (extended) {
+        c += ":";
+        c += padStart(o.c.minute);
+        if (precision === "minute") break;
+        if (showSeconds) {
+          c += ":";
+          c += padStart(o.c.second);
+        }
+      } else {
+        c += padStart(o.c.minute);
+        if (precision === "minute") break;
+        if (showSeconds) {
+          c += padStart(o.c.second);
+        }
+      }
+      if (precision === "second") break;
+      if (showSeconds && (!suppressMilliseconds || o.c.millisecond !== 0)) {
+        c += ".";
+        c += padStart(o.c.millisecond, 3);
+      }
   }
   if (includeOffset) {
     if (o.isOffsetFixed && o.offset === 0 && !extendedZone) {
@@ -7053,7 +7117,7 @@ var defaultOrdinalUnitValues = {
   second: 0,
   millisecond: 0
 };
-var orderedUnits2 = ["year", "month", "day", "hour", "minute", "second", "millisecond"];
+var orderedUnits = ["year", "month", "day", "hour", "minute", "second", "millisecond"];
 var orderedWeekUnits = [
   "weekYear",
   "weekNumber",
@@ -7110,13 +7174,19 @@ function normalizeUnitWithLocalWeeks(unit) {
   }
 }
 function guessOffsetForZone(zone) {
-  if (!zoneOffsetGuessCache[zone]) {
-    if (zoneOffsetTs === void 0) {
-      zoneOffsetTs = Settings.now();
-    }
-    zoneOffsetGuessCache[zone] = zone.offset(zoneOffsetTs);
+  if (zoneOffsetTs === void 0) {
+    zoneOffsetTs = Settings.now();
   }
-  return zoneOffsetGuessCache[zone];
+  if (zone.type !== "iana") {
+    return zone.offset(zoneOffsetTs);
+  }
+  const zoneName = zone.name;
+  let offsetGuess = zoneOffsetGuessCache.get(zoneName);
+  if (offsetGuess === void 0) {
+    offsetGuess = zone.offset(zoneOffsetTs);
+    zoneOffsetGuessCache.set(zoneName, offsetGuess);
+  }
+  return offsetGuess;
 }
 function quickDT(obj, opts) {
   const zone = normalizeZone(opts.zone, Settings.defaultZone);
@@ -7126,7 +7196,7 @@ function quickDT(obj, opts) {
   const loc = Locale.fromObject(opts);
   let ts, o;
   if (!isUndefined(obj.year)) {
-    for (const u of orderedUnits2) {
+    for (const u of orderedUnits) {
       if (isUndefined(obj[u])) {
         obj[u] = defaultUnitValues[u];
       }
@@ -7143,8 +7213,8 @@ function quickDT(obj, opts) {
   return new DateTime({ ts, zone, loc, o });
 }
 function diffRelative(start, end, opts) {
-  const round = isUndefined(opts.round) ? true : opts.round, format = (c, unit) => {
-    c = roundTo(c, round || opts.calendary ? 0 : 2, true);
+  const round = isUndefined(opts.round) ? true : opts.round, rounding = isUndefined(opts.rounding) ? "trunc" : opts.rounding, format = (c, unit) => {
+    c = roundTo(c, round || opts.calendary ? 0 : 2, opts.calendary ? "round" : rounding);
     const formatter = end.loc.clone(opts).relFormatter(opts);
     return formatter.format(c, unit);
   }, differ = (unit) => {
@@ -7178,7 +7248,7 @@ function lastOpts(argList) {
   return [opts, args];
 }
 var zoneOffsetTs;
-var zoneOffsetGuessCache = {};
+var zoneOffsetGuessCache = /* @__PURE__ */ new Map();
 var DateTime = class _DateTime {
   /**
    * @access private
@@ -7407,7 +7477,7 @@ var DateTime = class _DateTime {
       defaultValues = defaultOrdinalUnitValues;
       objNow = gregorianToOrdinal(objNow);
     } else {
-      units = orderedUnits2;
+      units = orderedUnits;
       defaultValues = defaultUnitValues;
     }
     let foundFirst = false;
@@ -7610,7 +7680,7 @@ var DateTime = class _DateTime {
   }
   static resetCache() {
     zoneOffsetTs = void 0;
-    zoneOffsetGuessCache = {};
+    zoneOffsetGuessCache.clear();
   }
   // INFO
   /**
@@ -7936,7 +8006,7 @@ var DateTime = class _DateTime {
     const c1 = tsToObj(ts1, o1);
     const c2 = tsToObj(ts2, o2);
     if (c1.hour === c2.hour && c1.minute === c2.minute && c1.second === c2.second && c1.millisecond === c2.millisecond) {
-      return [clone2(this, { ts: ts1 }), clone2(this, { ts: ts2 })];
+      return [clone(this, { ts: ts1 }), clone(this, { ts: ts2 })];
     }
     return [this];
   }
@@ -8046,7 +8116,7 @@ var DateTime = class _DateTime {
         const asObj = this.toObject();
         [newTS] = objToTS(asObj, offsetGuess, zone);
       }
-      return clone2(this, { ts: newTS, zone });
+      return clone(this, { ts: newTS, zone });
     }
   }
   /**
@@ -8057,7 +8127,7 @@ var DateTime = class _DateTime {
    */
   reconfigure({ locale, numberingSystem, outputCalendar } = {}) {
     const loc = this.loc.clone({ locale, numberingSystem, outputCalendar });
-    return clone2(this, { loc });
+    return clone(this, { loc });
   }
   /**
    * "Set" the locale. Returns a newly-constructed DateTime.
@@ -8110,7 +8180,7 @@ var DateTime = class _DateTime {
       }
     }
     const [ts, o] = objToTS(mixed, this.o, this.zone);
-    return clone2(this, { ts, o });
+    return clone(this, { ts, o });
   }
   /**
    * Add a period of time to this DateTime and return the resulting DateTime
@@ -8128,7 +8198,7 @@ var DateTime = class _DateTime {
   plus(duration) {
     if (!this.isValid) return this;
     const dur = Duration.fromDurationLike(duration);
-    return clone2(this, adjustTime(this, dur));
+    return clone(this, adjustTime(this, dur));
   }
   /**
    * Subtract a period of time to this DateTime and return the resulting DateTime
@@ -8139,7 +8209,7 @@ var DateTime = class _DateTime {
   minus(duration) {
     if (!this.isValid) return this;
     const dur = Duration.fromDurationLike(duration).negate();
-    return clone2(this, adjustTime(this, dur));
+    return clone(this, adjustTime(this, dur));
   }
   /**
    * "Set" this DateTime to the beginning of a unit of time.
@@ -8176,8 +8246,6 @@ var DateTime = class _DateTime {
       // falls through
       case "seconds":
         o.millisecond = 0;
-        break;
-      case "milliseconds":
         break;
     }
     if (normalizedUnit === "weeks") {
@@ -8227,7 +8295,7 @@ var DateTime = class _DateTime {
    * @return {string}
    */
   toFormat(fmt, opts = {}) {
-    return this.isValid ? Formatter.create(this.loc.redefaultToEN(opts)).formatDateTimeFromString(this, fmt) : INVALID3;
+    return this.isValid ? Formatter.create(this.loc.redefaultToEN(opts)).formatDateTimeFromString(this, fmt) : INVALID;
   }
   /**
    * Returns a localized string representing this date. Accepts the same options as the Intl.DateTimeFormat constructor and any presets defined by Luxon, such as `DateTime.DATE_FULL` or `DateTime.TIME_SIMPLE`.
@@ -8249,7 +8317,7 @@ var DateTime = class _DateTime {
    * @return {string}
    */
   toLocaleString(formatOpts = DATE_SHORT, opts = {}) {
-    return this.isValid ? Formatter.create(this.loc.clone(opts), formatOpts).formatDateTime(this) : INVALID3;
+    return this.isValid ? Formatter.create(this.loc.clone(opts), formatOpts).formatDateTime(this) : INVALID;
   }
   /**
    * Returns an array of format "parts", meaning individual tokens along with metadata. This is allows callers to post-process individual sections of the formatted output.
@@ -8275,41 +8343,56 @@ var DateTime = class _DateTime {
    * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
    * @param {boolean} [opts.extendedZone=false] - add the time zone format extension
    * @param {string} [opts.format='extended'] - choose between the basic and extended format
+   * @param {string} [opts.precision='milliseconds'] - truncate output to desired presicion: 'years', 'months', 'days', 'hours', 'minutes', 'seconds' or 'milliseconds'. When precision and suppressSeconds or suppressMilliseconds are used together, precision sets the maximum unit shown in the output, however seconds or milliseconds will still be suppressed if they are 0.
    * @example DateTime.utc(1983, 5, 25).toISO() //=> '1982-05-25T00:00:00.000Z'
    * @example DateTime.now().toISO() //=> '2017-04-22T20:47:05.335-04:00'
    * @example DateTime.now().toISO({ includeOffset: false }) //=> '2017-04-22T20:47:05.335'
    * @example DateTime.now().toISO({ format: 'basic' }) //=> '20170422T204705.335-0400'
-   * @return {string}
+   * @example DateTime.now().toISO({ precision: 'day' }) //=> '2017-04-22Z'
+   * @example DateTime.now().toISO({ precision: 'minute' }) //=> '2017-04-22T20:47Z'
+   * @return {string|null}
    */
   toISO({
     format = "extended",
     suppressSeconds = false,
     suppressMilliseconds = false,
     includeOffset = true,
-    extendedZone = false
+    extendedZone = false,
+    precision = "milliseconds"
   } = {}) {
     if (!this.isValid) {
       return null;
     }
+    precision = normalizeUnit(precision);
     const ext = format === "extended";
-    let c = toISODate(this, ext);
-    c += "T";
-    c += toISOTime(this, ext, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone);
+    let c = toISODate(this, ext, precision);
+    if (orderedUnits.indexOf(precision) >= 3) c += "T";
+    c += toISOTime(
+      this,
+      ext,
+      suppressSeconds,
+      suppressMilliseconds,
+      includeOffset,
+      extendedZone,
+      precision
+    );
     return c;
   }
   /**
    * Returns an ISO 8601-compliant string representation of this DateTime's date component
    * @param {Object} opts - options
    * @param {string} [opts.format='extended'] - choose between the basic and extended format
+   * @param {string} [opts.precision='day'] - truncate output to desired precision: 'years', 'months', or 'days'.
    * @example DateTime.utc(1982, 5, 25).toISODate() //=> '1982-05-25'
    * @example DateTime.utc(1982, 5, 25).toISODate({ format: 'basic' }) //=> '19820525'
-   * @return {string}
+   * @example DateTime.utc(1982, 5, 25).toISODate({ precision: 'month' }) //=> '1982-05'
+   * @return {string|null}
    */
-  toISODate({ format = "extended" } = {}) {
+  toISODate({ format = "extended", precision = "day" } = {}) {
     if (!this.isValid) {
       return null;
     }
-    return toISODate(this, format === "extended");
+    return toISODate(this, format === "extended", normalizeUnit(precision));
   }
   /**
    * Returns an ISO 8601-compliant string representation of this DateTime's week date
@@ -8328,10 +8411,12 @@ var DateTime = class _DateTime {
    * @param {boolean} [opts.extendedZone=true] - add the time zone format extension
    * @param {boolean} [opts.includePrefix=false] - include the `T` prefix
    * @param {string} [opts.format='extended'] - choose between the basic and extended format
+   * @param {string} [opts.precision='milliseconds'] - truncate output to desired presicion: 'hours', 'minutes', 'seconds' or 'milliseconds'. When precision and suppressSeconds or suppressMilliseconds are used together, precision sets the maximum unit shown in the output, however seconds or milliseconds will still be suppressed if they are 0.
    * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime() //=> '07:34:19.361Z'
    * @example DateTime.utc().set({ hour: 7, minute: 34, seconds: 0, milliseconds: 0 }).toISOTime({ suppressSeconds: true }) //=> '07:34Z'
    * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ format: 'basic' }) //=> '073419.361Z'
    * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ includePrefix: true }) //=> 'T07:34:19.361Z'
+   * @example DateTime.utc().set({ hour: 7, minute: 34, second: 56 }).toISOTime({ precision: 'minute' }) //=> '07:34Z'
    * @return {string}
    */
   toISOTime({
@@ -8340,19 +8425,22 @@ var DateTime = class _DateTime {
     includeOffset = true,
     includePrefix = false,
     extendedZone = false,
-    format = "extended"
+    format = "extended",
+    precision = "milliseconds"
   } = {}) {
     if (!this.isValid) {
       return null;
     }
-    let c = includePrefix ? "T" : "";
+    precision = normalizeUnit(precision);
+    let c = includePrefix && orderedUnits.indexOf(precision) >= 3 ? "T" : "";
     return c + toISOTime(
       this,
       format === "extended",
       suppressSeconds,
       suppressMilliseconds,
       includeOffset,
-      extendedZone
+      extendedZone,
+      precision
     );
   }
   /**
@@ -8378,7 +8466,7 @@ var DateTime = class _DateTime {
   /**
    * Returns a string representation of this DateTime appropriate for use in SQL Date
    * @example DateTime.utc(2014, 7, 13).toSQLDate() //=> '2014-07-13'
-   * @return {string}
+   * @return {string|null}
    */
   toSQLDate() {
     if (!this.isValid) {
@@ -8435,7 +8523,7 @@ var DateTime = class _DateTime {
    * @return {string}
    */
   toString() {
-    return this.isValid ? this.toISO() : INVALID3;
+    return this.isValid ? this.toISO() : INVALID;
   }
   /**
    * Returns a string representation of this DateTime appropriate for the REPL.
@@ -8463,7 +8551,7 @@ var DateTime = class _DateTime {
     return this.isValid ? this.ts : NaN;
   }
   /**
-   * Returns the epoch seconds of this DateTime.
+   * Returns the epoch seconds (including milliseconds in the fractional part) of this DateTime.
    * @return {number}
    */
   toSeconds() {
@@ -8535,7 +8623,7 @@ var DateTime = class _DateTime {
       return Duration.invalid("created by diffing an invalid DateTime");
     }
     const durOpts = { locale: this.locale, numberingSystem: this.numberingSystem, ...opts };
-    const units = maybeArray(unit).map(Duration.normalizeUnit), otherIsLater = otherDateTime.valueOf() > this.valueOf(), earlier = otherIsLater ? this : otherDateTime, later = otherIsLater ? otherDateTime : this, diffed = diff_default(earlier, later, units, durOpts);
+    const units = maybeArray(unit).map(Duration.normalizeUnit), otherIsLater = otherDateTime.valueOf() > this.valueOf(), earlier = otherIsLater ? this : otherDateTime, later = otherIsLater ? otherDateTime : this, diffed = diff(earlier, later, units, durOpts);
     return otherIsLater ? diffed.negate() : diffed;
   }
   /**
@@ -8552,7 +8640,7 @@ var DateTime = class _DateTime {
   /**
    * Return an Interval spanning between this DateTime and another DateTime
    * @param {DateTime} otherDateTime - the other end point of the Interval
-   * @return {Interval}
+   * @return {Interval|DateTime}
    */
   until(otherDateTime) {
     return this.isValid ? Interval.fromDateTimes(this, otherDateTime) : this;
@@ -8586,12 +8674,13 @@ var DateTime = class _DateTime {
   }
   /**
    * Returns a string representation of a this time relative to now, such as "in two days". Can only internationalize if your
-   * platform supports Intl.RelativeTimeFormat. Rounds down by default.
+   * platform supports Intl.RelativeTimeFormat. Rounds towards zero by default.
    * @param {Object} options - options that affect the output
    * @param {DateTime} [options.base=DateTime.now()] - the DateTime to use as the basis to which this time is compared. Defaults to now.
    * @param {string} [options.style="long"] - the style of units, must be "long", "short", or "narrow"
    * @param {string|string[]} options.unit - use a specific unit or array of units; if omitted, or an array, the method will pick the best unit. Use an array or one of "years", "quarters", "months", "weeks", "days", "hours", "minutes", or "seconds"
    * @param {boolean} [options.round=true] - whether to round the numbers in the output.
+   * @param {string} [options.rounding="trunc"] - rounding method to use when rounding the numbers in the output. Can be "trunc" (toward zero), "expand" (away from zero), "round", "floor", or "ceil".
    * @param {number} [options.padding=0] - padding in milliseconds. This allows you to round up the result if it fits inside the threshold. Don't use in combination with {round: false} because the decimal output will include the padding.
    * @param {string} options.locale - override the locale of this DateTime
    * @param {string} options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
