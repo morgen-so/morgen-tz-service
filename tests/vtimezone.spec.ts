@@ -16,6 +16,9 @@ describe("VTIMEZONE components", () => {
     ["Canada/Pacific", "-0700"],
     ["America/Edmonton", "-0600"],
     ["Canada/Mountain", "-0600"],
+    ["America/Inuvik", "-0600"],
+    ["America/Winnipeg", "-0500"],
+    ["Canada/Central", "-0500"],
     ["Africa/Casablanca", "+0000"],
     ["America/Coyhaique", "-0300"],
   ])("%s has a permanent offset of %s", (zone, offset) => {
