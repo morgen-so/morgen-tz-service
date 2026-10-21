@@ -1,4 +1,4 @@
-// Generated from windowsZones.xml on 2025-10-16T21:33:23.137Z
+// Generated from windowsZones.xml on 2026-10-21T19:30:53.167Z
 // Source: https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml
 
 export const windowsZonesInverse: Record<string, string> = {
@@ -25,7 +25,6 @@ export const windowsZonesInverse: Record<string, string> = {
   "Etc/GMT+8": "UTC-08",
   "Pacific/Pitcairn": "UTC-08",
   "America/Los_Angeles": "Pacific Standard Time",
-  "America/Vancouver": "Pacific Standard Time",
   "America/Phoenix": "US Mountain Standard Time",
   "America/Creston": "US Mountain Standard Time",
   "America/Dawson_Creek": "US Mountain Standard Time",
@@ -34,13 +33,14 @@ export const windowsZonesInverse: Record<string, string> = {
   "Etc/GMT+7": "US Mountain Standard Time",
   "America/Mazatlan": "Mountain Standard Time (Mexico)",
   "America/Denver": "Mountain Standard Time",
-  "America/Edmonton": "Mountain Standard Time",
   "America/Cambridge_Bay": "Mountain Standard Time",
-  "America/Inuvik": "Mountain Standard Time",
   "America/Ciudad_Juarez": "Mountain Standard Time",
   "America/Boise": "Mountain Standard Time",
+  "America/Vancouver": "British Columbia Standard Time",
   "America/Whitehorse": "Yukon Standard Time",
   "America/Dawson": "Yukon Standard Time",
+  "America/Edmonton": "Alberta Standard Time",
+  "America/Inuvik": "Alberta Standard Time",
   "America/Guatemala": "Central America Standard Time",
   "America/Belize": "Central America Standard Time",
   "America/Costa_Rica": "Central America Standard Time",
@@ -50,7 +50,6 @@ export const windowsZonesInverse: Record<string, string> = {
   "America/El_Salvador": "Central America Standard Time",
   "Etc/GMT+6": "Central America Standard Time",
   "America/Chicago": "Central Standard Time",
-  "America/Winnipeg": "Central Standard Time",
   "America/Rankin_Inlet": "Central Standard Time",
   "America/Resolute": "Central Standard Time",
   "America/Matamoros": "Central Standard Time",
@@ -69,6 +68,7 @@ export const windowsZonesInverse: Record<string, string> = {
   "America/Chihuahua": "Central Standard Time (Mexico)",
   "America/Regina": "Canada Central Standard Time",
   "America/Swift_Current": "Canada Central Standard Time",
+  "America/Winnipeg": "Manitoba Standard Time",
   "America/Bogota": "SA Pacific Standard Time",
   "America/Rio_Branco": "SA Pacific Standard Time",
   "America/Eirunepe": "SA Pacific Standard Time",
