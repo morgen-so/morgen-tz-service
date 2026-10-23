@@ -11,7 +11,7 @@ import { canonicalNames } from "./generated/canonicalNames.js";
 import { regions } from "./generated/regions.js";
 import { icsZones } from "./generated/icsZones.js";
 import { checkLuxonCompatibility } from "./utils.js";
-import { specialMapping } from "./specialMapping.js";
+import { specialMapping, windowsSpecialMapping } from "./specialMapping.js";
 
 class Timezone {
   canonicalName_: string;
@@ -35,7 +35,7 @@ class Timezone {
     // See https://github.com/mattjohnsonpint/TimeZoneConverter/issues/61
     if (ianaName === "Antarctica/Troll") return "UTC";
     const canonical = Timezone.findCanonicalIANAName(ianaName);
-    return windowsZonesInverse[canonical];
+    return windowsZonesInverse[canonical] ?? windowsSpecialMapping[canonical];
   }
 
   /**

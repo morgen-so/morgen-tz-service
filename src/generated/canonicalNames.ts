@@ -1,4 +1,4 @@
-// Generated from https://www.npmjs.com/package/tzdata data on 2025-10-16T21:33:23.295Z
+// Generated from https://www.npmjs.com/package/tzdata data on 2026-10-21T19:30:53.352Z
 
 export const canonicalNames: Record<string, string> = {
   "Africa/Accra": "Africa/Abidjan",
@@ -135,7 +135,6 @@ export const canonicalNames: Record<string, string> = {
   "Brazil/East": "America/Sao_Paulo",
   "Brazil/West": "America/Manaus",
   "CET": "Europe/Brussels",
-  "CST6CDT": "America/Chicago",
   "Canada/Atlantic": "America/Halifax",
   "Canada/Central": "America/Winnipeg",
   "Canada/Eastern": "America/Toronto",
@@ -149,7 +148,6 @@ export const canonicalNames: Record<string, string> = {
   "Cuba": "America/Havana",
   "EET": "Europe/Athens",
   "EST": "America/Panama",
-  "EST5EDT": "America/New_York",
   "Egypt": "Africa/Cairo",
   "Eire": "Europe/Dublin",
   "Etc/GMT+0": "Etc/GMT",
@@ -211,7 +209,6 @@ export const canonicalNames: Record<string, string> = {
   "Libya": "Africa/Tripoli",
   "MET": "Europe/Brussels",
   "MST": "America/Phoenix",
-  "MST7MDT": "America/Denver",
   "Mexico/BajaNorte": "America/Tijuana",
   "Mexico/BajaSur": "America/Mazatlan",
   "Mexico/General": "America/Mexico_City",
@@ -219,7 +216,6 @@ export const canonicalNames: Record<string, string> = {
   "NZ-CHAT": "Pacific/Chatham",
   "Navajo": "America/Denver",
   "PRC": "Asia/Shanghai",
-  "PST8PDT": "America/Los_Angeles",
   "Pacific/Chuuk": "Pacific/Port_Moresby",
   "Pacific/Enderbury": "Pacific/Kanton",
   "Pacific/Funafuti": "Pacific/Tarawa",

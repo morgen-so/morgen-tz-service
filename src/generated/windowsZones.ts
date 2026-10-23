@@ -1,4 +1,4 @@
-// Generated from windowsZones.xml on 2025-10-16T21:33:23.137Z
+// Generated from windowsZones.xml on 2026-10-21T19:30:53.167Z
 // Source: https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml
 
 export const windowsZones: Record<string, string> = {
@@ -15,12 +15,15 @@ export const windowsZones: Record<string, string> = {
   "US Mountain Standard Time": "America/Phoenix",
   "Mountain Standard Time (Mexico)": "America/Mazatlan",
   "Mountain Standard Time": "America/Denver",
+  "British Columbia Standard Time": "America/Vancouver",
   "Yukon Standard Time": "America/Whitehorse",
+  "Alberta Standard Time": "America/Edmonton",
   "Central America Standard Time": "America/Guatemala",
   "Central Standard Time": "America/Chicago",
   "Easter Island Standard Time": "Pacific/Easter",
   "Central Standard Time (Mexico)": "America/Mexico_City",
   "Canada Central Standard Time": "America/Regina",
+  "Manitoba Standard Time": "America/Winnipeg",
   "SA Pacific Standard Time": "America/Bogota",
   "Eastern Standard Time (Mexico)": "America/Cancun",
   "Eastern Standard Time": "America/New_York",

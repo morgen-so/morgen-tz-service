@@ -53,6 +53,10 @@ _TODO: add a script to automate this, ideally with a CI job._
 - Update `moment-timezone`, `luxon`, `tzdata`, `@vvo/tzdb` and `timezones-ical-library` to the latest versions in package.json
 - Use `npm update` to update the dependencies. Notice,  `npm install` will not work because of the peer dependencies.
 - Update `scripts/data/windowsZones.xml` with the [latest Windows timezone data](https://github.com/unicode-org/cldr/blob/main/common/supplemental/windowsZones.xml).
+- If the latest `timezones-ical-library` release contains an older tzdata version than IANA, build it from source with the new tzdata before you run the build:
+  `sh scripts/build-ical-library.sh <tzdata version> [library commit]`.
+  The script replaces `node_modules/timezones-ical-library/dist`, so run it again after each `npm install`.
+  Version 1.0.4 used tzdata `2026e` and library commit `07ada5679043d60c58d7f5c8ea5825154e0282e2` (release 2.3.2).
 - Run `npm run build` to update the data files and run the tests.
 - Bump version in `package.json`.
 - Push the changes to the repository.

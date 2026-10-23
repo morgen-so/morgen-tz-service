@@ -1,6 +1,6 @@
 {
   "name": "morgen-tz-service",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Time zone service for morgen.so",
   "homepage": "https://github.com/morgen-so/morgen-tz-service",
   "bugs": {
@@ -34,16 +34,16 @@
     "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.15",
     "@types/luxon": "^3.7.1",
-    "@vvo/tzdb": "^6.187.0",
+    "@vvo/tzdb": "^6.201.1",
     "fast-xml-parser": "^5.0.7",
     "jest": "^30.2.0",
-    "timezones-ical-library": "^1.10.0",
+    "timezones-ical-library": "^2.3.2",
     "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.0",
     "tsx": "^4.19.3",
     "typescript": "^5.9.3",
-    "tzdata": "^1.0.46",
+    "tzdata": "^1.0.52",
     "luxon": "latest"
   },
   "peerDependencies": {
