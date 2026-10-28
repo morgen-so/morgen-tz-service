@@ -60,17 +60,24 @@ import { getCanonicalIanaName } from "./utils.js";
     )}`
   );
 
-  // Mapping from canonical IANA name to Windows zone
+  // A name that CLDR lists keeps its own Windows zone. An alias that CLDR
+  // lists under a different Windows zone must not overwrite it, for example
+  // Europe/Copenhagen (Romance) is an alias of Europe/Berlin (W. Europe).
+  const listedIanaNames = new Set(
+    zones.flatMap((z) => z["@_type"].split(" "))
+  );
+
+  // Mapping from IANA name to Windows zone
   const windowsZonesInverse = _(zones)
     .map((z) => {
       const msZone = z["@_other"];
       const ianaNames = z["@_type"].split(" ");
       return ianaNames.map((ianaName) => {
         const canonicalIanaName = getCanonicalIanaName(ianaName);
-        return [
-          [ianaName, msZone],
-          [canonicalIanaName, msZone],
-        ];
+        const pairs = [[ianaName, msZone]];
+        if (canonicalIanaName && !listedIanaNames.has(canonicalIanaName))
+          pairs.push([canonicalIanaName, msZone]);
+        return pairs;
       });
     })
     .flattenDepth(2)

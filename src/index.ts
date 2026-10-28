@@ -34,6 +34,7 @@ class Timezone {
     // Antarctica/Troll does not have a Windows equivalent
     // See https://github.com/mattjohnsonpint/TimeZoneConverter/issues/61
     if (ianaName === "Antarctica/Troll") return "UTC";
+    if (windowsZonesInverse[ianaName]) return windowsZonesInverse[ianaName];
     const canonical = Timezone.findCanonicalIANAName(ianaName);
     return windowsZonesInverse[canonical] ?? windowsSpecialMapping[canonical];
   }
