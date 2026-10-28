@@ -9049,7 +9049,8 @@ var Timezone = class _Timezone {
   }
   static ianaToWindows(ianaName) {
     if (ianaName === "Antarctica/Troll") return "UTC";
-    if (windowsZonesInverse[ianaName]) return windowsZonesInverse[ianaName];
+    if (Object.hasOwn(windowsZonesInverse, ianaName))
+      return windowsZonesInverse[ianaName];
     const canonical = _Timezone.findCanonicalIANAName(ianaName);
     return windowsZonesInverse[canonical] ?? windowsSpecialMapping[canonical];
   }

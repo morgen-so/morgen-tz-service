@@ -89,6 +89,13 @@ describe("Windows zones", () => {
     );
   });
 
+  it.each(["constructor", "toString", "__proto__"])(
+    "inherited object key '%s' does not map to a Windows zone",
+    (name) => {
+      expect(TimezoneService.Timezone.ianaToWindows(name)).toBeUndefined();
+    }
+  );
+
   it.each(Object.keys(windowsZones))(
     "windows zone '%s' is accepted and converted to IANA",
     async (tzName) => {
