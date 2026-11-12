@@ -2,6 +2,7 @@ import fs from "fs";
 import _ from "lodash";
 import moment from "moment-timezone";
 import { tzlib_get_ical_block } from "timezones-ical-library";
+import { icsObservanceOverrides } from "./icsOverrides.js";
 import { getCanonicalIanaName } from "./utils.js";
 
 /**
@@ -25,7 +26,14 @@ import { getCanonicalIanaName } from "./utils.js";
     // because the library always returns the canonical zone name
     // Eg. the library return {"Europe/Kiev": {... TZID=Europe/Kyiv ...}}
     // and this breaks the mapping.
-    const blockUpdated = block.replace(tzid.replace("=", ":"), `TZID:${zone}`);
+    let blockUpdated = block.replace(tzid.replace("=", ":"), `TZID:${zone}`);
+    const observances = icsObservanceOverrides[canonicalZone];
+    if (observances) {
+      blockUpdated = blockUpdated.replace(
+        /BEGIN:(?:STANDARD|DAYLIGHT)[\s\S]*END:(?:STANDARD|DAYLIGHT)/,
+        observances
+      );
+    }
     icsZones[zone] = blockUpdated;
   });
 

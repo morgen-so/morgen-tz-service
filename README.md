@@ -58,6 +58,7 @@ _TODO: add a script to automate this, ideally with a CI job._
   The script replaces `node_modules/timezones-ical-library/dist`, so run it again after each `npm install`.
   Version 1.0.4 used tzdata `2026e` and library commit `07ada5679043d60c58d7f5c8ea5825154e0282e2` (release 2.3.2).
 - Run `npm run build` to update the data files and run the tests.
+- If `tests/icsZones.spec.ts` fails for a zone, timezones-ical-library could not express a tzdata change for it. Add the zone's observances to `scripts/icsOverrides.ts` and build again.
 - Bump version in `package.json`.
 - Push the changes to the repository.
 - Update the commit hash in the `package.json` of other projects fetching this repo from Github.
