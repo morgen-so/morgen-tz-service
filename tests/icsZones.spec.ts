@@ -66,7 +66,17 @@ describe("icsZones", () => {
   it.each(Object.keys(icsZones))("%s matches moment-timezone for the coming year", (zone) => {
     const zoneTransitions = transitions(icsZones[zone]!, endYear);
     const momentZone = moment.tz.zone(zone)!;
-    for (let time = from; time < to; time += STEP_MS) {
+    // A regular grid, plus the instant at and just before every transition either side
+    // knows, so a transition at the wrong hour or half hour cannot fall between samples.
+    const times = new Set<number>();
+    for (let time = from; time < to; time += STEP_MS) times.add(time);
+    for (const at of [...zoneTransitions.map(([at]) => at), ...momentZone.untils]) {
+      if (at > from && at < to) {
+        times.add(at);
+        times.add(at - 1);
+      }
+    }
+    for (const time of [...times].sort((a, b) => a - b)) {
       const before = zoneTransitions.filter(([at]) => at <= time);
       const icsOffset = (before[before.length - 1] ?? zoneTransitions[0])![1];
       expect({ at: new Date(time).toISOString(), offset: icsOffset }).toEqual({
